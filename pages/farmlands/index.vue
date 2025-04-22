@@ -63,14 +63,10 @@
   <script>
 import { http } from "~/common/index.js";
 import { mapGetters } from "vuex";
-import Register from "../../components/register.vue";
 
 export default {
   computed: {
     ...mapGetters(["imageUrl"]),
-  },
-  components: {
-    Register
   },
   async asyncData() {
     const url = `/api/available/farms`;

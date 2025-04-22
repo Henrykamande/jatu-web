@@ -34,16 +34,19 @@
       </div>
     </div>
     <!-- <div class="" v-else>
-      <register></register>
-    </div> -->
+        <register></register>
+    </div>-->
   </div>
 </template>
 <script>
-
 export default {
-  computed: {}
+  computed: {
+    isAuthenticated() {
+      return process.client ? !!localStorage.getItem("token") : false;
+    }
+  }
 };
 </script>
-  
-  <style lang="scss" scoped>
+    
+    <style lang="scss" scoped>
 </style>

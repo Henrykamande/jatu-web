@@ -34,7 +34,7 @@
         Call: +254 748 193 219
       </div>
 
-      <div class="" v-if="isAuthenticated">
+      <div>
         <div class="col-span-1 flex place-content-center relative" @mouseenter="showMenu" @mouseleave="hideMenu">
         <div class="flex flex-col items-center border p-1 rounded">
           <button >
@@ -66,7 +66,6 @@
       </div>
       <!-- v-else -->
       </div>
-      <nuxt-link to="/register" class="p-3 font-bold text-blue-500" v-else>Login</nuxt-link>
     </div>
     <!-- end  of top bar-->
 
@@ -167,15 +166,6 @@ export default {
   computed: {
     ...mapGetters(["imageUrl", "user"]),
     ...mapGetters("product", ["cart"]),
-    isAuthenticated() {
-     return process.client ? !!localStorage.getItem("token") : false;
-    },
-    user() {
-      return JSON.parse(localStorage.getItem("user")) || {};
-    },
-    fullName() {
-      return this.user.first_name + " " + this.user.last_name
-    }
   },
   data() {
     return {
