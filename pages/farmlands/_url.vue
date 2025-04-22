@@ -6,7 +6,7 @@
       <div class="flex flex-col md:flex-row justify-between mt-5 border py-3 px-2 bg-gray-50">
         <p class="uppercase">
           <span class="font-bold">Farm Code:</span>
-          {{ farm.serialNo }}
+          {{ record.serialNo }}
         </p>
         <p class="uppercase">
           <span class="font-bold">COUNTRY:</span>
@@ -711,13 +711,14 @@ export default {
   },
 
   async asyncData({ params, error }) {
-    const id = params.url;
-    const url = `/api/available/farms/get-by-id/${id}`;
+    const serialNo = params.url;
+    // console.log(serialNo, "Farm serial no.")
+    const url = `/api/available/farms/serial-no/${serialNo}`;
 
     try {
       const { data } = await http.get(url);
       const { record, meta } = data;
-
+      // console.log(record, "Farm record")
       return {
         record,
         meta

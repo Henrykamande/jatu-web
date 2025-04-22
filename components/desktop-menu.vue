@@ -6,16 +6,16 @@
     </div>
     <!-- top header -->
     <div
-      class="items-center bg-white justify-center grid md:grid-cols-7 p-4 border-b border-purple-500"
+      class="items-center bg-white justify-center grid md:grid-cols-8 p-4 border-b border-purple-500"
     >
       <!-- logo div -->
       <div class="col-span-3 flex items-center">
         <div>
           <nuxt-link to="/">
             <img
-              src="~assets/images/shambani-logo.png"
+              src="~assets/images/jubilant-logo.png"
               alt
-              class="h-16 md:h-20 md:ml-1 mt-1 object-contain"
+              class="h-12 md:h-15 md:ml-1 m-0 object-contain"
               style="width: 200px; height: 200px; transform: scale(1.7)"
             />
           </nuxt-link>
@@ -29,10 +29,44 @@
       <!-- end -->
 
       <!-- div 4 -->
-      <div class="col-span-2 flex pr-8 font-bold text-xl">
+      <div class="col-span-2 place-content-end flex font-bold text-xl">
         <!-- favourites icon -->
         Call: +254 748 193 219
       </div>
+
+      <div class="" v-if="isAuthenticated">
+        <div class="col-span-1 flex place-content-center relative" @mouseenter="showMenu" @mouseleave="hideMenu">
+        <div class="flex flex-col items-center border p-1 rounded">
+          <button >
+          <font-awesome-icon :icon="['fas', 'user-circle']" class="text-gray-600 md:text-2xl" />
+        </button>
+        <span class="font-semibold text-gray-600 text-xs">{{ fullName }}</span>
+        </div>
+        <div
+          v-if="showDropdown"
+          class="absolute right-0 mt-12 w-40 bg-white border rounded-md shadow"
+        >
+          <ul>
+            <li>
+              <nuxt-link
+                to="/your-equipments"
+                class="block px-4 py-2 hover:bg-gray-100"
+              >Your Equipments</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/your-farms" class="block px-4 py-2 hover:bg-gray-100">Your Farms</nuxt-link>
+            </li>
+            <li>
+              <button @click="logout" class="flex px-4 py-2 text-red-600 hover:bg-gray-100 w-full text-left">
+                <span>Logout</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- v-else -->
+      </div>
+      <nuxt-link to="/register" class="p-3 font-bold text-blue-500" v-else>Login</nuxt-link>
     </div>
     <!-- end  of top bar-->
 
@@ -63,7 +97,9 @@
               class="font-medium text-lg text-white p-2 hover:text-orange-500"
               to="/projects"
             >Partnership Projects</nuxt-link>
-            <div class="absolute left-0 top-fdivl bg-gray-50 text-gray-800 rounded-md shadow-md hidden group-hover:block">
+            <div
+              class="absolute left-0 top-fdivl bg-gray-50 text-gray-800 rounded-md shadow-md hidden group-hover:block"
+            >
               <nuxt-link to="/agriculture" class="block px-4 py-2 hover:bg-gray-100">Agriculture</nuxt-link>
               <nuxt-link to="/mining" class="block px-4 py-2 hover:bg-gray-100">Mining</nuxt-link>
               <nuxt-link to="/real-estate" class="block px-4 py-2 hover:bg-gray-100">Real Estate</nuxt-link>
@@ -75,7 +111,9 @@
               class="font-medium text-lg text-white p-2 hover:text-orange-500"
               to="#"
             >Services</nuxt-link>
-            <div class="absolute left-0 top-fdivl bg-gray-50 text-gray-800 rounded-md shadow-md hidden group-hover:block">
+            <div
+              class="absolute left-0 top-fdivl bg-gray-50 text-gray-800 rounded-md shadow-md hidden group-hover:block"
+            >
               <nuxt-link to="/farmlands" class="block px-4 py-2 hover:bg-gray-100">Farmlands</nuxt-link>
               <nuxt-link to="/equipment" class="block px-4 py-2 hover:bg-gray-100">Equipment</nuxt-link>
               <nuxt-link to="/management" class="block px-4 py-2 hover:bg-gray-100">Management</nuxt-link>
@@ -89,7 +127,7 @@
               class="font-medium text-lg text-white p-2 hover:text-orange-500"
               to="/farmlands"
             >Farmlands</nuxt-link>
-          </li> -->
+          </li>-->
 
           <li class="menu-li group inline-block relative">
             <nuxt-link
@@ -128,13 +166,16 @@ import { mapGetters } from "vuex";
 export default {
   computed: {
     ...mapGetters(["imageUrl", "user"]),
-    ...mapGetters("product", ["cart"])
-    // user() {
-    //   const token = localStorage.getItem("token");
-    //   return token;
-    //   // var decoded = jwt_decode(token);
-    //   // return decoded;
-    // },
+    ...mapGetters("product", ["cart"]),
+    isAuthenticated() {
+     return process.client ? !!localStorage.getItem("token") : false;
+    },
+    user() {
+      return JSON.parse(localStorage.getItem("user")) || {};
+    },
+    fullName() {
+      return this.user.first_name + " " + this.user.last_name
+    }
   },
   data() {
     return {
@@ -146,7 +187,8 @@ export default {
       searchResults: [],
       searchSuggestions: [],
       blured: true,
-      disabled: true
+      disabled: true,
+      showDropdown: false,
     };
   },
   async fetch() {
@@ -174,6 +216,12 @@ export default {
 
       dropdown.classList.toggle("hidden");
       dropdown.classList.toggle("block");
+    },
+    showMenu() {
+      this.showDropdown = true;
+    },
+    hideMenu() {
+      this.showDropdown = false; 
     },
     logout() {
       this.$store.commit("logout");
@@ -203,7 +251,8 @@ export default {
 
 <style scoped>
 .menu-li {
-  @apply py-2 md:py-0;
+  @apply py-2;
+  md: py-0;
 }
 
 .search-drop-down {

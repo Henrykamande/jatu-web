@@ -1,6 +1,7 @@
 <template>
   <div class="container mx-auto md:px-96 px-2 lg:min-h-screen">
-    <div class="bg-white mt-6 p-3">
+    <h2 class="text-center font-bold text-3xl text-green-600 mt-2">Welcome to Afro Farms</h2>
+    <div class="bg-white mt-6 px-3 pb-3">
       <div class="bg-gray-200 p-2">Login</div>
       <!-- row 1 -->
       <div class="grid gap-4">
@@ -9,15 +10,7 @@
           <input
             v-model="dataItem.email"
             type="text"
-            class="
-              border-2 border-gray-400
-              py-1
-              px-3
-              rounded
-              outline-none
-              focus:border-purple-500
-              w-full
-            "
+            class="border-2 border-gray-400 py-1 px-3 rounded outline-none focus:border-purple-500 w-full"
           />
         </div>
 
@@ -26,15 +19,7 @@
           <input
             v-model="dataItem.password"
             type="password"
-            class="
-              border-2 border-gray-400
-              py-1
-              px-3
-              rounded
-              outline-none
-              focus:border-purple-500
-              w-full
-            "
+            class="border-2 border-gray-400 py-1 px-3 rounded outline-none focus:border-purple-500 w-full"
           />
         </div>
       </div>
@@ -44,13 +29,10 @@
       <div>
         <button
           @click="login"
-          :loading="loader"
           class="bg-orange-600 text-white py-1 px-2 mt-3 rounded font-bold"
-        >
-          Login
-        </button>
+        >Login</button>
         <div class="flex py-2">
-          <span>Don't have an account? </span>
+          <span>Don't have an account?</span>
           <nuxt-link to="/register" class="text-blue ml-2">
             <button class="text-green-700">Register</button>
           </nuxt-link>
@@ -67,11 +49,11 @@ import { http } from "~/common/index.js";
 const { toast } = require("tailwind-toast");
 export default {
   computed: {
-    ...mapGetters("product", ["cart"]),
+    ...mapGetters("product", ["cart"])
   },
   data() {
     return {
-      dataItem: {},
+      dataItem: {}
     };
   },
   methods: {
@@ -91,7 +73,7 @@ export default {
             positionY: "top",
             color: "bg-red-600",
             fontColor: "white",
-            fontTone: 200,
+            fontTone: 200
           })
           .show();
       } else {
@@ -100,7 +82,7 @@ export default {
           const details = this.dataItem;
           const self = this;
           this.loader = true;
-          await http.post(url, details).then((res) => {
+          await http.post(url, details).then(res => {
             console.log(res, "reg res");
             if (res.data.state) {
               const data = res.data;
@@ -110,14 +92,16 @@ export default {
               localStorage.setItem("token", data.token);
               localStorage.setItem("user", JSON.stringify(data.user));
               // check cart and redirect
+              // redirect user
+              ;
               if (this.cart.length > 0) {
                 setTimeout(() => {
-                  this.$router.push("/checkout");
+                  this.$router.push("/");
                 }, 200);
                 return true;
               } else {
                 setTimeout(() => {
-                  this.$router.push("/cart");
+                  this.$router.push("/");
                 }, 200);
                 return true;
               }
@@ -132,7 +116,7 @@ export default {
         }
       }
     },
-  },
+  }
 };
 </script>
 

@@ -1,5 +1,6 @@
 <template>
   <div class="container mx-auto md:px-48 px-2 lg:min-h-screen">
+    <h2 class="text-center font-bold text-3xl text-green-600 mt-2">Welcome to Afro Farms</h2>
     <div class="bg-white mt-6 p-3">
       <div class="bg-gray-200 p-2">Create An Account</div>
       <!-- row 1 -->
@@ -9,15 +10,7 @@
           <input
             v-model="dataItem.first_name"
             type="text"
-            class="
-              border-2 border-gray-400
-              py-1
-              px-3
-              rounded
-              outline-none
-              focus:border-purple-500
-              w-full
-            "
+            class="border-2 border-gray-400 py-1 px-3 rounded outline-none focus:border-purple-500 w-full"
           />
         </div>
 
@@ -26,15 +19,7 @@
           <input
             v-model="dataItem.last_name"
             type="text"
-            class="
-              border-2 border-gray-400
-              py-1
-              px-3
-              rounded
-              outline-none
-              focus:border-purple-500
-              w-full
-            "
+            class="border-2 border-gray-400 py-1 px-3 rounded outline-none focus:border-purple-500 w-full"
           />
         </div>
       </div>
@@ -47,15 +32,7 @@
           <input
             v-model="dataItem.email"
             type="text"
-            class="
-              border-2 border-gray-400
-              py-1
-              px-3
-              rounded
-              outline-none
-              focus:border-purple-500
-              w-full
-            "
+            class="border-2 border-gray-400 py-1 px-3 rounded outline-none focus:border-purple-500 w-full"
           />
         </div>
 
@@ -64,15 +41,7 @@
           <input
             v-model="dataItem.phone"
             type="text"
-            class="
-              border-2 border-gray-400
-              py-1
-              px-3
-              rounded
-              outline-none
-              focus:border-purple-500
-              w-full
-            "
+            class="border-2 border-gray-400 py-1 px-3 rounded outline-none focus:border-purple-500 w-full"
           />
         </div>
       </div>
@@ -85,15 +54,7 @@
           <input
             v-model="dataItem.location"
             type="text"
-            class="
-              border-2 border-gray-400
-              py-1
-              px-3
-              rounded
-              outline-none
-              focus:border-purple-500
-              w-full
-            "
+            class="border-2 border-gray-400 py-1 px-3 rounded outline-none focus:border-purple-500 w-full"
           />
         </div>
 
@@ -102,15 +63,7 @@
           <input
             v-model="dataItem.house"
             type="text"
-            class="
-              border-2 border-gray-400
-              py-1
-              px-3
-              rounded
-              outline-none
-              focus:border-purple-500
-              w-full
-            "
+            class="border-2 border-gray-400 py-1 px-3 rounded outline-none focus:border-purple-500 w-full"
           />
         </div>
       </div>
@@ -123,15 +76,7 @@
           <input
             v-model="dataItem.password"
             type="password"
-            class="
-              border-2 border-gray-400
-              py-1
-              px-3
-              rounded
-              outline-none
-              focus:border-purple-500
-              w-full
-            "
+            class="border-2 border-gray-400 py-1 px-3 rounded outline-none focus:border-purple-500 w-full"
           />
         </div>
 
@@ -140,15 +85,7 @@
           <input
             v-model="dataItem.confirm_password"
             type="password"
-            class="
-              border-2 border-gray-400
-              py-1
-              px-3
-              rounded
-              outline-none
-              focus:border-purple-500
-              w-full
-            "
+            class="border-2 border-gray-400 py-1 px-3 rounded outline-none focus:border-purple-500 w-full"
           />
         </div>
       </div>
@@ -160,9 +97,7 @@
           :loading="loader"
           @click="register"
           class="bg-orange-600 text-white py-1 px-2 mt-3 rounded font-bold"
-        >
-          Register
-        </button>
+        >Register</button>
         <img
           v-show="loader"
           src="~assets/images/loader.gif"
@@ -171,7 +106,7 @@
           style="width: 30px; height: 30px"
         />
         <div class="flex py-2">
-          <span>Already have an account? </span>
+          <span>Already have an account?</span>
           <nuxt-link to="/login" class="text-blue ml-2">
             <button class="text-green-700">Login</button>
           </nuxt-link>
@@ -188,7 +123,7 @@ import { http } from "~/common/index.js";
 const { toast } = require("tailwind-toast");
 export default {
   computed: {
-    ...mapGetters("product", ["cart"]),
+    ...mapGetters("product", ["cart"])
   },
   data() {
     return {
@@ -196,7 +131,7 @@ export default {
       loader: false,
       successMsg: false,
       emailError: false,
-      formError: false,
+      formError: false
     };
   },
   methods: {
@@ -218,7 +153,7 @@ export default {
             positionY: "top",
             color: "bg-red-600",
             fontColor: "white",
-            fontTone: 200,
+            fontTone: 200
           })
           .show();
       } else {
@@ -227,7 +162,7 @@ export default {
           const details = this.dataItem;
           const self = this;
           this.loader = true;
-          await http.post(url, details).then((res) => {
+          await http.post(url, details).then(res => {
             console.log(res, "reg res");
             if (res.data.state) {
               const data = res.data;
@@ -239,18 +174,21 @@ export default {
               localStorage.setItem("token", data.token);
               localStorage.setItem("user", JSON.stringify(data.user));
               // redirect user
-              if (this.cart.length > 0) {
-                setTimeout(() => {
-                  this.$router.push("/checkout");
-                }, 200);
-                return true;
-              } else {
-                setTimeout(() => {
-                  this.$router.push("/cart");
-                }, 200);
-                return true;
-              }
-              // end of redirection
+              
+                this.$router.push("/");
+              
+              //   if (this.cart.length > 0) {
+              //     setTimeout(() => {
+              //       this.$router.push("/");
+              //     }, 200);
+              //     return true;
+              //   } else {
+              //     setTimeout(() => {
+              //       this.$router.push("/");
+              //     }, 200);
+              //     return true;
+              //   }
+              //   // end of redirection
             } else {
               self.emailError = true;
               self.loader = false;
@@ -260,8 +198,8 @@ export default {
           console.log("error occured", err);
         }
       }
-    },
-  },
+    }
+  }
 };
 </script>
 

@@ -156,6 +156,71 @@
             >
               Partnership Projects
             </li>
+            
+            <li class="menu-li group inline-block relative text-white px-4 border-b border-white w-full">
+              <a href="#" class="inline-flex gap-3 items-center font-bold"
+              @click="toggleDropdown"
+                >Services
+                <font-awesome-icon
+                  class="h-6 w-6 cursor-pointer"
+                  style="color: #fff"
+                  :icon="['fas', 'caret-down']"
+                />
+              </a>
+
+              <ul
+                :class="showDropdown ? 'block' : 'hidden'"
+                class="
+                  w-56
+                  bg-orange-600
+                  text-white
+                  shadow-xl
+                  absolute
+                  hidden
+                  group-hover:block
+                  z-40
+                  divide-y divide-gray-300 divide-solid
+                "
+              >
+                <li
+                  class="block py-2 px-4 hover:bg-gray-100"
+                >
+                  <nuxt-link
+                    :to="`/farmlands`"
+                    class="p-2 text-xs font-normal"
+                    >Farmlands</nuxt-link
+                  >
+                </li>
+                <li
+                  class="block py-2 px-4 hover:bg-gray-100"
+                >
+                  <nuxt-link
+                    :to="`/equipment`"
+                    class="p-2 text-xs font-normal"
+                    >Equipment</nuxt-link
+                  >
+                </li>
+                <li
+                  class="block py-2 px-4 hover:bg-gray-100"
+                >
+                  <nuxt-link
+                    :to="`/financing`"
+                    class="p-2 text-xs font-normal"
+                    >Financing</nuxt-link
+                  >
+                </li>
+                <li
+                  class="block py-2 px-4 hover:bg-gray-100"
+                >
+                  <nuxt-link
+                    :to="`/marketing`"
+                    class="p-2 text-xs font-normal"
+                    >Marketing</nuxt-link
+                  >
+                </li>
+              </ul>
+            </li>
+
             <li
               class="
                 bg-green-600
@@ -171,7 +236,7 @@
               "
               @click="navigateMain('location')"
             >
-              Our Locations
+              Our Location
             </li>
             <li
               class="
@@ -269,8 +334,10 @@ export default {
       services: [],
       searchPhrase: "",
       sResults: [],
+      showDropdown: false
     };
   },
+  
   async fetch() {
     const url = `api/categories`;
     const servicesUrl = `api/services`;
@@ -293,6 +360,9 @@ export default {
     handleMenu() {
       const sidebar = document.querySelector(".sidebar");
       sidebar.classList.toggle("-translate-x-full");
+    },
+    toggleDropdown() {
+      this.showDropdown = !this.showDropdown;
     },
     navigateMenu(url) {
       if (url == undefined) {
@@ -344,7 +414,7 @@ export default {
 
 <style scoped>
 .menu-li {
-  @apply py-2 md:py-0;
+  @apply py-2; md:py-0;
 }
 </style>
 

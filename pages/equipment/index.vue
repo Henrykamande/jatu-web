@@ -4,7 +4,7 @@
       <div
         class="flex flex-col gap-3 max-w-screen-lg mx-3 md:mx-auto px-3 pb-6 rounded-xl shadow shadow-gray-50"
       >
-      <h1 class="text-center font-bold text-3xl text-green-600 mt-2">AGRICULTURAL EQUIPMENT</h1>
+        <h1 class="text-center font-bold text-3xl text-green-600 mt-2">AGRICULTURAL EQUIPMENT</h1>
         <p
           class="text-center text-gray-600 text-lg leading-relaxed"
         >It's very costly to purchase and manage modern agricultural equipment, especially for smallholders and beginners in agri-investments.</p>
@@ -19,25 +19,32 @@
           <div class="text-center">
             <p class="text-green-600 text-lg font-semibold mb-4">TO RENT EQUIPMENT</p>
             <nuxt-link
-            to="/equipment/rent-farmland-equipment"
+              to="/equipment/rent-farmland-equipment"
               class="px-6 py-3 font-bold text-white border border-gray-300 rounded-full hover:bg-orange-600 bg-orange-700"
             >Start Here</nuxt-link>
           </div>
           <div class="text-center">
             <p class="text-green-600 text-lg font-semibold my-4">TO LIST EQUIPMENT</p>
             <nuxt-link
-            to="/equipment/list-farmland-equipment"
+              to="/equipment/list-farmland-equipment"
               class="px-6 py-3 font-bold text-white border border-gray-300 rounded-full hover:bg-orange-600 bg-orange-700"
             >Start Here</nuxt-link>
           </div>
         </div>
       </div>
     </div>
+    <!-- <div class="" v-else>
+      <register></register>
+    </div> -->
   </div>
 </template>
   
-  <script>
-export default {};
+<script>
+import register from '../../components/register.vue';
+
+export default {
+  computed: {}
+};
 </script>
   
   <style lang="scss" scoped>

@@ -137,8 +137,8 @@ export default {
   },
 
   methods: {
-    toggleDetails(index) {
-      this.$set(this.showDetails, index, !this.showDetails[index]);
+    toggleDetails(eqId) {
+      this.$set(this.showDetails, eqId, !this.showDetails[eqId]);
     },
   }
 };
