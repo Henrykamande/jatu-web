@@ -281,7 +281,7 @@ export default {
   
   <style scoped>
 .menu-li {
-  @apply py-2 md:py-0;
+  @apply py-2; md:py-0;
 }
 
 .search-drop-down {

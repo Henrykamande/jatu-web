@@ -5,6 +5,7 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _7cd294ea = () => interopDefault(import('..\\pages\\about\\index.vue' /* webpackChunkName: "pages/about/index" */))
+const _55066af5 = () => interopDefault(import('..\\pages\\auth\\index.vue' /* webpackChunkName: "pages/auth/index" */))
 const _0dd4f8bb = () => interopDefault(import('..\\pages\\blog\\index.vue' /* webpackChunkName: "pages/blog/index" */))
 const _3a919b06 = () => interopDefault(import('..\\pages\\cart\\index.vue' /* webpackChunkName: "pages/cart/index" */))
 const _5f2f1b17 = () => interopDefault(import('..\\pages\\checkout\\index.vue' /* webpackChunkName: "pages/checkout/index" */))
@@ -21,7 +22,6 @@ const _b017dee2 = () => interopDefault(import('..\\pages\\investor-success\\inde
 const _16d30a74 = () => interopDefault(import('..\\pages\\join-event\\index.vue' /* webpackChunkName: "pages/join-event/index" */))
 const _77d72224 = () => interopDefault(import('..\\pages\\joseph\\index.vue' /* webpackChunkName: "pages/joseph/index" */))
 const _a40b8570 = () => interopDefault(import('..\\pages\\location\\index.vue' /* webpackChunkName: "pages/location/index" */))
-const _52ff078e = () => interopDefault(import('..\\pages\\login\\index.vue' /* webpackChunkName: "pages/login/index" */))
 const _d38ec18c = () => interopDefault(import('..\\pages\\management\\index.vue' /* webpackChunkName: "pages/management/index" */))
 const _f90f339e = () => interopDefault(import('..\\pages\\marketing\\index.vue' /* webpackChunkName: "pages/marketing/index" */))
 const _37c96974 = () => interopDefault(import('..\\pages\\meeting-success\\index.vue' /* webpackChunkName: "pages/meeting-success/index" */))
@@ -33,7 +33,6 @@ const _7683d1e4 = () => interopDefault(import('..\\pages\\owner-success\\index.v
 const _42a3ba62 = () => interopDefault(import('..\\pages\\privacy\\index.vue' /* webpackChunkName: "pages/privacy/index" */))
 const _7cb57839 = () => interopDefault(import('..\\pages\\products\\index.vue' /* webpackChunkName: "pages/products/index" */))
 const _286a0763 = () => interopDefault(import('..\\pages\\projects\\index.vue' /* webpackChunkName: "pages/projects/index" */))
-const _49d0ad9a = () => interopDefault(import('..\\pages\\register\\index.vue' /* webpackChunkName: "pages/register/index" */))
 const _eed60e02 = () => interopDefault(import('..\\pages\\services\\index.vue' /* webpackChunkName: "pages/services/index" */))
 const _79a29e32 = () => interopDefault(import('..\\pages\\shop\\index.vue' /* webpackChunkName: "pages/shop/index" */))
 const _2918b042 = () => interopDefault(import('..\\pages\\simo-index.vue' /* webpackChunkName: "pages/simo-index" */))
@@ -56,6 +55,7 @@ const _95d40928 = () => interopDefault(import('..\\pages\\join-event\\_url.vue' 
 const _505aa50a = () => interopDefault(import('..\\pages\\order-farm\\_url.vue' /* webpackChunkName: "pages/order-farm/_url" */))
 const _762602ea = () => interopDefault(import('..\\pages\\product\\_url.vue' /* webpackChunkName: "pages/product/_url" */))
 const _a30031a2 = () => interopDefault(import('..\\pages\\projects\\_url.vue' /* webpackChunkName: "pages/projects/_url" */))
+const _3dbfc3d0 = () => interopDefault(import('..\\pages\\register\\_url.vue' /* webpackChunkName: "pages/register/_url" */))
 const _12c1bf5d = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 const _cb74a98a = () => interopDefault(import('..\\pages\\_category\\_subcategory\\index.vue' /* webpackChunkName: "pages/_category/_subcategory/index" */))
 
@@ -74,6 +74,10 @@ export const routerOptions = {
     path: "/about",
     component: _7cd294ea,
     name: "about"
+  }, {
+    path: "/auth",
+    component: _55066af5,
+    name: "auth"
   }, {
     path: "/blog",
     component: _0dd4f8bb,
@@ -139,10 +143,6 @@ export const routerOptions = {
     component: _a40b8570,
     name: "location"
   }, {
-    path: "/login",
-    component: _52ff078e,
-    name: "login"
-  }, {
     path: "/management",
     component: _d38ec18c,
     name: "management"
@@ -186,10 +186,6 @@ export const routerOptions = {
     path: "/projects",
     component: _286a0763,
     name: "projects"
-  }, {
-    path: "/register",
-    component: _49d0ad9a,
-    name: "register"
   }, {
     path: "/services",
     component: _eed60e02,
@@ -278,6 +274,10 @@ export const routerOptions = {
     path: "/projects/:url",
     component: _a30031a2,
     name: "projects-url"
+  }, {
+    path: "/register/:url?",
+    component: _3dbfc3d0,
+    name: "register-url"
   }, {
     path: "/",
     component: _12c1bf5d,

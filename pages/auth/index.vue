@@ -1,52 +1,117 @@
 <template>
-  <div class="max-w-screen-xl mx-auto">
-    <div class="py-6">
-      <div
-        class="flex flex-col gap-3 max-w-screen-lg mx-3 md:mx-auto px-3 pb-6 rounded-xl shadow shadow-gray-50"
-      >
-        <h1 class="text-center font-bold text-3xl text-green-600 mt-2">AGRICULTURAL EQUIPMENT</h1>
-        <p
-          class="text-center text-gray-600 text-lg leading-relaxed"
-        >It's very costly to purchase and manage modern agricultural equipment, especially for smallholders and beginners in agri-investments.</p>
-        <p
-          class="text-center text-gray-600 text-lg leading-relaxed"
-        >Save your money while enjoying unlimited flexibility on technology by sharing the available modern agricultural equipment through a renting program structured to accommodate both fiscal constraints and profit maximization for the farmer and the owner respectively.</p>
-        <p
-          class="text-center text-gray-600 text-lg leading-relaxed"
-        >While applying for this service, choose to rent the equipment if you are looking for machinery or equipment and choose to list if you have the machinery or equipment that you want to rent to farmers.</p>
+  <div class="container mx-auto md:px-96 px-2 lg:min-h-screen mb-5">
+    <h2 class="text-center font-bold text-3xl text-green-600 mt-2">Welcome to Afro Farms</h2>
+    <div class="bg-white mt-6 px-3 max-w-md border border-green-300 mx-auto rounded">
+      <!-- row 1 -->
+      <div class="flex flex-col gap-8 py-12">
+        <div class="flex gap-5 items-center">
+          <label class="font-bold w-20 text-green-600">Email:</label>
+          <input
+            v-model="dataItem.email"
+            type="text"
+            class="border border-green-400 py-1 px-3 rounded outline-none focus:border-purple-500 w-full text-green-600"
+          />
+        </div>
 
-        <div class="flex flex-col gap-3">
-          <div class="text-center">
-            <p class="text-green-600 text-lg font-semibold mb-4">TO RENT EQUIPMENT</p>
-            <nuxt-link
-              to="/auth"
-              class="px-6 py-3 font-bold text-white border border-gray-300 rounded-full hover:bg-orange-600 bg-orange-700"
-            >Start Here</nuxt-link>
-          </div>
-          <div class="text-center">
-            <p class="text-green-600 text-lg font-semibold my-4">TO LIST EQUIPMENT</p>
-            <nuxt-link
-              to="/auth"
-              class="px-6 py-3 font-bold text-white border border-gray-300 rounded-full hover:bg-orange-600 bg-orange-700"
-            >Start Here</nuxt-link>
-          </div>
+        <div class="flex gap-5 items-center">
+          <label class="font-bold w-16 text-green-600">Password:</label>
+          <input
+            v-model="dataItem.password"
+            type="password"
+            class="border border-green-400 py-1 px-3 rounded outline-none focus:border-purple-500 w-full text-green-600"
+          />
+        </div>
+        <div class="flex flex-col w-full justify-center gap-3 items-center">
+          <button
+            @click="login"
+            class="bg-green-500 w-20 text-white py-1 px-2 mt-3 rounded font-bold"
+          >Login</button>
+          <p class="font-bold text-center text-green-600">OR</p>
+          <nuxt-link
+            to="/register/equipment"
+            class="text-orange-500 text-xl py-1 px-2 border border-green-400 rounded font-bold"
+          >Create an Account</nuxt-link>
         </div>
       </div>
     </div>
-    <!-- <div class="" v-else>
-        <register></register>
-    </div>-->
   </div>
 </template>
-<script>
+  
+  <script>
+import { mapGetters } from "vuex";
+import { http } from "~/common/index.js";
+const { toast } = require("tailwind-toast");
 export default {
   computed: {
-    isAuthenticated() {
-      return process.client ? !!localStorage.getItem("token") : false;
+    ...mapGetters("product", ["cart"])
+  },
+  data() {
+    return {
+      dataItem: {}
+    };
+  },
+  methods: {
+    async login() {
+      const details = this.dataItem;
+      if (
+        this.dataItem.email == undefined ||
+        this.dataItem.password == undefined
+      ) {
+        toast()
+          .danger("Oops!", "Please fill all the required fields!")
+          .with({
+            shape: "square",
+            duration: 3000,
+            speed: 1000,
+            positionX: "end",
+            positionY: "top",
+            color: "bg-red-600",
+            fontColor: "white",
+            fontTone: 200
+          })
+          .show();
+      } else {
+        try {
+          const url = `/api/users/login`;
+          const details = this.dataItem;
+          const self = this;
+          this.loader = true;
+          await http.post(url, details).then(res => {
+            console.log(res, "reg res");
+            if (res.data.state) {
+              const data = res.data;
+              self.dataItem = {};
+              self.$store.commit("setUser", data.user);
+              self.$store.commit("setToken", data.token);
+              localStorage.setItem("token", data.token);
+              localStorage.setItem("user", JSON.stringify(data.user));
+              // check cart and redirect
+              // redirect user
+              if (this.cart.length > 0) {
+                setTimeout(() => {
+                  this.$router.push("/");
+                }, 200);
+                return true;
+              } else {
+                setTimeout(() => {
+                  this.$router.push("/");
+                }, 200);
+                return true;
+              }
+              // end
+            } else {
+              self.emailError = true;
+              self.loader = false;
+            }
+          });
+        } catch (err) {
+          console.log("error occured", err);
+        }
+      }
     }
   }
 };
 </script>
-    
-    <style lang="scss" scoped>
+  
+  <style lang="scss" scoped>
 </style>

@@ -18,15 +18,25 @@
         <div class="flex flex-col gap-3">
           <div class="text-center">
             <p class="text-green-600 text-lg font-semibold mb-4">TO RENT EQUIPMENT</p>
-            <nuxt-link
-              to="/auth"
+            <!-- User auth -->
+            <nuxt-link v-if="isAuthenticated"
+              to="/equipment/rent-farmland-equipment"
+              class="px-6 py-3 font-bold text-white border border-gray-300 rounded-full hover:bg-orange-600 bg-orange-700"
+            >Start Here</nuxt-link>
+
+            <nuxt-link v-else to="/auth"
               class="px-6 py-3 font-bold text-white border border-gray-300 rounded-full hover:bg-orange-600 bg-orange-700"
             >Start Here</nuxt-link>
           </div>
+
           <div class="text-center">
             <p class="text-green-600 text-lg font-semibold my-4">TO LIST EQUIPMENT</p>
-            <nuxt-link
-              to="/auth"
+            <nuxt-link v-if="isAuthenticated"
+              to="/equipment/list-farmland-equipment"
+              class="px-6 py-3 font-bold text-white border border-gray-300 rounded-full hover:bg-orange-600 bg-orange-700"
+            >Start Here</nuxt-link>
+            
+            <nuxt-link v-else to="/auth"
               class="px-6 py-3 font-bold text-white border border-gray-300 rounded-full hover:bg-orange-600 bg-orange-700"
             >Start Here</nuxt-link>
           </div>
@@ -38,10 +48,15 @@
     </div> -->
   </div>
 </template>
+  
 <script>
 
 export default {
-  computed: {}
+  computed: {
+    isAuthenticated() {
+      return process.client ? !!localStorage.getItem("token") : false;
+    }
+  },
 };
 </script>
   

@@ -6,6 +6,12 @@
     "chunkName": "pages/about/index"
   },
   {
+    "name": "auth",
+    "path": "/auth",
+    "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\auth\\\\index.vue",
+    "chunkName": "pages/auth/index"
+  },
+  {
     "name": "blog",
     "path": "/blog",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\blog\\\\index.vue",
@@ -102,12 +108,6 @@
     "chunkName": "pages/location/index"
   },
   {
-    "name": "login",
-    "path": "/login",
-    "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\login\\\\index.vue",
-    "chunkName": "pages/login/index"
-  },
-  {
     "name": "management",
     "path": "/management",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\management\\\\index.vue",
@@ -172,12 +172,6 @@
     "path": "/projects",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\projects\\\\index.vue",
     "chunkName": "pages/projects/index"
-  },
-  {
-    "name": "register",
-    "path": "/register",
-    "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\register\\\\index.vue",
-    "chunkName": "pages/register/index"
   },
   {
     "name": "services",
@@ -310,6 +304,12 @@
     "path": "/projects/:url",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\projects\\\\_url.vue",
     "chunkName": "pages/projects/_url"
+  },
+  {
+    "name": "register-url",
+    "path": "/register/:url?",
+    "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\register\\\\_url.vue",
+    "chunkName": "pages/register/_url"
   },
   {
     "name": "index",

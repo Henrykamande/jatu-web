@@ -40,7 +40,7 @@
           <button >
           <font-awesome-icon :icon="['fas', 'user-circle']" class="text-gray-600 md:text-2xl" />
         </button>
-        <span class="font-semibold text-gray-600 text-xs">{{ fullName }}</span>
+        <span class="font-semibold text-gray-600 text-xs">Full Name</span>
         </div>
         <div
           v-if="showDropdown"
