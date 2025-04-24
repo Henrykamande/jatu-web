@@ -1,7 +1,7 @@
 'use strict'
 
 var mongoose = require('mongoose')
-require('mongoose-double')(mongoose);
+// require('mongoose-double')(mongoose);
 // var Category = require('../categories/category.model.js')
 // var SubCategory = require('../sub_categories/category.model.js')
 

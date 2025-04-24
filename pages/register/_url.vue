@@ -120,7 +120,6 @@
 <script>
 import { mapGetters } from "vuex";
 import { http } from "~/common/index.js";
-import { param } from "../../server/routes/api/categories";
 const { toast } = require("tailwind-toast");
 export default {
   computed: {
@@ -135,13 +134,13 @@ export default {
       formError: false
     };
   },
-  getPageUrl({ params }) {
-    const pageUrl = params.url;
-    const isAuthenticated = localStorage.getItem("token")
-    if (isAuthenticated) {
-      this.$router.push(`/${pageUrl}`)
-    }
-  },
+  // getPageUrl({ params }) {
+  //   const pageUrl = params.url;
+  //   const isAuthenticated = localStorage.getItem("token")
+  //   if (isAuthenticated) {
+  //     this.$router.push(`/${pageUrl}`)
+  //   }
+  // },
   methods: {
     async register() {
       const details = this.dataItem;
