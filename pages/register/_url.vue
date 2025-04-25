@@ -107,7 +107,7 @@
         />
         <div class="flex py-2">
           <span class="text-orange-500">Already have an account?</span>
-          <nuxt-link to="/auth" class="text-blue ml-2">
+          <nuxt-link :to="`/auth/${dynamicUrl}`" class="text-blue ml-2">
             <button class="text-blue-700 underline">Login</button>
           </nuxt-link>
         </div>
@@ -124,6 +124,9 @@ const { toast } = require("tailwind-toast");
 export default {
   computed: {
     ...mapGetters("product", ["cart"]),
+    dynamicUrl() {
+      return this.$route.params.url
+    }
   },
   data() {
     return {
@@ -134,16 +137,12 @@ export default {
       formError: false
     };
   },
-  // getPageUrl({ params }) {
-  //   const pageUrl = params.url;
-  //   const isAuthenticated = localStorage.getItem("token")
-  //   if (isAuthenticated) {
-  //     this.$router.push(`/${pageUrl}`)
-  //   }
-  // },
+  
   methods: {
     async register() {
       const details = this.dataItem;
+      const pageUrl = this.$route.params.url;
+      
       if (
         this.dataItem.first_name == undefined ||
         this.dataItem.last_name == undefined ||
@@ -182,7 +181,9 @@ export default {
               localStorage.setItem("token", data.token);
               localStorage.setItem("user", JSON.stringify(data.user));
               // redirect user
-              
+              // console.log(pageUrl, "page url");
+              this.$router.push(`/equipment/${pageUrl}`);
+              // end
             } else {
               self.emailError = true;
               self.loader = false;

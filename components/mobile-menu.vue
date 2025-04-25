@@ -1,10 +1,8 @@
 <template>
   <div>
-    <div class="bg-white grid grid-cols-12 items-center relative">
+    <div class="bg-white grid grid-cols-12 justify-center items-center relative">
       <!-- top div -->
-      <div
-        style="background: #2e7d32"
-        class="
+      <div style="background: #2e7d32" class="
           col-span-12
           p-2
           text-white
@@ -12,49 +10,66 @@
           flex
           text-lg
           font-bold
-        "
-      >
-        <div>Shambani Connect</div>
-        <div>+254 748 193 219</div>
+        ">
+        <div class="text-sm">Shambani Connect</div>
+        <div class="text-sm">+254 748 193 219</div>
+
+        <!-- user account -->
+        <div v-if="isAuthenticated">
+          <div class="col-span-1 flex place-content-center relative">
+            <button @click="showMenu">
+              <font-awesome-icon :icon="['fas', 'user-circle']" class="text-white text-xl md:text-2xl" />
+            </button>
+            <div v-if="showDropdown"
+              class="absolute flex flex-col items-center right-0 text-gray-500 mt-10 w-32 bg-white border rounded-md shadow">
+              <ul>
+                <li>
+                  <nuxt-link to="/your-account" class="block py-2 hover:bg-gray-100">Account</nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link to="/your-equipments" class="block py-2 hover:bg-gray-100">Equipments</nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link to="/your-farms" class="block py-2 hover:bg-gray-100">Farms</nuxt-link>
+                </li>
+                <li>
+                  <button @click="logout" class="flex py-2 max-h-3 text-red-600 hover:bg-gray-100 w-full text-left">
+                    <span>Logout</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- v-else -->
+        <div class="text-white bg-orange-400 rounded font-bold px-2 py-1 text-sm" v-else>
+          <nuxt-link to="/auth">
+            Login
+          </nuxt-link>
+        </div>
       </div>
       <!-- end of top bar -->
-      
+
       <div class="col-span-6">
         <nuxt-link to="/">
-          <img
-            src="~assets/images/shambani-logo.png"
-            alt
-            class="w-3/4 h-16 md:w-full md:h-20 md:ml-2 object-contain"
-          />
+          <img src="~assets/images/shambani-logo.png" alt class="w-3/4 h-16 md:w-full md:h-20 md:ml-2 object-contain" />
         </nuxt-link>
       </div>
       <!-- end of div 1 -->
 
       <!-- div 2 -->
       <div class="col-span-6 flex justify-end pr-4">
-  
+
         <!-- mobile menu -->
         <div class="p-2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-8 w-8 float-right md:hidden mobile-menu-button"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            @click="handleMenu"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 float-right md:hidden mobile-menu-button" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor" @click="handleMenu">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </div>
       </div>
 
-      <div
-        class="
+      <div class="
           sidebar
           min-h-screen
           md:flex
@@ -72,8 +87,7 @@
           transition
           duration-200
           ease-in-out
-        "
-      >
+        ">
         <!-- logo -->
         <div class="flex justify-between">
           <nuxt-link to="/" class="flex items-center space-x-2 px-4">
@@ -88,8 +102,7 @@
         <!-- nav -->
         <nav class="ml-4 bg-green-600">
           <ul class="md:flex">
-            <li
-              class="
+            <li class="
                 bg-green-600
                 text-white
                 border-b border-white
@@ -100,13 +113,10 @@
                 transition
                 duration-200
                 hover:bg-blue-400 hover:text-white
-              "
-              @click="navigateMenu()"
-            >
+              " @click="navigateMenu()">
               Home
             </li>
-            <li
-              class="
+            <li class="
                 bg-green-600
                 text-white
                 border-b border-white
@@ -117,13 +127,10 @@
                 transition
                 duration-200
                 hover:bg-blue-400 hover:text-white
-              "
-              @click="navigateMain('about')"
-            >
+              " @click="navigateMain('about')">
               About Us
             </li>
-            <li
-              class="
+            <li class="
                 bg-green-600
                 text-white
                 border-b border-white
@@ -134,13 +141,10 @@
                 transition
                 duration-200
                 hover:bg-blue-400 hover:text-white
-              "
-              @click="navigateMain('services')"
-            >
+              " @click="navigateMain('services')">
               Agri Support
             </li>
-            <li
-              class="
+            <li class="
                 bg-green-600
                 text-white
                 border-b border-white
@@ -151,24 +155,16 @@
                 transition
                 duration-200
                 hover:bg-blue-400 hover:text-white
-              "
-              @click="navigateMain('projects')"
-            >
+              " @click="navigateMain('projects')">
               Partnership Projects
             </li>
-            
+
             <li class="menu-li group inline-block relative text-white px-4 border-b border-white w-full">
-              <a href="#" class="inline-flex gap-3 items-center font-bold"
-              @click="toggleDropdown"
-                >Services
-                <font-awesome-icon
-                  class="h-6 w-6 cursor-pointer"
-                  style="color: #fff"
-                  :icon="['fas', 'caret-down']"
-                />
+              <a href="#" class="inline-flex gap-3 items-center font-bold" @click="toggleDropdown">Services
+                <font-awesome-icon class="h-6 w-6 cursor-pointer" style="color: #fff" :icon="['fas', 'caret-down']" />
               </a>
 
-              <ul
+              <!-- <ul
                 :class="showDropdown ? 'block' : 'hidden'"
                 class="
                   w-56
@@ -218,11 +214,10 @@
                     >Marketing</nuxt-link
                   >
                 </li>
-              </ul>
+              </ul> -->
             </li>
 
-            <li
-              class="
+            <li class="
                 bg-green-600
                 text-white
                 border-b border-white
@@ -233,13 +228,10 @@
                 transition
                 duration-200
                 hover:bg-blue-400 hover:text-white
-              "
-              @click="navigateMain('location')"
-            >
+              " @click="navigateMain('location')">
               Our Location
             </li>
-            <li
-              class="
+            <li class="
                 bg-green-600
                 text-white
                 border-b border-white
@@ -250,24 +242,15 @@
                 transition
                 duration-200
                 hover:bg-blue-400 hover:text-white
-              "
-              @click="navigateMain('blog')"
-            >
+              " @click="navigateMain('blog')">
               Blog
             </li>
             <li class="menu-li group inline-block relative text-white px-4">
-              <a href="#" class="inline-flex items-center font-bold"
-                >Market Place
-                <font-awesome-icon
-                  class="h-6 w-6 cursor-pointer"
-                  style="color: #fff"
-                  :icon="['fas', 'caret-down']"
-                />
+              <a href="#" class="inline-flex items-center font-bold">Market Place
+                <font-awesome-icon class="h-6 w-6 cursor-pointer" style="color: #fff" :icon="['fas', 'caret-down']" />
               </a>
 
-              <ul
-                v-if="categories && categories.length > 0"
-                class="
+              <ul v-if="categories && categories.length > 0" class="
                   w-56
                   bg-orange-600
                   text-white
@@ -277,23 +260,14 @@
                   group-hover:block
                   z-40
                   divide-y divide-gray-300 divide-solid
-                "
-              >
-                <li
-                  class="block py-2 px-4 hover:bg-gray-100"
-                  v-for="category in categories"
-                  :key="category._id"
-                >
-                  <nuxt-link
-                    :to="`/category/${category.url}`"
-                    class="p-2 text-xs font-normal"
-                    >{{ category.name }}</nuxt-link
-                  >
+                ">
+                <li class="block py-2 px-4 hover:bg-gray-100" v-for="category in categories" :key="category._id">
+                  <nuxt-link :to="`/category/${category.url}`" class="p-2 text-xs font-normal">{{ category.name
+                    }}</nuxt-link>
                 </li>
               </ul>
             </li>
-            <li
-              class="
+            <li class="
                 bg-green-600
                 text-white
                 border-b border-white
@@ -304,9 +278,7 @@
                 transition
                 duration-200
                 hover:bg-blue-400 hover:text-white
-              "
-              @click="navigateMain('contact-us')"
-            >
+              " @click="navigateMain('contact-us')">
               Contact Us
             </li>
           </ul>
@@ -326,6 +298,15 @@ export default {
   computed: {
     ...mapGetters(["imageUrl"]),
     ...mapGetters("product", ["cart"]),
+    isAuthenticated() {
+      return process.client ? !!localStorage.getItem("token") : false;
+    },
+    userName() {
+      if (process.client) {
+        const user = JSON.parse(localStorage.getItem("user"));
+        return `${user.first_name || "Guest"} ${user.last_name || ""}`.trim()
+      }
+    }
   },
   data() {
     return {
@@ -337,7 +318,7 @@ export default {
       showDropdown: false
     };
   },
-  
+
   async fetch() {
     const url = `api/categories`;
     const servicesUrl = `api/services`;
@@ -363,6 +344,13 @@ export default {
     },
     toggleDropdown() {
       this.showDropdown = !this.showDropdown;
+    },
+    showMenu() {
+      this.showDropdown = !this.showDropdown;
+    },
+    logout() {
+      this.$store.commit("logout");
+      this.$router.push("/");
     },
     navigateMenu(url) {
       if (url == undefined) {
@@ -414,7 +402,7 @@ export default {
 
 <style scoped>
 .menu-li {
-  @apply py-2; md:py-0;
+  @apply py-2;
+  md: py-0;
 }
 </style>
-

@@ -8,7 +8,7 @@
           <label class="font-bold w-20 text-green-600">Email:</label>
           <input
             v-model="dataItem.email"
-            type="text"
+            type="email"
             class="border border-green-400 py-1 px-3 rounded outline-none focus:border-purple-500 w-full text-green-600"
           />
         </div>
@@ -24,11 +24,11 @@
         <div class="flex flex-col w-full justify-center gap-3 items-center">
           <button
             @click="login"
-            class="bg-green-500 w-20 text-white py-1 px-2 mt-3 rounded font-bold"
+            class="bg-orange-500 w-20 text-white py-1 px-2 mt-3 rounded font-bold"
           >Login</button>
-          <p class="font-bold text-center text-green-600">OR</p>
+          <p class="font-bold text-center text-orange-500">OR</p>
           <nuxt-link
-            to="/register/equipment"
+            :to="`/register/${dynamicUrl}`"
             class="text-orange-500 text-xl py-1 px-2 border border-green-400 rounded font-bold"
           >Create an Account</nuxt-link>
         </div>
@@ -43,7 +43,10 @@ import { http } from "~/common/index.js";
 const { toast } = require("tailwind-toast");
 export default {
   computed: {
-    ...mapGetters("product", ["cart"])
+    ...mapGetters("product", ["cart"]),
+    dynamicUrl() {
+      return this.$route.params.url
+    }
   },
   data() {
     return {
@@ -53,6 +56,8 @@ export default {
   methods: {
     async login() {
       const details = this.dataItem;
+      const currentPath = this.$route.params.url;
+      
       if (
         this.dataItem.email == undefined ||
         this.dataItem.password == undefined
@@ -86,15 +91,15 @@ export default {
               localStorage.setItem("token", data.token);
               localStorage.setItem("user", JSON.stringify(data.user));
               // check cart and redirect
-              // redirect user
+              // redirect user to the page they were trying to access
               if (this.cart.length > 0) {
                 setTimeout(() => {
-                  this.$router.push("/");
+                  this.$router.push(`/${currentPath}`);
                 }, 200);
                 return true;
               } else {
                 setTimeout(() => {
-                  this.$router.push("/");
+                  this.$router.push(`/${currentPath}`);
                 }, 200);
                 return true;
               }
@@ -109,7 +114,7 @@ export default {
         }
       }
     }
-  }
+  },
 };
 </script>
   

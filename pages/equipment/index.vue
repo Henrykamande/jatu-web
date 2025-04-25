@@ -19,33 +19,30 @@
           <div class="text-center">
             <p class="text-green-600 text-lg font-semibold mb-4">TO RENT EQUIPMENT</p>
             <!-- User auth -->
-            <nuxt-link 
+            <nuxt-link v-if="isAuthenticated"
               to="/equipment/rent-farmland-equipment"
               class="px-6 py-3 font-bold text-white border border-gray-300 rounded-full hover:bg-orange-600 bg-orange-700"
             >Start Here</nuxt-link>
 
-            <nuxt-link
+            <nuxt-link to="/auth/rent-farmland-equipment" v-else
               class="px-6 py-3 font-bold text-white border border-gray-300 rounded-full hover:bg-orange-600 bg-orange-700"
             >Start Here</nuxt-link>
           </div>
 
-          <div class="text-center">
+          <div class="text-center" >
             <p class="text-green-600 text-lg font-semibold my-4">TO LIST EQUIPMENT</p>
-            <nuxt-link
+            <nuxt-link v-if="isAuthenticated"
               to="/equipment/list-farmland-equipment"
               class="px-6 py-3 font-bold text-white border border-gray-300 rounded-full hover:bg-orange-600 bg-orange-700"
             >Start Here</nuxt-link>
             
-            <nuxt-link
+            <nuxt-link v-else to="/auth/list-farmland-equipment"
               class="px-6 py-3 font-bold text-white border border-gray-300 rounded-full hover:bg-orange-600 bg-orange-700"
             >Start Here</nuxt-link>
           </div>
         </div>
       </div>
     </div>
-    <!-- <div class="" v-else>
-      <register></register>
-    </div> -->
   </div>
 </template>
   
@@ -53,9 +50,9 @@
 
 export default {
   computed: {
-    // isAuthenticated() {
-    //   return process.client ? !!localStorage.getItem("token") : false;
-    // }
+    isAuthenticated() {
+      return process.client ? !!localStorage.getItem("token") : false;
+    }
   },
 };
 </script>

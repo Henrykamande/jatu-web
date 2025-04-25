@@ -5,19 +5,13 @@
       <div style="color: #fff">info@jubilantafrofarms.com</div>
     </div>
     <!-- top header -->
-    <div
-      class="items-center bg-white justify-center grid md:grid-cols-8 p-4 border-b border-purple-500"
-    >
+    <div class="items-center bg-white justify-center gap-3 grid md:grid-cols-8 p-4 border-b border-purple-500">
       <!-- logo div -->
       <div class="col-span-3 flex items-center">
         <div>
           <nuxt-link to="/">
-            <img
-              src="~assets/images/jubilant-logo.png"
-              alt
-              class="h-12 md:h-15 md:ml-1 m-0 object-contain"
-              style="width: 200px; height: 200px; transform: scale(1.7)"
-            />
+            <img src="~assets/images/jubilant-logo.png" alt class="h-12 md:h-15 md:ml-1 m-0 object-contain"
+              style="width: 200px; height: 200px; transform: scale(1.7)" />
           </nuxt-link>
         </div>
         <div class="flex justify-center text-xl font-bold"></div>
@@ -34,37 +28,36 @@
         Call: +254 748 193 219
       </div>
 
-      <div>
+      <div v-if="isAuthenticated">
         <div class="col-span-1 flex place-content-center relative" @mouseenter="showMenu" @mouseleave="hideMenu">
-        <div class="flex flex-col items-center border p-1 rounded">
-          <button >
-          <font-awesome-icon :icon="['fas', 'user-circle']" class="text-gray-600 md:text-2xl" />
-        </button>
-        <span class="font-semibold text-gray-600 text-xs">Full Name</span>
-        </div>
-        <div
-          v-if="showDropdown"
-          class="absolute right-0 mt-12 w-40 bg-white border rounded-md shadow"
-        >
-          <ul>
-            <li>
-              <nuxt-link
-                to="/your-equipments"
-                class="block px-4 py-2 hover:bg-gray-100"
-              >Your Equipments</nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/your-farms" class="block px-4 py-2 hover:bg-gray-100">Your Farms</nuxt-link>
-            </li>
-            <li>
-              <button @click="logout" class="flex px-4 py-2 text-red-600 hover:bg-gray-100 w-full text-left">
-                <span>Logout</span>
-              </button>
-            </li>
-          </ul>
+          <div class="flex flex-col items-center border p-1 rounded">
+            <button>
+              <font-awesome-icon :icon="['fas', 'user-circle']" class="text-gray-600 md:text-2xl" />
+            </button>
+            <span class="font-semibold text-gray-600 text-xs">{{ userName }}</span>
+          </div>
+          <div v-if="showDropdown" class="absolute right-0 mt-12 w-40 bg-white border rounded-md shadow">
+            <ul>
+              <li>
+                <nuxt-link to="/your-equipments" class="block px-4 py-2 hover:bg-gray-100">Your Equipments</nuxt-link>
+              </li>
+              <li>
+                <nuxt-link to="/your-farms" class="block px-4 py-2 hover:bg-gray-100">Your Farms</nuxt-link>
+              </li>
+              <li>
+                <button @click="logout" class="flex px-4 py-2 text-red-600 hover:bg-gray-100 w-full text-left">
+                  <span>Logout</span>
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <!-- v-else -->
+      <div class="text-white w-16 bg-orange-400 px-2 py-1 rounded font-bold" v-else>
+        <nuxt-link to="/auth">
+          Login
+        </nuxt-link>
       </div>
     </div>
     <!-- end  of top bar-->
@@ -78,27 +71,19 @@
             <nuxt-link class="font-medium text-lg text-white p-2 hover:text-orange-500" to="/">Home</nuxt-link>
           </li>
           <li class="menu-li group inline-block relative">
-            <nuxt-link
-              class="font-medium text-lg text-white p-2 hover:text-orange-500"
-              to="/about"
-            >About Us</nuxt-link>
+            <nuxt-link class="font-medium text-lg text-white p-2 hover:text-orange-500" to="/about">About Us</nuxt-link>
           </li>
 
           <li class="menu-li group inline-block relative">
-            <nuxt-link
-              class="font-medium text-lg text-white p-2 hover:text-orange-500"
-              to="/services"
-            >Agri Support</nuxt-link>
+            <nuxt-link class="font-medium text-lg text-white p-2 hover:text-orange-500" to="/services">Agri
+              Support</nuxt-link>
           </li>
 
           <li class="menu-li group inline-block relative">
-            <nuxt-link
-              class="font-medium text-lg text-white p-2 hover:text-orange-500"
-              to="/projects"
-            >Partnership Projects</nuxt-link>
+            <nuxt-link class="font-medium text-lg text-white p-2 hover:text-orange-500" to="/projects">Partnership
+              Projects</nuxt-link>
             <div
-              class="absolute left-0 top-fdivl bg-gray-50 text-gray-800 rounded-md shadow-md hidden group-hover:block"
-            >
+              class="absolute left-0 top-fdivl bg-gray-50 text-gray-800 rounded-md shadow-md hidden group-hover:block">
               <nuxt-link to="/agriculture" class="block px-4 py-2 hover:bg-gray-100">Agriculture</nuxt-link>
               <nuxt-link to="/mining" class="block px-4 py-2 hover:bg-gray-100">Mining</nuxt-link>
               <nuxt-link to="/real-estate" class="block px-4 py-2 hover:bg-gray-100">Real Estate</nuxt-link>
@@ -106,13 +91,9 @@
           </li>
           <!-- On click the the link directs the user to the list of farms -->
           <li class="menu-li group inline-block relative">
-            <nuxt-link
-              class="font-medium text-lg text-white p-2 hover:text-orange-500"
-              to="#"
-            >Services</nuxt-link>
+            <nuxt-link class="font-medium text-lg text-white p-2 hover:text-orange-500" to="#">Services</nuxt-link>
             <div
-              class="absolute left-0 top-fdivl bg-gray-50 text-gray-800 rounded-md shadow-md hidden group-hover:block"
-            >
+              class="absolute left-0 top-fdivl bg-gray-50 text-gray-800 rounded-md shadow-md hidden group-hover:block">
               <nuxt-link to="/farmlands" class="block px-4 py-2 hover:bg-gray-100">Farmlands</nuxt-link>
               <nuxt-link to="/equipment" class="block px-4 py-2 hover:bg-gray-100">Equipment</nuxt-link>
               <nuxt-link to="/management" class="block px-4 py-2 hover:bg-gray-100">Management</nuxt-link>
@@ -129,22 +110,15 @@
           </li>-->
 
           <li class="menu-li group inline-block relative">
-            <nuxt-link
-              class="font-medium text-lg text-white p-2 hover:text-orange-500"
-              to="/location"
-            >Our Location</nuxt-link>
+            <nuxt-link class="font-medium text-lg text-white p-2 hover:text-orange-500" to="/location">Our
+              Location</nuxt-link>
           </li>
           <li class="menu-li group inline-block relative">
-            <nuxt-link
-              class="font-medium text-lg text-white p-2 hover:text-orange-500"
-              to="/blog"
-            >Blog</nuxt-link>
+            <nuxt-link class="font-medium text-lg text-white p-2 hover:text-orange-500" to="/blog">Blog</nuxt-link>
           </li>
           <li class="menu-li group inline-block relative">
-            <nuxt-link
-              class="font-medium text-lg text-white p-2 hover:text-orange-500"
-              to="/contact-us"
-            >Contact Us</nuxt-link>
+            <nuxt-link class="font-medium text-lg text-white p-2 hover:text-orange-500" to="/contact-us">Contact
+              Us</nuxt-link>
           </li>
         </ul>
       </nav>
@@ -166,6 +140,16 @@ export default {
   computed: {
     ...mapGetters(["imageUrl", "user"]),
     ...mapGetters("product", ["cart"]),
+    isAuthenticated() {
+      return process.client ? !!localStorage.getItem("token") : false;
+    },
+    userName() {
+      if (process.client) {
+        const user = JSON.parse(localStorage.getItem("user"));
+        return `${user.first_name || "Guest"} ${user.last_name || ""}`.trim()
+
+      }
+    }
   },
   data() {
     return {
@@ -211,7 +195,7 @@ export default {
       this.showDropdown = true;
     },
     hideMenu() {
-      this.showDropdown = false; 
+      this.showDropdown = false;
     },
     logout() {
       this.$store.commit("logout");
