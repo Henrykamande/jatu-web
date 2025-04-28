@@ -3,336 +3,392 @@
     "name": "about",
     "path": "/about",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\about\\\\index.vue",
-    "chunkName": "pages/about/index"
+    "chunkName": "pages/about/index",
+    "_name": "_7cd294ea"
   },
   {
     "name": "blog",
     "path": "/blog",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\blog\\\\index.vue",
-    "chunkName": "pages/blog/index"
+    "chunkName": "pages/blog/index",
+    "_name": "_0dd4f8bb"
   },
   {
     "name": "cart",
     "path": "/cart",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\cart\\\\index.vue",
-    "chunkName": "pages/cart/index"
+    "chunkName": "pages/cart/index",
+    "_name": "_3a919b06"
   },
   {
     "name": "checkout",
     "path": "/checkout",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\checkout\\\\index.vue",
-    "chunkName": "pages/checkout/index"
+    "chunkName": "pages/checkout/index",
+    "_name": "_5f2f1b17"
   },
   {
     "name": "contact-us",
     "path": "/contact-us",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\contact-us\\\\index.vue",
-    "chunkName": "pages/contact-us/index"
+    "chunkName": "pages/contact-us/index",
+    "_name": "_3d2cef12"
   },
   {
     "name": "engage-expert",
     "path": "/engage-expert",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\engage-expert\\\\index.vue",
-    "chunkName": "pages/engage-expert/index"
+    "chunkName": "pages/engage-expert/index",
+    "_name": "_4c04447e"
   },
   {
     "name": "equipment",
     "path": "/equipment",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\equipment\\\\index.vue",
-    "chunkName": "pages/equipment/index"
+    "chunkName": "pages/equipment/index",
+    "_name": "_3376cc6e"
   },
   {
     "name": "events",
     "path": "/events",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\events\\\\index.vue",
-    "chunkName": "pages/events/index"
+    "chunkName": "pages/events/index",
+    "_name": "_713aa624"
   },
   {
     "name": "expert-success",
     "path": "/expert-success",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\expert-success\\\\index.vue",
-    "chunkName": "pages/expert-success/index"
+    "chunkName": "pages/expert-success/index",
+    "_name": "_7118ba7d"
   },
   {
     "name": "farmlands",
     "path": "/farmlands",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\farmlands\\\\index.vue",
-    "chunkName": "pages/farmlands/index"
+    "chunkName": "pages/farmlands/index",
+    "_name": "_78c43936"
   },
   {
     "name": "financing",
     "path": "/financing",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\financing\\\\index.vue",
-    "chunkName": "pages/financing/index"
+    "chunkName": "pages/financing/index",
+    "_name": "_590321a0"
   },
   {
     "name": "gakuo",
     "path": "/gakuo",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\gakuo\\\\index.vue",
-    "chunkName": "pages/gakuo/index"
+    "chunkName": "pages/gakuo/index",
+    "_name": "_831a06e8"
   },
   {
     "name": "gasaya",
     "path": "/gasaya",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\gasaya\\\\index.vue",
-    "chunkName": "pages/gasaya/index"
+    "chunkName": "pages/gasaya/index",
+    "_name": "_2165412d"
   },
   {
     "name": "investor-success",
     "path": "/investor-success",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\investor-success\\\\index.vue",
-    "chunkName": "pages/investor-success/index"
+    "chunkName": "pages/investor-success/index",
+    "_name": "_b017dee2"
   },
   {
     "name": "join-event",
     "path": "/join-event",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\join-event\\\\index.vue",
-    "chunkName": "pages/join-event/index"
+    "chunkName": "pages/join-event/index",
+    "_name": "_16d30a74"
   },
   {
     "name": "joseph",
     "path": "/joseph",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\joseph\\\\index.vue",
-    "chunkName": "pages/joseph/index"
+    "chunkName": "pages/joseph/index",
+    "_name": "_77d72224"
   },
   {
     "name": "location",
     "path": "/location",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\location\\\\index.vue",
-    "chunkName": "pages/location/index"
+    "chunkName": "pages/location/index",
+    "_name": "_a40b8570"
   },
   {
     "name": "management",
     "path": "/management",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\management\\\\index.vue",
-    "chunkName": "pages/management/index"
+    "chunkName": "pages/management/index",
+    "_name": "_d38ec18c"
   },
   {
     "name": "marketing",
     "path": "/marketing",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\marketing\\\\index.vue",
-    "chunkName": "pages/marketing/index"
+    "chunkName": "pages/marketing/index",
+    "_name": "_f90f339e"
   },
   {
     "name": "meeting-success",
     "path": "/meeting-success",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\meeting-success\\\\index.vue",
-    "chunkName": "pages/meeting-success/index"
+    "chunkName": "pages/meeting-success/index",
+    "_name": "_37c96974"
   },
   {
     "name": "newsletter-success",
     "path": "/newsletter-success",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\newsletter-success\\\\index.vue",
-    "chunkName": "pages/newsletter-success/index"
+    "chunkName": "pages/newsletter-success/index",
+    "_name": "_ab7c1be4"
   },
   {
     "name": "order",
     "path": "/order",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\order\\\\index.vue",
-    "chunkName": "pages/order/index"
+    "chunkName": "pages/order/index",
+    "_name": "_773002ee"
   },
   {
     "name": "order-farm",
     "path": "/order-farm",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\order-farm\\\\index.vue",
-    "chunkName": "pages/order-farm/index"
+    "chunkName": "pages/order-farm/index",
+    "_name": "_7c31f630"
   },
   {
     "name": "our-services",
     "path": "/our-services",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\our-services\\\\index.vue",
-    "chunkName": "pages/our-services/index"
+    "chunkName": "pages/our-services/index",
+    "_name": "_92723104"
   },
   {
     "name": "owner-success",
     "path": "/owner-success",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\owner-success\\\\index.vue",
-    "chunkName": "pages/owner-success/index"
+    "chunkName": "pages/owner-success/index",
+    "_name": "_7683d1e4"
   },
   {
     "name": "privacy",
     "path": "/privacy",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\privacy\\\\index.vue",
-    "chunkName": "pages/privacy/index"
+    "chunkName": "pages/privacy/index",
+    "_name": "_42a3ba62"
   },
   {
     "name": "products",
     "path": "/products",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\products\\\\index.vue",
-    "chunkName": "pages/products/index"
+    "chunkName": "pages/products/index",
+    "_name": "_7cb57839"
   },
   {
     "name": "projects",
     "path": "/projects",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\projects\\\\index.vue",
-    "chunkName": "pages/projects/index"
+    "chunkName": "pages/projects/index",
+    "_name": "_286a0763"
   },
   {
     "name": "services",
     "path": "/services",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\services\\\\index.vue",
-    "chunkName": "pages/services/index"
+    "chunkName": "pages/services/index",
+    "_name": "_eed60e02"
   },
   {
     "name": "shop",
     "path": "/shop",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\shop\\\\index.vue",
-    "chunkName": "pages/shop/index"
+    "chunkName": "pages/shop/index",
+    "_name": "_79a29e32"
   },
   {
     "name": "simo",
     "path": "/simo-index",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\simo-index.vue",
-    "chunkName": "pages/simo-index"
+    "chunkName": "pages/simo-index",
+    "_name": "_2918b042"
   },
   {
     "name": "success",
     "path": "/success",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\success\\\\index.vue",
-    "chunkName": "pages/success/index"
+    "chunkName": "pages/success/index",
+    "_name": "_6b2afb74"
   },
   {
     "name": "whishlist",
     "path": "/whishlist",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\whishlist\\\\index.vue",
-    "chunkName": "pages/whishlist/index"
+    "chunkName": "pages/whishlist/index",
+    "_name": "_a3df85e8"
   },
   {
     "name": "winnie",
     "path": "/winnie",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\winnie\\\\index.vue",
-    "chunkName": "pages/winnie/index"
+    "chunkName": "pages/winnie/index",
+    "_name": "_2622676f"
   },
   {
     "name": "blog-blog-copy",
     "path": "/blog/blog-copy",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\blog\\\\blog-copy.vue",
-    "chunkName": "pages/blog/blog-copy"
+    "chunkName": "pages/blog/blog-copy",
+    "_name": "_0640af29"
   },
   {
     "name": "blog-index-copy",
     "path": "/blog/index-copy",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\blog\\\\index-copy.vue",
-    "chunkName": "pages/blog/index-copy"
+    "chunkName": "pages/blog/index-copy",
+    "_name": "_79c53a77"
   },
   {
     "name": "contact-us-ali",
     "path": "/contact-us/ali-index",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\contact-us\\\\ali-index.vue",
-    "chunkName": "pages/contact-us/ali-index"
+    "chunkName": "pages/contact-us/ali-index",
+    "_name": "_5af3c9a3"
   },
   {
     "name": "equipment-list-farmland-equipment",
     "path": "/equipment/list-farmland-equipment",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\equipment\\\\list-farmland-equipment\\\\index.vue",
-    "chunkName": "pages/equipment/list-farmland-equipment/index"
+    "chunkName": "pages/equipment/list-farmland-equipment/index",
+    "_name": "_547ba85a"
   },
   {
     "name": "equipment-rent-farmland-equipment",
     "path": "/equipment/rent-farmland-equipment",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\equipment\\\\rent-farmland-equipment\\\\index.vue",
-    "chunkName": "pages/equipment/rent-farmland-equipment/index"
+    "chunkName": "pages/equipment/rent-farmland-equipment/index",
+    "_name": "_22ea11b5"
   },
   {
     "name": "global-auth-login",
     "path": "/global-auth/login",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\global-auth\\\\login\\\\index.vue",
-    "chunkName": "pages/global-auth/login/index"
+    "chunkName": "pages/global-auth/login/index",
+    "_name": "_7ddef434"
   },
   {
     "name": "global-auth-register",
     "path": "/global-auth/register",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\global-auth\\\\register\\\\index.vue",
-    "chunkName": "pages/global-auth/register/index"
+    "chunkName": "pages/global-auth/register/index",
+    "_name": "_0f8e7042"
   },
   {
     "name": "services-urlcopy",
     "path": "/services/urlcopy",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\services\\\\urlcopy.vue",
-    "chunkName": "pages/services/urlcopy"
+    "chunkName": "pages/services/urlcopy",
+    "_name": "_2be7e95e"
   },
   {
     "name": "equipment-apply-url",
     "path": "/equipment/apply/:url?",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\equipment\\\\apply\\\\_url.vue",
-    "chunkName": "pages/equipment/apply/_url"
+    "chunkName": "pages/equipment/apply/_url",
+    "_name": "_331120d5"
   },
   {
     "name": "equipment-rent-farmland-equipment-url",
     "path": "/equipment/rent-farmland-equipment/:url?",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\equipment\\\\rent-farmland-equipment\\\\_url.vue",
-    "chunkName": "pages/equipment/rent-farmland-equipment/_url"
+    "chunkName": "pages/equipment/rent-farmland-equipment/_url",
+    "_name": "_d4e76ac6"
   },
   {
     "name": "auth-url",
     "path": "/auth/:url?",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\auth\\\\_url.vue",
-    "chunkName": "pages/auth/_url"
+    "chunkName": "pages/auth/_url",
+    "_name": "_6ddfc95d"
   },
   {
     "name": "blog-url",
     "path": "/blog/:url",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\blog\\\\_url.vue",
-    "chunkName": "pages/blog/_url"
+    "chunkName": "pages/blog/_url",
+    "_name": "_31c56ad7"
   },
   {
     "name": "brand-url",
     "path": "/brand/:url?",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\brand\\\\_url.vue",
-    "chunkName": "pages/brand/_url"
+    "chunkName": "pages/brand/_url",
+    "_name": "_26030442"
   },
   {
     "name": "engage-expert-url",
     "path": "/engage-expert/:url?",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\engage-expert\\\\_url.vue",
-    "chunkName": "pages/engage-expert/_url"
+    "chunkName": "pages/engage-expert/_url",
+    "_name": "_23ee65de"
   },
   {
     "name": "farmlands-url",
     "path": "/farmlands/:url",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\farmlands\\\\_url.vue",
-    "chunkName": "pages/farmlands/_url"
+    "chunkName": "pages/farmlands/_url",
+    "_name": "_a980fa26"
   },
   {
     "name": "join-event-url",
     "path": "/join-event/:url?",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\join-event\\\\_url.vue",
-    "chunkName": "pages/join-event/_url"
+    "chunkName": "pages/join-event/_url",
+    "_name": "_95d40928"
   },
   {
     "name": "order-farm-url",
     "path": "/order-farm/:url",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\order-farm\\\\_url.vue",
-    "chunkName": "pages/order-farm/_url"
+    "chunkName": "pages/order-farm/_url",
+    "_name": "_505aa50a"
   },
   {
     "name": "product-url",
     "path": "/product/:url?",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\product\\\\_url.vue",
-    "chunkName": "pages/product/_url"
+    "chunkName": "pages/product/_url",
+    "_name": "_762602ea"
   },
   {
     "name": "projects-url",
     "path": "/projects/:url",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\projects\\\\_url.vue",
-    "chunkName": "pages/projects/_url"
+    "chunkName": "pages/projects/_url",
+    "_name": "_a30031a2"
   },
   {
     "name": "register-url",
     "path": "/register/:url?",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\register\\\\_url.vue",
-    "chunkName": "pages/register/_url"
+    "chunkName": "pages/register/_url",
+    "_name": "_3dbfc3d0"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_12c1bf5d"
   },
   {
     "name": "category-subcategory",
     "path": "/:category/:subcategory",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jatu-site\\\\pages\\\\_category\\\\_subcategory\\\\index.vue",
-    "chunkName": "pages/_category/_subcategory/index"
+    "chunkName": "pages/_category/_subcategory/index",
+    "_name": "_cb74a98a"
   }
 ]

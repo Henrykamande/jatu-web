@@ -21,9 +21,7 @@
 
     <div class="hidden md:grid grid-cols-2 mt-3 mx-auto max-w-screen-lg">
       <!-- Location -->
-      <div
-        class="p-3 bg-gray-50 uppercase font-bold border border-r-0 border-gray-400 my-3"
-      >LOCATION</div>
+      <div class="p-3 bg-gray-50 uppercase font-bold border border-r-0 border-gray-400 my-3">LOCATION</div>
       <div class="p-3 border border-gray-400 my-3">
         <ul>
           <li>
@@ -50,9 +48,7 @@
       </div>
 
       <!-- Location -->
-      <div
-        class="p-3 bg-gray-50 uppercase font-bold border border-r-0 border-gray-400 mb-3"
-      >LOCATION</div>
+      <div class="p-3 bg-gray-50 uppercase font-bold border border-r-0 border-gray-400 mb-3">LOCATION</div>
       <div class="p-3 border border-gray-400 mb-3">
         <ul>
           <li>
@@ -79,9 +75,7 @@
       </div>
 
       <!-- Farm Size -->
-      <div
-        class="p-3 bg-gray-50 uppercase font-bold border border-r-0 border-gray-400 mb-3"
-      >Farm Size</div>
+      <div class="p-3 bg-gray-50 uppercase font-bold border border-r-0 border-gray-400 mb-3">Farm Size</div>
       <div class="p-3 border border-gray-400 mb-3">
         <ul>
           <li>
@@ -92,9 +86,7 @@
       </div>
 
       <!-- Farm Ownership -->
-      <div
-        class="p-3 bg-gray-50 uppercase font-bold border border-r-0 border-gray-400 mb-3"
-      >Farm Ownership</div>
+      <div class="p-3 bg-gray-50 uppercase font-bold border border-r-0 border-gray-400 mb-3">Farm Ownership</div>
       <div class="p-3 border border-gray-400 mb-3">
         <ul>
           <li>
@@ -109,9 +101,7 @@
       </div>
 
       <!-- All projects -->
-      <div
-        class="p-3 bg-gray-50 uppercase font-bold border border-r-0 border-gray-400 mb-3"
-      >All Projects</div>
+      <div class="p-3 bg-gray-50 uppercase font-bold border border-r-0 border-gray-400 mb-3">All Projects</div>
       <div class="p-3 border border-gray-400 mb-3">
         <ul>
           <li>
@@ -139,9 +129,7 @@
         </ul>
       </div>
 
-      <div
-        class="p-3 bg-gray-50 uppercase font-bold border border-r-0 border-gray-400 mb-3"
-      >Electricity</div>
+      <div class="p-3 bg-gray-50 uppercase font-bold border border-r-0 border-gray-400 mb-3">Electricity</div>
       <div class="p-3 border border-gray-400 mb-3">
         <ul>
           <li>
@@ -159,9 +147,7 @@
         </ul>
       </div>
 
-      <div
-        class="p-3 bg-gray-50 uppercase font-bold border border-r-0 border-gray-400 mb-3"
-      >Transport</div>
+      <div class="p-3 bg-gray-50 uppercase font-bold border border-r-0 border-gray-400 mb-3">Transport</div>
       <div class="p-3 border border-gray-400 mb-3">
         <ul>
           <li>
@@ -179,9 +165,7 @@
         </ul>
       </div>
 
-      <div
-        class="p-3 bg-gray-50 uppercase font-bold border border-r-0 border-gray-400 mb-3"
-      >COMMUNICATION</div>
+      <div class="p-3 bg-gray-50 uppercase font-bold border border-r-0 border-gray-400 mb-3">COMMUNICATION</div>
       <div class="p-3 border border-gray-400 mb-3">
         <ul>
           <li>
@@ -213,9 +197,7 @@
         </ul>
       </div>
 
-      <div
-        class="p-3 bg-gray-50 uppercase font-bold border border-r-0 border-gray-400 mb-3"
-      >PHOTO / VIDEO</div>
+      <div class="p-3 bg-gray-50 uppercase font-bold border border-r-0 border-gray-400 mb-3">PHOTO / VIDEO</div>
       <div class="p-3 border border-gray-400 mb-3">
         <ul>
           <li>
@@ -250,59 +232,50 @@
     <!-- USER INPUT -->
     <div class="hidden md:flex flex-col my-6 mx-auto max-w-screen-lg">
       <div class="my-3">
-          <h1 class="font-bold text-2xl text-gray-800 text-center mb-6">HOW MANY ACRES DO YOU WANT?</h1>
-          <div class="flex flex-col">
-            <label class="mb-2 font-bold text-gray-700">Acres *</label>
-            <input
-              v-model="userContacts.acres"
-              type="number"
-              class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
-              placeholder="Number of acres"
-            />
-          </div>
-        </div>
-
-      <!-- Form -->
-      <div class="flex flex-col gap-6">
-        <!-- Name Field -->
+        <h1 class="font-bold text-2xl text-gray-800 text-center mb-6">HOW MANY ACRES DO YOU WANT?</h1>
         <div class="flex justify-between gap-3">
           <div class="flex flex-1 flex-col">
             <label class="mb-2 font-bold text-gray-700">Your Name *</label>
-            <input
-              v-model="userContacts.name"
-              type="text"
+            <input v-model="userContacts.name" type="text"
               class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
-              placeholder="Enter your name"
-            />
+              placeholder="Enter your name" />
           </div>
 
           <div class="flex flex-1 flex-col">
             <label class="mb-2 font-bold text-gray-700">Phone Number *</label>
-            <input
-              v-model="userContacts.phoneNumber"
-              type="text"
+            <input v-model="userContacts.phoneNumber" type="text"
               class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
-              placeholder="Enter your phone number"
-            />
+              placeholder="Enter your phone number" />
           </div>
 
           <div class="flex flex-1 flex-col">
             <label class="mb-2 font-bold text-gray-700">Email *</label>
-            <input
-              v-model="userContacts.contactEmail"
-              type="email"
+            <input v-model="userContacts.contactEmail" type="email"
               class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
-              placeholder="Enter your email"
-            />
+              placeholder="Enter your email" />
           </div>
         </div>
+      </div>
+
+      <!-- Form -->
+      <div class="flex flex-col gap-6">
+        <!-- Name Field -->
+       <div class="flex justify-between gap-3">
+        <div class="flex flex-1 flex-col">
+          <label class="mb-2 font-bold text-gray-700">Acres *</label>
+          <input v-model="userContacts.acres" type="number"
+            class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
+            placeholder="Number of acres" 
+          />
+        </div>
+        <div class="flex flex-1"></div>
+        <div class="flex flex-1"></div>
+       </div>
+
 
         <!-- success message -->
-        <div
-          v-show="successMsg"
-          class="bg-blue-100 mt-2 border rounded-md border-blue-500 text-blue-700 px-4 py-3"
-          role="alert"
-        >
+        <div v-show="successMsg" class="bg-blue-100 mt-2 border rounded-md border-blue-500 text-blue-700 px-4 py-3"
+          role="alert">
           <p class="font-bold">Message sent</p>
           <p class="text-sm">Thanks for your order, we shall get back to you soon.</p>
         </div>
@@ -318,29 +291,16 @@
         <!-- end -->
 
         <div v-show="formError" class="mt-6">
-          <div
-            class="bg-red-500 text-white font-bold rounded-t-md px-4 py-2"
-          >Please fill all the required fields</div>
-          <div
-            class="border border-t-0 border-red-400 bg-red-100 px-4 py-3 text-red-700 rounded-b-md"
-          >
+          <div class="bg-red-500 text-white font-bold rounded-t-md px-4 py-2">Please fill all the required fields</div>
+          <div class="border border-t-0 border-red-400 bg-red-100 px-4 py-3 text-red-700 rounded-b-md">
             <p>Your name, phone number, and message are mandatory.</p>
           </div>
         </div>
 
         <div class="flex flex-col-reverse justify-center items-center">
-          <button
-            @click="sendContacts"
-            type="button"
-            class="mt-2 py-2 px-5 mr-3 bg-orange-500 hover:bg-orange-600 rounded-3xl font-bold text-white focus:outline-none"
-          >Submit</button>
-          <img
-            v-show="loader"
-            src="~assets/images/loader.gif"
-            alt
-            class="mt-4"
-            style="width: 30px; height: 30px"
-          />
+          <button @click="sendContacts" type="button"
+            class="mt-2 py-2 px-5 mr-3 bg-orange-500 hover:bg-orange-600 rounded-3xl font-bold text-white focus:outline-none">Submit</button>
+          <img v-show="loader" src="~assets/images/loader.gif" alt class="mt-4" style="width: 30px; height: 30px" />
         </div>
       </div>
     </div>
@@ -596,56 +556,41 @@
       <div class="py-4 px-2 w-full md:mx-auto">
         <div class="my-3">
           <h1 class="font-bold text-2xl text-gray-800 text-center mb-6">HOW MANY ACRES DO YOU WANT?</h1>
-          <div class="flex flex-col">
-            <label class="mb-2 font-bold text-gray-700">Acres *</label>
-            <input
-              v-model="userContacts.acres"
-              type="number"
-              class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
-              placeholder="Number of acres"
-            />
+          <div class="flex flex-col gap-6">
+            <!-- Name Field -->
+            <div class="flex flex-col">
+              <label class="mb-2 font-bold text-gray-700">Name *</label>
+              <input v-model="userContacts.name" type="text"
+                class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
+                placeholder="Enter your name" />
+            </div>
+
+            <div class="flex flex-col">
+              <label class="mb-2 font-bold text-gray-700">Phone Number *</label>
+              <input v-model="userContacts.phoneNumber" type="text"
+                class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
+                placeholder="Enter your phone number" />
+            </div>
+
+            <div class="flex flex-col">
+              <label class="mb-2 font-bold text-gray-700">Email *</label>
+              <input v-model="userContacts.contactEmail" type="email"
+                class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
+                placeholder="Enter your email" />
+            </div>
           </div>
         </div>
+
         <!-- Form -->
-        <div class="flex flex-col gap-6">
-          <!-- Name Field -->
-          <div class="flex flex-col">
-            <label class="mb-2 font-bold text-gray-700">Name *</label>
-            <input
-              v-model="userContacts.name"
-              type="text"
-              class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
-              placeholder="Enter your name"
-            />
-          </div>
-
-          <div class="flex flex-col">
-            <label class="mb-2 font-bold text-gray-700">Phone Number *</label>
-            <input
-              v-model="userContacts.phoneNumber"
-              type="text"
-              class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
-              placeholder="Enter your phone number"
-            />
-          </div>
-
-          <div class="flex flex-col">
-            <label class="mb-2 font-bold text-gray-700">Email *</label>
-            <input
-              v-model="userContacts.contactEmail"
-              type="email"
-              class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
-              placeholder="Enter your email"
-            />
-          </div>
+        <div class="flex flex-col">
+          <label class="mb-2 font-bold text-gray-700">Acres *</label>
+          <input v-model="userContacts.acres" type="number"
+            class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
+            placeholder="Number of acres" />
         </div>
-
         <!-- success message -->
-        <div
-          v-show="successMsg"
-          class="bg-blue-100 mt-6 border border-blue-500 text-blue-700 px-4 py-3 rounded-md"
-          role="alert"
-        >
+        <div v-show="successMsg" class="bg-blue-100 mt-6 border border-blue-500 text-blue-700 px-4 py-3 rounded-md"
+          role="alert">
           <p class="font-bold">Message sent</p>
           <p class="text-sm">Thanks for your order, we shall get back to you soon.</p>
         </div>
@@ -654,44 +599,29 @@
         <!-- Error Messages -->
         <div v-show="emailError" role="alert" class="mt-6">
           <div class="bg-red-500 text-white font-bold rounded-t-md px-4 py-2">Something went Wrong!</div>
-          <div
-            class="border border-t-0 border-red-400 bg-red-100 px-4 py-3 text-red-700 rounded-b-md"
-          >
+          <div class="border border-t-0 border-red-400 bg-red-100 px-4 py-3 text-red-700 rounded-b-md">
             <p>Please check your internet connection and try again.</p>
           </div>
         </div>
 
         <div v-show="formError" class="mt-6">
-          <div
-            class="bg-red-500 text-white font-bold rounded-t-md px-4 py-2"
-          >Please fill all the required fields</div>
-          <div
-            class="border border-t-0 border-red-400 bg-red-100 px-4 py-3 text-red-700 rounded-b-md"
-          >
+          <div class="bg-red-500 text-white font-bold rounded-t-md px-4 py-2">Please fill all the required fields</div>
+          <div class="border border-t-0 border-red-400 bg-red-100 px-4 py-3 text-red-700 rounded-b-md">
             <p>Your name, phone number, and email are mandatory.</p>
           </div>
         </div>
 
         <div class="flex items-center flex-col-reverse">
-          <button
-            @click="sendContacts"
-            type="button"
-            class="mt-2 py-2 px-5 mr-3 bg-orange-500 hover:bg-orange-600 rounded-3xl font-bold text-white focus:outline-none"
-          >Submit</button>
-          <img
-            v-show="loader"
-            src="~assets/images/loader.gif"
-            alt
-            class="mt-4"
-            style="width: 30px; height: 30px"
-          />
+          <button @click="sendContacts" type="button"
+            class="mt-2 py-2 px-5 mr-3 bg-orange-500 hover:bg-orange-600 rounded-3xl font-bold text-white focus:outline-none">Submit</button>
+          <img v-show="loader" src="~assets/images/loader.gif" alt class="mt-4" style="width: 30px; height: 30px" />
         </div>
       </div>
     </div>
   </div>
 </template>
-  
-  <script>
+
+<script>
 import { http } from "~/common/index.js";
 import { mapGetters } from "vuex";
 import { handleErr } from "../../server/helpers/common";
@@ -748,7 +678,7 @@ export default {
           details.farm = this.record._id;
           const self = this;
           this.loader = true;
-          
+
           await http.post(url, details).then(res => {
             if (res.data.state) {
               self.successMsg = true;
@@ -768,6 +698,5 @@ export default {
   }
 };
 </script>
-  
-  <style lang="scss" scoped>
-</style>
+
+<style lang="scss" scoped></style>
