@@ -33,7 +33,7 @@
                   <nuxt-link to="/your-farms" class="block py-2 hover:bg-gray-100">Farms</nuxt-link>
                 </li>
                 <li>
-                  <button @click="logout" class="flex py-2 max-h-3 text-red-600 hover:bg-gray-100 w-full text-left">
+                  <button @click="logout" class="flex py-2 text-red-600 hover:bg-gray-100 w-full text-left">
                     <span>Logout</span>
                   </button>
                 </li>
@@ -43,7 +43,7 @@
         </div>
         <!-- v-else -->
         <div class="text-white bg-orange-400 rounded font-bold px-2 py-1 text-sm" v-else>
-          <nuxt-link to="/auth">
+          <nuxt-link to="/login">
             Login
           </nuxt-link>
         </div>
@@ -399,7 +399,7 @@ export default {
   },
 };
 </script>
-
+import Login from "~/components/login.vue";
 <style scoped>
 .menu-li {
   @apply py-2;

@@ -28,36 +28,41 @@
         Call: +254 748 193 219
       </div>
 
-      <div v-if="isAuthenticated">
-        <div class="col-span-1 flex place-content-center relative" @mouseenter="showMenu" @mouseleave="hideMenu">
-          <div class="flex flex-col items-center border p-1 rounded">
-            <button>
-              <font-awesome-icon :icon="['fas', 'user-circle']" class="text-gray-600 md:text-2xl" />
-            </button>
-            <span class="font-semibold text-gray-600 text-xs">{{ userName }}</span>
-          </div>
-          <div v-if="showDropdown" class="absolute right-0 mt-12 w-40 bg-white border rounded-md shadow">
-            <ul>
-              <li>
-                <nuxt-link to="/your-equipments" class="block px-4 py-2 hover:bg-gray-100">Your Equipments</nuxt-link>
-              </li>
-              <li>
-                <nuxt-link to="/your-farms" class="block px-4 py-2 hover:bg-gray-100">Your Farms</nuxt-link>
-              </li>
-              <li>
-                <button @click="logout" class="flex px-4 py-2 text-red-600 hover:bg-gray-100 w-full text-left">
-                  <span>Logout</span>
-                </button>
-              </li>
-            </ul>
+      <div class="col-span-1 text-gray-600 flex justify-center">
+        <div v-if="isAuthenticated">
+          <div class="col-span-1 flex place-content-center relative">
+            <div>
+              <button @click="showMenu" class="flex flex-col items-center border border-gray-200 p-1 rounded ">
+                <font-awesome-icon :icon="['fas', 'user-circle']" class="text-gray-600 md:text-2xl" />
+                <span class="font-semibold text-xs">{{ userName }}</span>
+              </button>
+            </div>
+            <div v-if="showDropdown" class="absolute right-0 mt-14 w-30 bg-gray-100 border rounded-md shadow">
+              <ul>
+                <li>
+                  <nuxt-link to="/your-account" class="block px-4 py-2 hover:bg-gray-100">Account</nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link to="/your-equipments" class="block px-4 py-2 hover:bg-gray-100">Equipments</nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link to="/your-farms" class="block px-4 py-2 hover:bg-gray-100">Farms</nuxt-link>
+                </li>
+                <li>
+                  <button @click="logout" class="flex px-4 py-2 text-red-600 hover:bg-gray-100 w-full text-left">
+                    <span>Logout</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- v-else -->
-      <div class="text-white w-16 bg-orange-400 px-2 py-1 rounded font-bold" v-else>
-        <nuxt-link to="/auth">
-          Login
-        </nuxt-link>
+        <!-- v-else -->
+        <div class="text-white w-16 bg-orange-400 px-2 py-1 rounded font-bold" v-else>
+          <nuxt-link to="/global-auth/login">
+            Login
+          </nuxt-link>
+        </div>
       </div>
     </div>
     <!-- end  of top bar-->

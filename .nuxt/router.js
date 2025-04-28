@@ -43,6 +43,8 @@ const _79c53a77 = () => interopDefault(import('..\\pages\\blog\\index-copy.vue' 
 const _5af3c9a3 = () => interopDefault(import('..\\pages\\contact-us\\ali-index.vue' /* webpackChunkName: "pages/contact-us/ali-index" */))
 const _547ba85a = () => interopDefault(import('..\\pages\\equipment\\list-farmland-equipment\\index.vue' /* webpackChunkName: "pages/equipment/list-farmland-equipment/index" */))
 const _22ea11b5 = () => interopDefault(import('..\\pages\\equipment\\rent-farmland-equipment\\index.vue' /* webpackChunkName: "pages/equipment/rent-farmland-equipment/index" */))
+const _7ddef434 = () => interopDefault(import('..\\pages\\global-auth\\login\\index.vue' /* webpackChunkName: "pages/global-auth/login/index" */))
+const _0f8e7042 = () => interopDefault(import('..\\pages\\global-auth\\register\\index.vue' /* webpackChunkName: "pages/global-auth/register/index" */))
 const _2be7e95e = () => interopDefault(import('..\\pages\\services\\urlcopy.vue' /* webpackChunkName: "pages/services/urlcopy" */))
 const _331120d5 = () => interopDefault(import('..\\pages\\equipment\\apply\\_url.vue' /* webpackChunkName: "pages/equipment/apply/_url" */))
 const _d4e76ac6 = () => interopDefault(import('..\\pages\\equipment\\rent-farmland-equipment\\_url.vue' /* webpackChunkName: "pages/equipment/rent-farmland-equipment/_url" */))
@@ -226,6 +228,14 @@ export const routerOptions = {
     path: "/equipment/rent-farmland-equipment",
     component: _22ea11b5,
     name: "equipment-rent-farmland-equipment"
+  }, {
+    path: "/global-auth/login",
+    component: _7ddef434,
+    name: "global-auth-login"
+  }, {
+    path: "/global-auth/register",
+    component: _0f8e7042,
+    name: "global-auth-register"
   }, {
     path: "/services/urlcopy",
     component: _2be7e95e,
