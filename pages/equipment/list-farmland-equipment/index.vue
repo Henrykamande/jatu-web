@@ -5,7 +5,7 @@
         <div class>
           <h1 class="text-center font-bold text-3xl text-orange-500 mt-2">LIST YOUR EQUIPMENT</h1>
           <p class="text-center text-gray-600 text-lg leading-relaxed">Please fill in the following details to register
-            your equipment and tools to Jatu system for renting and partnership program</p>
+            your equipment and tools to Jubilantafrofarms system for renting and partnership program</p>
         </div>
 
         <h1 class="font-bold text-xl text-orange-500 mt-2">Agri-equipment registration</h1>

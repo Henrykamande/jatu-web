@@ -17,9 +17,9 @@
         <div>
           <nuxt-link to="/">
             <img
-              src="~assets/images/shambani-logo.png"
+              src="~assets/images/jubilantafrofarms-logo.png"
               alt
-              class="h-16 md:h-20 md:ml-1 object-contain"
+              class="h-16 md:h-16 md:ml-1 object-contain"
               style="width: 142px; height: 90px"
             />
           </nuxt-link>
@@ -326,7 +326,7 @@ export default {
 
 <style scoped>
 .menu-li {
-  @apply py-2 md:py-0;
+  @apply py-2; md:py-0;
 }
 
 .search-drop-down {

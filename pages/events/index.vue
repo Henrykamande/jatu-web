@@ -164,7 +164,7 @@ export default {
   head() {
     const meta = this.meta || {};
     return {
-      title: `Projects - Shambani connect`,
+      title: `Projects - jubilantafrofarms`,
       meta: [
         {
           hid: "description",

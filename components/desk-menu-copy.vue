@@ -2,7 +2,7 @@
   <div>
     <div class="flex text-white px-6 py-2 justify-between font-bold" style="background: #d8713d">
       <div style="color: #fff; font-family: Caveat">"Together, We Feed Africa"</div>
-      <div style="color: #fff">info@shambaniconnect.com</div>
+      <div style="color: #fff">info@jubilantafrofarms.com</div>
     </div>
     <!-- top header -->
     <div
@@ -13,9 +13,9 @@
         <div>
           <nuxt-link to="/">
             <img
-              src="~assets/images/shambani-logo.png"
+              src="~assets/images/jubilant-afrofarms-logo.png"
               alt
-              class="h-16 md:h-20 md:ml-1 mt-1 object-contain"
+              class="h-16 md:h-16 object-contain"
               style="width: 200px; height: 200px; transform: scale(1.7)"
             />
           </nuxt-link>
@@ -201,7 +201,7 @@ export default {
   
   <style scoped>
 .menu-li {
-  @apply py-2 md:py-0;
+  @apply py-2; md:py-0;
 }
 
 .search-drop-down {

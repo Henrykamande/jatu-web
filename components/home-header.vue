@@ -37,10 +37,10 @@
     <!-- top header -->
     <div class="items-center justify-center grid md:grid-cols-8 p-4">
       <!-- logo div -->
-      <div class="col-span-3 flex items-center">
+      <div class="col-span-3 flex items-center justify-start">
         <div>
           <nuxt-link to="/">
-            <img src="~assets/images/shambani-logo.png" alt class="h-16 md:h-20 md:ml-1 mt-1 object-contain"
+            <img src="~assets/images/jubilantafrofarms-logo.png" alt class="h-16 md:h-16 md:pt-2 object-contain"
               style="width: 200px; height: 200px; transform: scale(1.7)" />
           </nuxt-link>
         </div>
@@ -109,7 +109,7 @@
 
     <!-- navbar -->
     <!-- #2f93a3 -->
-    <div class="md:flex items-center p-3 justify-between">
+    <div class="md:flex items-center px-3 justify-between">
       <nav class="ml-4">
         <ul class="md:flex flex-wrap">
           <li class="menu-li group inline-block relative">

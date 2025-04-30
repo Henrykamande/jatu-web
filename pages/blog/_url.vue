@@ -422,7 +422,7 @@ export default {
     shareFacebook() {
       const articleUrl = this.record.url;
       const pageUrl = `${websiteUrl}/blog/${articleUrl}`;
-      //const pageUrl = "https://jatumarket.com";
+      //const pageUrl = "https://Jubilantafrofarmsmarket.com";
       const url = `https://www.facebook.com/sharer.php?u=${pageUrl}`;
       this.socialWindowScreen(url);
     },

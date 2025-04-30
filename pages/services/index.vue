@@ -2601,7 +2601,7 @@ export default {
   head() {
     const meta = this.meta || {};
     return {
-      title: `Shambani Connect - Agri support`,
+      title: `jublantafrofarms - Agri support`,
       meta: [
         {
           hid: "description",
@@ -2860,7 +2860,7 @@ export default {
       }
     },
     viewCv(expert) {
-      const shopName = "Shambani Connect";
+      const shopName = "Jubilantafrofarms";
       const self = this;
       var doc = new jsPDF({ compress: true });
       var totalPagesExp = "{total_pages_count_string}";
@@ -2870,7 +2870,7 @@ export default {
         doc.internal.pageSize.width || doc.internal.pageSize.getWidth();
 
       var img = new Image();
-      img.src = require("@/assets/images/shambani-logo.png");
+      img.src = require("@/assets/images/jubilantafrofarms-logo.png");
       doc.addImage(img, "png", 10, 5, 45, 40);
 
       doc.setFontSize(15);
@@ -2882,9 +2882,9 @@ export default {
         20,
         "right"
       );
-      doc.text("Website: www.shambaniconnect.com", pageWidth - 10, 25, "right");
+      doc.text("Website: www.jubilantafrofarms.com", pageWidth - 10, 25, "right");
       doc.text("Contact: +254 748 193 219", pageWidth - 10, 30, "right");
-      doc.text("Email: info@shambaniconnect.com", pageWidth - 10, 35, "right");
+      doc.text("Email: info@jubilantafrofarms.com", pageWidth - 10, 35, "right");
 
       //Setting Items Title:
       doc.setFontSize(15);
@@ -3021,7 +3021,7 @@ export default {
       doc.output("dataurlnewwindow");
     },
     viewFarmDetails(farm) {
-      const shopName = "Shambani Connect";
+      const shopName = "Jubilantafrofarms";
       const self = this;
       var doc = new jsPDF({ compress: true });
       var totalPagesExp = "{total_pages_count_string}";
@@ -3031,7 +3031,7 @@ export default {
         doc.internal.pageSize.width || doc.internal.pageSize.getWidth();
 
       var img = new Image();
-      img.src = require("@/assets/images/shambani-logo.png");
+      img.src = require("@/assets/images/jubilantafrofarms-logo.png");
       doc.addImage(img, "png", 10, 5, 45, 40);
 
       doc.setFontSize(15);
@@ -3043,9 +3043,9 @@ export default {
         20,
         "right"
       );
-      doc.text("Website: www.shambaniconnect.com", pageWidth - 10, 25, "right");
+      doc.text("Website: www.jubilantafrofarms.com", pageWidth - 10, 25, "right");
       doc.text("Contact: +254 748 193 219", pageWidth - 10, 30, "right");
-      doc.text("Email: info@shambaniconnect.com", pageWidth - 10, 35, "right");
+      doc.text("Email: info@jubilantafrofarms.com", pageWidth - 10, 35, "right");
 
       //Setting Items Title:
       doc.setFontSize(15);

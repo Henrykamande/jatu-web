@@ -10,7 +10,7 @@
       <div class="col-span-3 flex items-center">
         <div>
           <nuxt-link to="/">
-            <img src="~assets/images/jubilant-logo.png" alt class="h-12 md:h-15 md:ml-1 m-0 object-contain"
+            <img src="~assets/images/jubilantafrofarms-logo.png" alt class="h-full md:h-16 md:ml-1 py-1 object-contain"
               style="width: 200px; height: 200px; transform: scale(1.7)" />
           </nuxt-link>
         </div>

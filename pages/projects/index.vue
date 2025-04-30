@@ -96,7 +96,7 @@ export default {
   head() {
     const meta = this.meta || {};
     return {
-      title: `Projects - Shambani connect`,
+      title: `Projects -  connect`,
       meta: [
         {
           hid: "description",

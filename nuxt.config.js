@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "Shambani Connect",
+    title: "jubilantafrofarms",
     htmlAttrs: {
       lang: "en",
     },
@@ -10,7 +10,7 @@ export default {
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "" },
     ],
-    link: [{ rel: "icon", type: "image/png", href: "/jatu-ico.png" }],
+    link: [{ rel: "icon", type: "image/png", href: "/jubilantafrofarms-ico.png" }],
   },
   server: {
     port: 8182, // default: 3000

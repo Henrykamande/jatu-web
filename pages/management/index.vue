@@ -33,7 +33,7 @@
           <div>
             <b>Peter</b> is a young entrepreneur and a holder of bachelor’s degree
             of laws (LLB) from the university of Dar es salaam, Tanzania. As a
-            founder of JATU MARKET, he has strong vision in alleviating poverty
+            founder of Jubilantafrofarms MARKET, he has strong vision in alleviating poverty
             through agribusiness in local, regional and international society and
             with his experience, commitment, vision and passion in agribusiness he
             is determined to take the company to global platforms and

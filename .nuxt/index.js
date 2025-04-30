@@ -13,8 +13,8 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_90238c78 from 'nuxt_plugin_plugin_90238c78' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_templatesplugincdb16a62_5e34d140 from 'nuxt_plugin_templatesplugincdb16a62_5e34d140' // Source: .\\templates.plugin.cdb16a62.js (mode: 'all')
+import nuxt_plugin_plugin_3fe5d1a7 from 'nuxt_plugin_plugin_3fe5d1a7' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_templatespluginb8fa45e8_5cd130f5 from 'nuxt_plugin_templatespluginb8fa45e8_5cd130f5' // Source: .\\templates.plugin.b8fa45e8.js (mode: 'all')
 import nuxt_plugin_capitalize_211e3ee2 from 'nuxt_plugin_capitalize_211e3ee2' // Source: ..\\plugins\\capitalize (mode: 'all')
 import nuxt_plugin_vuexpersist_13f465a2 from 'nuxt_plugin_vuexpersist_13f465a2' // Source: ..\\plugins\\vuex-persist (mode: 'client')
 import nuxt_plugin_vuedatepicker_19e66559 from 'nuxt_plugin_vuedatepicker_19e66559' // Source: ..\\plugins\\vue-datepicker (mode: 'client')
@@ -85,7 +85,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Shambani Connect","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""}],"link":[{"rel":"icon","type":"image\u002Fpng","href":"\u002Fjatu-ico.png"}],"style":[],"script":[]},
+    head: {"title":"jubilantafrofarms","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""}],"link":[{"rel":"icon","type":"image\u002Fpng","href":"\u002Fjubilantafrofarms-ico.png"}],"style":[],"script":[]},
 
     store,
     router,
@@ -214,12 +214,12 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_90238c78 === 'function') {
-    await nuxt_plugin_plugin_90238c78(app.context, inject)
+  if (typeof nuxt_plugin_plugin_3fe5d1a7 === 'function') {
+    await nuxt_plugin_plugin_3fe5d1a7(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_templatesplugincdb16a62_5e34d140 === 'function') {
-    await nuxt_plugin_templatesplugincdb16a62_5e34d140(app.context, inject)
+  if (typeof nuxt_plugin_templatespluginb8fa45e8_5cd130f5 === 'function') {
+    await nuxt_plugin_templatespluginb8fa45e8_5cd130f5(app.context, inject)
   }
 
   if (typeof nuxt_plugin_capitalize_211e3ee2 === 'function') {

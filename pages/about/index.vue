@@ -2,14 +2,14 @@
   <div class="container mx-auto p-2">
     <div
       class="mb-2 justify-center items-center content-center grid text-2xl font-bold text-green-600"
-    >ABOUT SHAMBANI CONNECT</div>
+    >ABOUT JUBILANTAFROFARMS</div>
 
     <!-- div 1 -->
     <div class="grid md:grid-cols-2">
       <div class="bg-white p-4 text-base">
         <div>
           <p>
-            <b>SHAMBANI CONNECT</b> is a global platform designed to unlock and provide access to the hidden potential of
+            <b>JUBILANTAFROFARMS</b> is a global platform designed to unlock and provide access to the hidden potential of
             agricultural opportunities in African countries. Africa is facing a major food crisis and has the highest
             rate of hunger and food insecurity in the world. It’s estimated that by 2030 African population will reach
             1.7 billion people, and food will be a serious major problem for many families on the continent.
@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="bg-white p-2">
-        <img src="~assets/images/shambani-connect.jpg" alt class="object-cover md:h-96" />
+        <img src="~assets/images/jubilantafrofarms.jpg" alt class="object-cover md:h-96" />
       </div>
     </div>
     <!-- end of div 1 -->
@@ -57,7 +57,7 @@
         <br />
 
         <p>
-          <b>SHAMBANI CONNECT</b> is coordinating the farm owners, agricultural experts, and agri-investors by allowing the farm
+          <b>JUBILANTAFROFARMS</b> is coordinating the farm owners, agricultural experts, and agri-investors by allowing the farm
           owners to register their farms on the site for leasing and partnership, and the investor gets a chance to lease
           the registered farms and engage the agricultural expert through the system. The platform is also selling
           different agricultural products direct from the farms, and agricultural equipment, machinery, inputs,

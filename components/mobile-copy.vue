@@ -14,16 +14,16 @@
           font-bold
         "
       >
-        <div>Shambani Connect</div>
+        <div>Jubilantafrofarms</div>
         <div>+254700000000</div>
       </div>
       <!-- div 1 -->
       <div class="col-span-6">
         <nuxt-link to="/">
           <img
-            src="~assets/images/shambani-logo.png"
+            src="~assets/images/jubilant-afrofarms-logo.png"
             alt
-            class="w-3/4 h-16 md:w-full md:h-20 md:ml-2 object-contain"
+            class="w-3/4 h-12 md:w-full md:h-20 md:ml-2 object-contain"
           />
         </nuxt-link>
       </div>
@@ -121,7 +121,7 @@
         <!-- logo -->
         <div class="flex justify-between">
           <nuxt-link to="/" class="flex items-center space-x-2 px-4">
-            <span class="text-lg font-extrabold">Jatu Market</span>
+            <span class="text-lg font-extrabold">Jubilantafrofarms Market</span>
           </nuxt-link>
 
           <button @click="handleMenu">
@@ -286,6 +286,6 @@ export default {
 
 <style scoped>
 .menu-li {
-  @apply py-2 md:py-0;
+  @apply py-2; md:py-0;
 }
 </style>

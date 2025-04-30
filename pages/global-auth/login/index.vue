@@ -1,6 +1,6 @@
 <template>
-    <div class="container mx-auto md:px-96 px-2 lg:min-h-screen mb-5">
-        <h2 class="text-center font-bold text-3xl text-green-600 mt-2">Welcome to Afro Farms</h2>
+    <div class="container mx-auto md:px-96 px-2 lg:min-h-screen my-5">
+        <h2 class="text-center font-bold text-3xl text-green-600 mt-2">Welcome to Jubilantafrofarms</h2>
         <div class="bg-white mt-6 px-3 max-w-md border border-green-300 mx-auto rounded">
             <!-- row 1 -->
             <div class="flex flex-col gap-8 py-12">

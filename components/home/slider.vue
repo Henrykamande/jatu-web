@@ -10,7 +10,7 @@
 
     <div class="flex text-white justify-center mt-36 h-full">
       <div class="text-center">
-        <div class="font-bold text-6xl">SHAMBANI CONNECT</div>
+        <div class="font-bold text-6xl">Jubilantafrofarms</div>
         <div class="text-3xl font-bold">"Together, we feed Africa"</div>
         <div class="mt-4">
           <nuxt-link to="/services" class="bg-white px-4 py-3 text-black text-xl rounded-3xl">Find out more</nuxt-link>
@@ -28,9 +28,9 @@
     class="mx-auto object-cover"
     :style="{ backgroundImage: `url(${bannerImage})` }"
   >
-    <div class="flex text-white justify-center mt-2 py-20 h-full">
+    <div class="flex text-white justify-center md:mt-2 py-20 h-full">
       <div class="text-center">
-        <div class="font-bold text-4xl">SHAMBANI CONNECT</div>
+        <div class="font-bold text-4xl">Jubilantafrofarms</div>
         <div class="text-2xl font-bold mt-2">"Together, we feed Africa"</div>
         <div class="mt-8">
           <nuxt-link to="/services" class="bg-white px-4 py-3 text-black text-xl rounded-3xl">Find out more</nuxt-link>

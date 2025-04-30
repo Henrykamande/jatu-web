@@ -1,6 +1,6 @@
 <template>
-    <div class="container mx-auto md:px-48 px-2 lg:min-h-screen">
-      <h2 class="text-center font-bold  text-3xl text-green-600 mt-5">Welcome to Afro Farms</h2>
+    <div class="container mx-auto md:px-48 md:pt-5 px-2 lg:min-h-screen">
+      <h2 class="text-center font-bold  text-3xl text-green-600">Welcome to Jubilantafrofarms</h2>
       <div class="bg-white p-3">
         <div class="text-geen-200 py-2 font-bold text-2xl text-green-600">Create An Account</div>
         <!-- row 1 -->

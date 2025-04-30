@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="bg-white grid grid-cols-12 justify-center items-center relative">
+    <div class="bg-white grid border-b border-green-400 grid-cols-12 justify-center items-center relative">
       <!-- top div -->
       <div style="background: #2e7d32" class="
           col-span-12
@@ -11,8 +11,8 @@
           text-lg
           font-bold
         ">
-        <div class="text-sm">Shambani Connect</div>
-        <div class="text-sm">+254 748 193 219</div>
+        <div class="text-xs">Jubilantafrofarms</div>
+        <div class="text-xs">+254 748 193 219</div>
 
         <!-- user account -->
         <div v-if="isAuthenticated">
@@ -42,8 +42,8 @@
           </div>
         </div>
         <!-- v-else -->
-        <div class="text-white bg-orange-400 rounded font-bold px-2 py-1 text-sm" v-else>
-          <nuxt-link to="/login">
+        <div class="text-white bg-orange-400 rounded font-bold px-2 py-0 text-sm" v-else>
+          <nuxt-link to="/global-auth/login">
             Login
           </nuxt-link>
         </div>
@@ -52,7 +52,7 @@
 
       <div class="col-span-6">
         <nuxt-link to="/">
-          <img src="~assets/images/shambani-logo.png" alt class="w-3/4 h-16 md:w-full md:h-20 md:ml-2 object-contain" />
+          <img src="~assets/images/jubilantafrofarms-logo.png" alt class="w-3/4 h-12 md:w-full md:h-20 md:ml-2 object-contain" />
         </nuxt-link>
       </div>
       <!-- end of div 1 -->
@@ -91,7 +91,7 @@
         <!-- logo -->
         <div class="flex justify-between">
           <nuxt-link to="/" class="flex items-center space-x-2 px-4">
-            <span class="text-lg font-extrabold">Jatu Market</span>
+            <span class="text-lg font-bold">Jubilantafrofarms Market</span>
           </nuxt-link>
 
           <button @click="handleMenu">
