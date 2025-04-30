@@ -66,7 +66,7 @@
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-toolbar-title style="width: 300px" class="ml-0 pl-4">
-        <span class="hidden-sm-and-down">Shambani Connect</span>
+        <span class="hidden-sm-and-down">Jubilantafrofarms Connect</span>
       </v-toolbar-title>
       <v-spacer />
       <v-btn icon>

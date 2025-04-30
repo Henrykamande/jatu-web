@@ -215,6 +215,8 @@
       </v-col>
     </v-row>
 
+    <!-- Add videos and photos -->
+
     <v-divider class="my-4"></v-divider>
     <h2 class="subtitle-2 text--primary">Price margin</h2>
     <v-row class="subtitle-2 text--primary mb-2">

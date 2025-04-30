@@ -4,14 +4,14 @@
       <v-col cols="12" sm="12" md="9">
         <v-card class="elevation-12">
           <v-toolbar color="primary" dark flat>
-            <v-toolbar-title>Jatu Market</v-toolbar-title>
+            <v-toolbar-title>JANI Market</v-toolbar-title>
             <v-spacer />
             <v-icon>mdi-bank</v-icon>
           </v-toolbar>
           <v-card-text>
             <v-row>
               <v-col cols="12" md="4">
-                <v-img style="margin-top: 40px" src="@/assets/jatu-logo.png"></v-img>
+                <v-img style="margin-top: 40px" src="@/assets/jani-logo.png"></v-img>
               </v-col>
 
               <v-col cols="12" md="8">
