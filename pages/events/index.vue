@@ -164,7 +164,7 @@ export default {
   head() {
     const meta = this.meta || {};
     return {
-      title: `Projects - jubilantafrofarms`,
+      title: `Projects - jubilant Afro Farms`,
       meta: [
         {
           hid: "description",

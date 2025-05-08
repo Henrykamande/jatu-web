@@ -2860,7 +2860,7 @@ export default {
       }
     },
     viewCv(expert) {
-      const shopName = "Jubilantafrofarms";
+      const shopName = "Jubilant Afro Farms";
       const self = this;
       var doc = new jsPDF({ compress: true });
       var totalPagesExp = "{total_pages_count_string}";

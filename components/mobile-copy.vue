@@ -14,7 +14,7 @@
           font-bold
         "
       >
-        <div>Jubilantafrofarms</div>
+        <div>Jubilant Afro Farms</div>
         <div>+254700000000</div>
       </div>
       <!-- div 1 -->
@@ -121,7 +121,7 @@
         <!-- logo -->
         <div class="flex justify-between">
           <nuxt-link to="/" class="flex items-center space-x-2 px-4">
-            <span class="text-lg font-extrabold">Jubilantafrofarms Market</span>
+            <span class="text-lg font-extrabold"> Market</span>
           </nuxt-link>
 
           <button @click="handleMenu">

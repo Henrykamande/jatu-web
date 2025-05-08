@@ -29,14 +29,14 @@
           font-bold
         "
       >
-        JUBILANTAFROFARMS
+        JUBILANT AFRO FARMS
       </div>
 
       <div class="grid md:grid-cols-2 gap-2">
         <div class="bg-white p-4 text-base">
           <div>
             <p>
-              <b>JUBILANTAFROFARMS</b> is a global platform designed to unlock and provide access to the hidden potential of
+              <b>JUBILANT AFRO FARMS</b> is a global platform designed to unlock and provide access to the hidden potential of
              agricultural opportunities in African countries. Africa is facing a major food crisis and has the highest
               rate of hunger and food insecurity in the world. It’s estimated that by 2030 African population will 
               reach 1.7 billion people, and food will be a serious major problem for many families on the continent.

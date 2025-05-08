@@ -42,7 +42,7 @@
         <div class="grid grid-cols-12 md:items-center">
           <div class="col-span-4">
             <img
-              :src="`http://localhost:7800/uploads/products/${product.cover_image}`"
+              :src="`https://backend.jubilantafrofarms.com/uploads/products/${product.cover_image}`"
               alt
               class="object-contain h-24"
             />

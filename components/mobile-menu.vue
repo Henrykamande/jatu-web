@@ -11,7 +11,7 @@
           text-lg
           font-bold
         ">
-        <div class="text-xs">Jubilantafrofarms</div>
+        <div class="text-xs">Jubilant Afro Farms</div>
         <div class="text-xs">+254 748 193 219</div>
 
         <!-- user account -->
@@ -91,7 +91,7 @@
         <!-- logo -->
         <div class="flex justify-between">
           <nuxt-link to="/" class="flex items-center space-x-2 px-4">
-            <span class="text-lg font-bold">Jubilantafrofarms Market</span>
+            <span class="text-lg font-bold">Jubilant Afro Farms Market</span>
           </nuxt-link>
 
           <button @click="handleMenu">
@@ -160,8 +160,8 @@
             </li>
 
             <li class="menu-li group inline-block relative text-white px-4 border-b border-white w-full">
-              <a href="#" class="inline-flex gap-3 items-center font-bold" @click="toggleDropdown">Services
-                <font-awesome-icon class="h-6 w-6 cursor-pointer" style="color: #fff" :icon="['fas', 'caret-down']" />
+              <a href="/services" class="inline-flex gap-3 items-center" @click="toggleDropdown">Services
+                <!-- <font-awesome-icon class="h-6 w-6 cursor-pointer" style="color: #fff" :icon="['fas', 'caret-down']" /> -->
               </a>
 
               <!-- <ul

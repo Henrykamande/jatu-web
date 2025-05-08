@@ -6,7 +6,7 @@
         <span class="uppercase font-bold text-lg md:text-2xl text-white">Company</span>
 
         <div class="flex items-center">
-          This Platform is managed and run by Jubilantafrofarms Market (k) Ltd. The Company was established under the Kenyan
+          This Platform is managed and run by Jubilant Afro Farms Market (k) Ltd. The Company was established under the Kenyan
           Companies Act No. 17 of 2015 to engage in Agriculture and related businesses in the entire value
           chain of the agriculture sector in Africa.
         </div>
@@ -157,7 +157,7 @@
         "Together, We feed Africa"
       </div>
       <div>
-        Copyright {{ new Date().getFullYear() }} &copy; Jubilantafrofarms, All Rights Reserved
+        Copyright {{ new Date().getFullYear() }} &copy;Jubilant Afro Farms, All Rights Reserved
       </div>
     </div>
 

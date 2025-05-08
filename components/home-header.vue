@@ -127,11 +127,11 @@
           <li class="menu-li group inline-block relative">
             <nuxt-link class="font-medium text-lg text-white p-2 hover:text-orange-500" to="/projects">Partnership
               Projects</nuxt-link>
-            <div class="absolute left-0 top-fdivl bg-white text-gray-800 rounded-md shadow-lg hidden group-hover:block">
+            <!-- <div class="absolute left-0 top-fdivl bg-white text-gray-800 rounded-md shadow-lg hidden group-hover:block">
               <nuxt-link to="/agriculture" class="block px-4 py-2 hover:bg-gray-100">Agriculture</nuxt-link>
               <nuxt-link to="/mining" class="block px-4 py-2 hover:bg-gray-100">Mining</nuxt-link>
               <nuxt-link to="/real-estate" class="block px-4 py-2 hover:bg-gray-100">Real Estate</nuxt-link>
-            </div>
+            </div> -->
           </li>
 
           <!-- Services -->
@@ -140,9 +140,9 @@
             <div class="absolute left-0 top-fdivl bg-white text-gray-800 rounded-md shadow-lg hidden group-hover:block">
               <nuxt-link to="/farmlands" class="block px-4 py-2 hover:bg-gray-100">Farmlands</nuxt-link>
               <nuxt-link to="/equipment" class="block px-4 py-2 hover:bg-gray-100">Equipment</nuxt-link>
-              <nuxt-link to="/management" class="block px-4 py-2 hover:bg-gray-100">Management</nuxt-link>
+              <!-- <nuxt-link to="/management" class="block px-4 py-2 hover:bg-gray-100">Management</nuxt-link>
               <nuxt-link to="/financing" class="block px-4 py-2 hover:bg-gray-100">Financing</nuxt-link>
-              <nuxt-link to="/marketing" class="block px-4 py-2 hover:bg-gray-100">Marketing</nuxt-link>
+              <nuxt-link to="/marketing" class="block px-4 py-2 hover:bg-gray-100">Marketing</nuxt-link> -->
             </div>
           </li>
 
