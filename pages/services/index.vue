@@ -2601,7 +2601,7 @@ export default {
   head() {
     const meta = this.meta || {};
     return {
-      title: `jublantafrofarms - Agri support`,
+      title: `Jublant Afro Farms - Agri support`,
       meta: [
         {
           hid: "description",

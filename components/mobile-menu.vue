@@ -52,7 +52,7 @@
 
       <div class="col-span-6">
         <nuxt-link to="/">
-          <img src="~assets/images/jubilantafrofarms-logo.png" alt class="w-3/4 h-12 md:w-full md:h-20 md:ml-2 object-contain" />
+          <img src="~assets/images/jubilant-afrofarms-logo.png" alt class="w-3/4 h-12 md:w-full md:h-20 md:ml-2 object-contain" />
         </nuxt-link>
       </div>
       <!-- end of div 1 -->
