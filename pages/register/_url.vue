@@ -139,62 +139,97 @@ export default {
   },
   
   methods: {
-    async register() {
-      const details = this.dataItem;
-      const pageUrl = this.$route.params.url;
-      
-      if (
-        this.dataItem.first_name == undefined ||
-        this.dataItem.last_name == undefined ||
-        this.dataItem.email == undefined ||
-        this.dataItem.phone == undefined
-      ) {
+  async register() {
+    const details = this.dataItem;
+    const pageUrl = this.$route.params.url;
+
+    if (!details.first_name || !details.last_name || !details.email || !details.phone) {
+      toast()
+        .danger("Oops!", "Please fill all the required fields!")
+        .with({
+          shape: "square",
+          duration: 3000,
+          speed: 1000,
+          positionX: "end",
+          positionY: "top",
+          color: "bg-red-500",
+          fontColor: "white",
+          fontTone: 200,
+        })
+        .show();
+      return;
+    }
+
+    try {
+      const url = `/api/users`;
+      this.loader = true;
+
+      const response = await http.post(url, details);
+
+      if (!response.data.state) {
+        // Show error toast based on the API response message
         toast()
-          .danger("Oops!", "Please fill all the required fields!")
+          .danger("Error", response.data.msg)
           .with({
             shape: "square",
             duration: 3000,
             speed: 1000,
             positionX: "end",
             positionY: "top",
-            color: "bg-red-600",
+            color: "bg-red-500",
             fontColor: "white",
-            fontTone: 200
+            fontTone: 200,
           })
           .show();
-      } else {
-        try {
-          const url = `/api/users`;
-          const details = this.dataItem;
-          const self = this;
-
-          this.loader = true;
-          await http.post(url, details).then(res => {
-            // console.log(res, "reg res");
-            if (res.data.state) {
-              const data = res.data;
-              self.successMsg = true;
-              self.loader = false;
-              self.dataItem = {};
-              self.$store.commit("setUser", data.user);
-              self.$store.commit("setToken", data.token);
-              localStorage.setItem("token", data.token);
-              localStorage.setItem("user", JSON.stringify(data.user));
-              // redirect user
-              // console.log(pageUrl, "page url");
-              this.$router.push(`/equipment/${pageUrl}`);
-              // end
-            } else {
-              self.emailError = true;
-              self.loader = false;
-            }
-          });
-        } catch (err) {
-          console.log("error occured", err);
-        }
+        this.loader = false;
+        return;
       }
+
+      // Registration successful
+      const data = response.data;
+      this.successMsg = true;
+      this.loader = false;
+      this.dataItem = {};
+      this.$store.commit("setUser", data.user);
+      this.$store.commit("setToken", data.token);
+      localStorage.setItem("token", data.token);
+      localStorage.setItem("user", JSON.stringify(data.user));
+
+      toast()
+        .success("Welcome!", "You have successfully registered.")
+        .with({
+          shape: "square",
+          duration: 3000,
+          speed: 1000,
+          positionX: "end",
+          positionY: "top",
+          color: "bg-green-500",
+          fontColor: "white",
+          fontTone: 200,
+        })
+        .show();
+
+      // Redirect user
+      this.$router.push(`/equipment/${pageUrl}`);
+    } catch (err) {
+      console.error("Error occurred", err);
+      toast()
+        .danger("Server Error", "An unexpected error occurred. Please try again.")
+        .with({
+          shape: "square",
+          duration: 3000,
+          speed: 1000,
+          positionX: "end",
+          positionY: "top",
+          color: "bg-red-500",
+          fontColor: "white",
+          fontTone: 200,
+        })
+        .show();
     }
   }
+}
+
 };
 </script>
 
