@@ -273,6 +273,7 @@ export default {
       this.dataItem.imageUrls = fileName;
       this.dataItem.serialNo = "eq-" + this.generateRandomString();
     },
+    
     async sendEquimentRegDetails() {
       const details = this.dataItem;
       const formData = new FormData();

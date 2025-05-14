@@ -9,13 +9,19 @@
       <div class="grid md:grid-cols-2 gap-6">
         <div>
           <label class="block mb-2 font-semibold text-green-600">First Name *</label>
-          <input v-model="dataItem.first_name" type="text"
+          <input 
+            v-model="dataItem.first_name" 
+            type="text"
+            placeholder="First name"
             class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
 
         <div>
           <label class="block mb-2 font-semibold text-green-600">Last Name *</label>
-          <input v-model="dataItem.last_name" type="text"
+          <input 
+            v-model="dataItem.last_name" 
+            type="text"
+            placeholder="Last name"
             class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
       </div>
@@ -24,13 +30,19 @@
       <div class="grid md:grid-cols-2 gap-6 mt-4">
         <div>
           <label class="block mb-2 font-semibold text-green-600">Email *</label>
-          <input v-model="dataItem.email" type="text"
+          <input 
+            v-model="dataItem.email" 
+            type="text"
+            placeholder="example@gmail.com"
             class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
 
         <div>
           <label class="block mb-2 font-semibold text-green-600">Phone Number *</label>
-          <input v-model="dataItem.phone" type="text"
+          <input 
+            v-model="dataItem.phone" 
+            type="text"
+            placeholder="+254798765432"
             class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
       </div>
@@ -39,13 +51,19 @@
       <div class="grid md:grid-cols-2 gap-6 mt-4">
         <div>
           <label class="block mb-2 font-semibold text-green-600">Location *</label>
-          <input v-model="dataItem.location" type="text"
+          <input 
+            v-model="dataItem.location" 
+            type="text"
+            placeholder="Location"
             class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
 
         <div>
           <label class="block mb-2 font-semibold text-green-600">House No</label>
-          <input v-model="dataItem.house" type="text"
+          <input 
+            v-model="dataItem.house" 
+            type="text"
+            placeholder="House no"
             class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
       </div>
@@ -54,13 +72,19 @@
       <div class="grid md:grid-cols-2 gap-6 mt-4">
         <div>
           <label class="block mb-2 font-semibold text-green-600">Password *</label>
-          <input v-model="dataItem.password" type="password"
+          <input 
+            v-model="dataItem.password" 
+            type="password"
+            placeholder="Your password"
             class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
 
         <div>
           <label class="block mb-2 font-semibold text-green-600">Confirm Password *</label>
-          <input v-model="dataItem.confirm_password" type="password"
+          <input 
+            v-model="dataItem.confirm_password" 
+            type="password"
+            placeholder="Confirm your password"
             class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
       </div>
@@ -107,7 +131,13 @@ export default {
   },
 
   methods: {
+    generateRandomString() {
+      return Math.random()
+        .toString(36)
+        .substring(7);
+    },
     async register() {
+      this.dataItem.serialNo = 'user' + this.generateRandomString();
       const details = this.dataItem;
       // const pageUrl = this.$route.params.url;
 

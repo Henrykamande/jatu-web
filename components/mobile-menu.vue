@@ -347,6 +347,7 @@ export default {
     },
     showMenu() {
       this.showDropdown = !this.showDropdown;
+      console.log(this.showDropdown, "Show dropdown")
     },
     logout() {
       this.$store.commit("logout");

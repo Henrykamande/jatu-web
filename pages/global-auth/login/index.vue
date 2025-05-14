@@ -9,14 +9,18 @@
         <!-- Email input -->
         <div class="flex flex-col md:flex-row gap-4 items-center">
           <label class="font-semibold md:w-24 text-green-600">Email:</label>
-          <input v-model="dataItem.email" type="email"
+          <input v-model="dataItem.email" 
+            type="email"
+            placeholder="example@gmail.com"
             class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
 
         <!-- Password input -->
         <div class="flex flex-col md:flex-row gap-4 items-center">
           <label class="font-semibold md:w-24 text-green-600">Password:</label>
-          <input v-model="dataItem.password" type="password"
+          <input v-model="dataItem.password" 
+          type="password"
+          placeholder="Enter your password"
             class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
 
@@ -165,6 +169,7 @@ export default {
                 .show();
 
               // redirect user to the page they were trying to 
+              
               this.$router.push("/");
               // if (this.cart.length > 0) {
               //     setTimeout(() => {

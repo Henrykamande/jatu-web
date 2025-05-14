@@ -16,7 +16,12 @@
 
 <script>
 export default {
-  computed: {},
+  computed: {
+     async asyncData({ params, err}) {
+      const serialNo = params.url;
+      console.log(serialNo, "User serial no")
+     }
+  },
   data() {
     return {};
   },

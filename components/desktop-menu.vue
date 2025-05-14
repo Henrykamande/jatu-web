@@ -37,13 +37,14 @@
                 <span class="font-semibold text-xs">{{ userName }}</span>
               </button>
             </div>
-            <div v-if="showDropdown" class="absolute right-0 mt-14 w-auto bg-gray-100 border rounded-md shadow">
+            <div v-if="showDropdown" class="absolute right-0 mt-14 w-28 bg-gray-100 border rounded-md shadow">
               <ul>
                 <li>
-                  <nuxt-link to="/my-details/account" class="block px-2 py-2 hover:bg-gray-100">Account</nuxt-link>
+                  <nuxt-link :to="`/my-details/account/${userSerialNo}`" class="block px-2 py-2 hover:bg-gray-100">Account</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/my-details/equipments" class="block px-2 py-2 hover:bg-gray-100">Equipments</nuxt-link>
+                  <nuxt-link to="/my-details/equipments"
+                    class="block px-2 py-2 hover:bg-gray-100">Equipments</nuxt-link>
                 </li>
                 <li>
                   <nuxt-link to="/my-details/farms" class="block px-2 py-2 hover:bg-gray-100">Farms</nuxt-link>
@@ -152,7 +153,12 @@ export default {
       if (process.client) {
         const user = JSON.parse(localStorage.getItem("user"));
         return `${user.first_name || "Guest"} ${user.last_name || ""}`.trim()
-
+      }
+    },
+    userSerialNo() {
+      if (process.client) {
+        const user = JSON.parse(localStorage.getItem("user"));
+        return user.serialNo;
       }
     }
   },
@@ -197,10 +203,7 @@ export default {
       dropdown.classList.toggle("block");
     },
     showMenu() {
-      this.showDropdown = true;
-    },
-    hideMenu() {
-      this.showDropdown = false;
+      this.showDropdown = !this.showDropdown;
     },
     logout() {
       this.$store.commit("logout");

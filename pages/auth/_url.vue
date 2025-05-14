@@ -8,14 +8,20 @@
         <!-- Email Input -->
         <div class="flex flex-col md:flex-row gap-5 items-center">
           <label class="font-semibold md:w-28 text-green-600">Email:</label>
-          <input v-model="dataItem.email" type="email"
+          <input 
+            v-model="dataItem.email" 
+            type="email"
+            placeholder="example@gmail.com"
             class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
 
         <!-- Password Input -->
         <div class="flex flex-col md:flex-row gap-5 items-center">
           <label class="font-semibold md:w-28 text-green-600">Password:</label>
-          <input v-model="dataItem.password" type="password"
+          <input 
+            v-model="dataItem.password" 
+            type="password"
+            placeholder="Your password"
             class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
 
@@ -40,14 +46,19 @@
         <!-- Email Input -->
         <div class="flex flex-col gap-4">
           <label class="font-semibold text-green-600">Email:</label>
-          <input v-model="dataItem.email" type="email"
+          <input v-model="dataItem.email" 
+            type="email"
+            placeholder="example@gmail.com"
             class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
 
         <!-- Password Input -->
         <div class="flex flex-col gap-4">
           <label class="font-semibold text-green-600">Password:</label>
-          <input v-model="dataItem.password" type="password"
+          <input 
+            v-model="dataItem.password" 
+            type="password"
+            placeholder="Your password"
             class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
 
