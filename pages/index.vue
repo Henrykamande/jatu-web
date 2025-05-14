@@ -103,10 +103,11 @@
             allowfullscreen
           ></iframe>
         </div>
+
         <!-- div 2 -->
         <div class="card p-2 bg-white">
           <img
-            src="~assets/images/jubilantafrofarms.jpg"
+            src="~assets/images/jani-holdings.jpeg"
             alt
             class="object-cover md:h-96"
           />

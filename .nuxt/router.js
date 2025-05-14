@@ -45,6 +45,9 @@ const _44385c17 = () => interopDefault(import('..\\pages\\equipment\\list-farmla
 const _12a6c572 = () => interopDefault(import('..\\pages\\equipment\\rent-farmland-equipment\\index.vue' /* webpackChunkName: "pages/equipment/rent-farmland-equipment/index" */))
 const _52c358ba = () => interopDefault(import('..\\pages\\global-auth\\login\\index.vue' /* webpackChunkName: "pages/global-auth/login/index" */))
 const _50676d65 = () => interopDefault(import('..\\pages\\global-auth\\register\\index.vue' /* webpackChunkName: "pages/global-auth/register/index" */))
+const _7b35098e = () => interopDefault(import('..\\pages\\my-details\\account\\index.vue' /* webpackChunkName: "pages/my-details/account/index" */))
+const _7e69e494 = () => interopDefault(import('..\\pages\\my-details\\equipments\\index.vue' /* webpackChunkName: "pages/my-details/equipments/index" */))
+const _166d6a04 = () => interopDefault(import('..\\pages\\my-details\\farms\\index.vue' /* webpackChunkName: "pages/my-details/farms/index" */))
 const _538de60e = () => interopDefault(import('..\\pages\\services\\urlcopy.vue' /* webpackChunkName: "pages/services/urlcopy" */))
 const _55a91790 = () => interopDefault(import('..\\pages\\equipment\\apply\\_url.vue' /* webpackChunkName: "pages/equipment/apply/_url" */))
 const _6bbbab40 = () => interopDefault(import('..\\pages\\equipment\\rent-farmland-equipment\\_url.vue' /* webpackChunkName: "pages/equipment/rent-farmland-equipment/_url" */))
@@ -236,6 +239,18 @@ export const routerOptions = {
     path: "/global-auth/register",
     component: _50676d65,
     name: "global-auth-register"
+  }, {
+    path: "/my-details/account",
+    component: _7b35098e,
+    name: "my-details-account"
+  }, {
+    path: "/my-details/equipments",
+    component: _7e69e494,
+    name: "my-details-equipments"
+  }, {
+    path: "/my-details/farms",
+    component: _166d6a04,
+    name: "my-details-farms"
   }, {
     path: "/services/urlcopy",
     component: _538de60e,

@@ -1,29 +1,28 @@
 <template>
-  <div class="px-2 lg:min-h-screen mb-5">
-    <h2 class="text-center text-wrap font-bold text-3xl text-green-600">Welcome to Jubilant Afro Farms</h2>
+  <div class="px-4 lg:min-h-screen mb-6">
+    <h2 class="text-center mt-5 font-bold text-3xl text-green-600">Welcome to Jubilant Afro Farms</h2>
 
-    <!-- Width > 640px --- DESKTOP -->
-    <div class="bg-white mt-6 p-6 md:block sm:hidden w-3/5 hidden border border-green-300 mx-auto rounded shadow-lg">
-      <!-- Container for the form fields -->
-      <div class="flex flex-col gap-6 py-10">
-        <!-- Email input -->
-        <div class="flex flex-col md:flex-row gap-4 items-center">
-          <label class="font-semibold md:w-24 text-green-600">Email:</label>
+    <!-- Desktop Login Form -->
+    <div class="bg-white mt-8 p-8 md:block sm:hidden w-3/5 hidden border border-green-300 mx-auto rounded-lg shadow-xl">
+      <div class="flex flex-col gap-8 py-12">
+        <!-- Email Input -->
+        <div class="flex flex-col md:flex-row gap-5 items-center">
+          <label class="font-semibold md:w-28 text-green-600">Email:</label>
           <input v-model="dataItem.email" type="email"
             class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
 
-        <!-- Password input -->
-        <div class="flex flex-col md:flex-row gap-4 items-center">
-          <label class="font-semibold md:w-24 text-green-600">Password:</label>
+        <!-- Password Input -->
+        <div class="flex flex-col md:flex-row gap-5 items-center">
+          <label class="font-semibold md:w-28 text-green-600">Password:</label>
           <input v-model="dataItem.password" type="password"
             class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
 
-        <!-- Action buttons -->
-        <div class="flex flex-col w-full justify-center items-center gap-4 mt-6">
+        <!-- Action Buttons -->
+        <div class="flex flex-col w-full justify-center items-center gap-5 mt-6">
           <button @click="login"
-            class="bg-orange-500 w-24 text-white py-2 px-4 rounded-md font-bold shadow-md hover:bg-orange-600 transition">
+            class="bg-orange-500 w-28 text-white py-2 px-4 rounded-md font-bold shadow-md hover:bg-orange-600 transition">
             Login
           </button>
           <p class="font-semibold text-center text-orange-500">OR</p>
@@ -35,29 +34,27 @@
       </div>
     </div>
 
-
-    <!-- MOBILE LOGIN MENU -->
-    <div class="bg-white mt-6 p-6 md:hidden sm:block block border border-green-300 rounded shadow-md">
-      <!-- Form container -->
+    <!-- Mobile Login Menu -->
+    <div class="bg-white mt-8 p-6 md:hidden sm:block border border-green-300 rounded-lg shadow-lg">
       <div class="flex flex-col gap-6 py-10">
-        <!-- Email input -->
-        <div class="flex flex-col gap-3">
+        <!-- Email Input -->
+        <div class="flex flex-col gap-4">
           <label class="font-semibold text-green-600">Email:</label>
           <input v-model="dataItem.email" type="email"
             class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
 
-        <!-- Password input -->
-        <div class="flex flex-col gap-3">
+        <!-- Password Input -->
+        <div class="flex flex-col gap-4">
           <label class="font-semibold text-green-600">Password:</label>
           <input v-model="dataItem.password" type="password"
             class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
 
-        <!-- Action buttons -->
-        <div class="flex flex-col w-full justify-center items-center gap-4 mt-6">
+        <!-- Action Buttons -->
+        <div class="flex flex-col w-full justify-center items-center gap-5 mt-6">
           <button @click="login"
-            class="bg-orange-500 w-24 text-white py-2 px-4 rounded-md font-bold shadow-md hover:bg-orange-600 transition">
+            class="bg-orange-500 w-28 text-white py-2 px-4 rounded-md font-bold shadow-md hover:bg-orange-600 transition">
             Login
           </button>
           <p class="font-semibold text-center text-orange-500">OR</p>
@@ -68,8 +65,8 @@
         </div>
       </div>
     </div>
-
   </div>
+
 </template>
 
 <script>
@@ -98,18 +95,22 @@ export default {
         this.dataItem.password == undefined
       ) {
         toast()
-          .danger("Sorry!", "Please fill all the required fields!")
+          .danger("⚠️ Attention!", "All required fields must be completed.")
           .with({
-            shape: "square",
-            duration: 3000,
-            speed: 1000,
-            positionX: "end",
+            shape: "rounded",
+            duration: 4000,
+            speed: 700,
+            positionX: "center",
             positionY: "top",
-            color: "bg-red-600",
+            color: "bg-red-700",
             fontColor: "white",
-            fontTone: 200
+            fontTone: 100,
+            shadow: true,
+            opacity: 90,
+            icon: "warning",
           })
           .show();
+
       } else {
         try {
           const url = `/api/users/login`;
@@ -129,18 +130,22 @@ export default {
               // check cart and redirect
 
               toast()
-                .success("Welcome back!", "Jubilant Afro Farms")
+                .success("🎉 Welcome back!", "Jubilant Afro Farms")
                 .with({
-                  shape: "square",
-                  duration: 3000,
-                  speed: 1000,
-                  positionX: "end",
+                  shape: "rounded",
+                  duration: 4000,
+                  speed: 800,
+                  positionX: "center",
                   positionY: "top",
-                  color: "bg-green-500",
+                  color: "bg-green-600",
                   fontColor: "white",
-                  fontTone: 200,
+                  fontTone: 100,
+                  shadow: true,
+                  opacity: 85,
+                  icon: "check-circle",
                 })
                 .show();
+
 
               this.$router.push(`/equipment/${currentPath}`);
 
@@ -155,7 +160,7 @@ export default {
               //   }, 200);
               //   return true;
               // }
-              
+
               // end
             } else {
               self.emailError = true;

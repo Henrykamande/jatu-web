@@ -1,120 +1,87 @@
 <template>
-  <div class="container mx-auto md:px-48 px-2 lg:min-h-screen">
+  <div class="container mx-auto md:px-48 my-5 px-4 lg:min-h-screen">
     <h2 class="text-center font-bold text-wrap text-3xl text-green-600">Welcome to Jubilant Afro Farms</h2>
-    <div class="bg-white p-3">
-      <div class="text-geen-200 py-2 font-bold text-2xl text-green-600">Create An Account</div>
-      <!-- row 1 -->
-      <div class="grid md:grid-cols-2 gap-4">
+
+    <div class="bg-white p-6 border border-green-300 rounded-lg shadow-lg">
+      <h3 class="py-4 font-bold text-2xl text-green-600">Create An Account</h3>
+
+      <!-- Row 1: Name Inputs -->
+      <div class="grid md:grid-cols-2 gap-6">
         <div>
-          <label class="block mb-2 font-bold text-green-600">First Name *</label>
-          <input
-            v-model="dataItem.first_name"
-            type="text"
-            class="border border-green-400 py-1 px-3 rounded outline-none focus:border-purple-500 w-full text-green-600"
-          />
+          <label class="block mb-2 font-semibold text-green-600">First Name *</label>
+          <input v-model="dataItem.first_name" type="text"
+            class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
 
         <div>
-          <label class="block mb-2 font-bold text-green-600">Last Name *</label>
-          <input
-            v-model="dataItem.last_name"
-            type="text"
-            class="border border-green-400 py-1 px-3 rounded outline-none focus:border-purple-500 w-full text-green-600"
-          />
+          <label class="block mb-2 font-semibold text-green-600">Last Name *</label>
+          <input v-model="dataItem.last_name" type="text"
+            class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
       </div>
-      <!-- end -->
 
-      <!-- row two -->
-      <div class="grid md:grid-cols-2 gap-4">
+      <!-- Row 2: Email & Phone -->
+      <div class="grid md:grid-cols-2 gap-6 mt-4">
         <div>
-          <label class="block mb-2 font-bold text-green-600">Email *</label>
-          <input
-            v-model="dataItem.email"
-            type="text"
-            class="border border-green-400 py-1 px-3 rounded outline-none focus:border-purple-500 w-full text-green-600"
-          />
+          <label class="block mb-2 font-semibold text-green-600">Email *</label>
+          <input v-model="dataItem.email" type="text"
+            class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
 
         <div>
-          <label class="block mb-2 font-bold text-green-600">Phone Number *</label>
-          <input
-            v-model="dataItem.phone"
-            type="text"
-            class="border border-green-400 py-1 px-3 rounded outline-none focus:border-purple-500 w-full text-green-600"
-          />
+          <label class="block mb-2 font-semibold text-green-600">Phone Number *</label>
+          <input v-model="dataItem.phone" type="text"
+            class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
       </div>
-      <!-- end -->
 
-      <!-- row three -->
-      <div class="grid md:grid-cols-2 gap-4">
+      <!-- Row 3: Location & House No -->
+      <div class="grid md:grid-cols-2 gap-6 mt-4">
         <div>
-          <label class="block mb-2 font-bold text-green-600">Location *</label>
-          <input
-            v-model="dataItem.location"
-            type="text"
-            class="border border-green-400 py-1 px-3 rounded outline-none focus:border-purple-500 w-full text-green-600"
-          />
+          <label class="block mb-2 font-semibold text-green-600">Location *</label>
+          <input v-model="dataItem.location" type="text"
+            class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
 
         <div>
-          <label class="block mb-2 font-bold text-green-600">House No</label>
-          <input
-            v-model="dataItem.house"
-            type="text"
-            class="border border-green-400 py-1 px-3 rounded outline-none focus:border-purple-500 w-full text-green-600"
-          />
+          <label class="block mb-2 font-semibold text-green-600">House No</label>
+          <input v-model="dataItem.house" type="text"
+            class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
       </div>
-      <!-- end -->
 
-      <!-- row four -->
-      <div class="grid md:grid-cols-2 gap-4">
+      <!-- Row 4: Password Fields -->
+      <div class="grid md:grid-cols-2 gap-6 mt-4">
         <div>
-          <label class="block mb-2 font-bold text-green-600">Password *</label>
-          <input
-            v-model="dataItem.password"
-            type="password"
-            class="border border-green-400 py-1 px-3 rounded outline-none focus:border-purple-500 w-full text-green-600"
-          />
+          <label class="block mb-2 font-semibold text-green-600">Password *</label>
+          <input v-model="dataItem.password" type="password"
+            class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
 
         <div>
-          <label class="block mb-2 font-bold text-green-600">Confirm Password *</label>
-          <input
-            v-model="dataItem.confirm_password"
-            type="password"
-            class="border border-green-400 py-1 px-3 rounded outline-none focus:border-purple-500 w-full text-green-600"
-          />
+          <label class="block mb-2 font-semibold text-green-600">Confirm Password *</label>
+          <input v-model="dataItem.confirm_password" type="password"
+            class="border border-green-400 py-2 px-4 rounded-md outline-none focus:border-purple-500 w-full text-green-600" />
         </div>
       </div>
-      <!-- end -->
 
-      <!-- row 6 -->
-      <div>
-        <button
-          :loading="loader"
-          @click="register"
-          class="bg-orange-600 text-white py-1 px-2 mt-3 rounded font-bold"
-        >Register</button>
-        <img
-          v-show="loader"
-          src="~assets/images/loader.gif"
-          alt
-          class="mt-4 ml-4"
-          style="width: 30px; height: 30px"
-        />
-        <div class="flex py-2">
+      <!-- Register Button -->
+      <div class="flex flex-col items-center mt-6">
+        <button :loading="loader" @click="register"
+          class="bg-orange-600 text-white py-2 px-6 rounded-md font-bold shadow-md hover:bg-orange-700 transition">
+          Register
+        </button>
+        <img v-show="loader" src="~assets/images/loader.gif" alt class="mt-4" style="width: 30px; height: 30px" />
+        <div class="flex py-3">
           <span class="text-orange-500">Already have an account?</span>
-          <nuxt-link :to="`/auth/${dynamicUrl}`" class="text-blue ml-2">
-            <button class="text-blue-700 underline">Login</button>
+          <nuxt-link :to="`/auth/${dynamicUrl}`">
+            <button class="text-blue-700 underline ml-2">Login</button>
           </nuxt-link>
         </div>
       </div>
-      <!-- end -->
     </div>
   </div>
+
 </template>
 
 <script>
@@ -137,101 +104,112 @@ export default {
       formError: false
     };
   },
-  
+
   methods: {
-  async register() {
-    const details = this.dataItem;
-    const pageUrl = this.$route.params.url;
+    async register() {
+      const details = this.dataItem;
+      const pageUrl = this.$route.params.url;
 
-    if (!details.first_name || !details.last_name || !details.email || !details.phone) {
-      toast()
-        .danger("Oops!", "Please fill all the required fields!")
-        .with({
-          shape: "square",
-          duration: 3000,
-          speed: 1000,
-          positionX: "end",
-          positionY: "top",
-          color: "bg-red-500",
-          fontColor: "white",
-          fontTone: 200,
-        })
-        .show();
-      return;
-    }
-
-    try {
-      const url = `/api/users`;
-      this.loader = true;
-
-      const response = await http.post(url, details);
-
-      if (!response.data.state) {
-        // Show error toast based on the API response message
+      if (!details.first_name || !details.last_name || !details.email || !details.phone) {
         toast()
-          .danger("Error", response.data.msg)
+          .success("Sorry", "Please fill in all required fields.")
           .with({
-            shape: "square",
-            duration: 3000,
-            speed: 1000,
-            positionX: "end",
+            shape: "rounded",
+            duration: 4000,
+            speed: 800,
+            positionX: "center",
+            positionY: "top",
+            color: "bg-green-600",
+            fontColor: "white",
+            fontTone: 100,
+            shadow: true,
+            opacity: 85,
+            icon: "check-circle",
+          })
+          .show();
+        return;
+      }
+
+      try {
+        const url = `/api/users`;
+        this.loader = true;
+
+        const response = await http.post(url, details);
+
+        if (!response.data.state) {
+          // Show error toast based on the API response message
+          toast()
+            .danger("⚠️ Attention!", response.data.msg)
+            .with({
+              shape: "rounded",
+              duration: 4000,
+              speed: 700,
+              positionX: "center",
+              positionY: "top",
+              color: "bg-red-700",
+              fontColor: "white",
+              fontTone: 100,
+              shadow: true,
+              opacity: 90,
+              icon: "warning",
+            })
+            .show();
+          this.loader = false;
+          return;
+        }
+
+        // Registration successful
+        const data = response.data;
+        this.successMsg = true;
+        this.loader = false;
+        this.dataItem = {};
+        this.$store.commit("setUser", data.user);
+        this.$store.commit("setToken", data.token);
+        localStorage.setItem("token", data.token);
+        localStorage.setItem("user", JSON.stringify(data.user));
+
+        toast()
+          .success("🎉 Welcome!", "You have successfully registered.")
+          .with({
+            shape: "rounded",
+            duration: 4000,
+            speed: 800,
+            positionX: "center",
+            positionY: "top",
+            color: "bg-green-600",
+            fontColor: "white",
+            fontTone: 100,
+            shadow: true,
+            opacity: 85,
+            icon: "check-circle",
+          })
+          .show();
+
+        // Redirect user
+        this.$router.push(`/equipment/${pageUrl}`);
+      } catch (err) {
+        toast()
+          .success("Server Error!", "An unexpected error occurred. Please try again.")
+          .with({
+            shape: "rounded",
+            duration: 4000,
+            speed: 800,
+            positionX: "center",
             positionY: "top",
             color: "bg-red-500",
             fontColor: "white",
-            fontTone: 200,
+            fontTone: 100,
+            shadow: true,
+            opacity: 85,
+            icon: "check-circle",
           })
           .show();
         this.loader = false;
         return;
       }
-
-      // Registration successful
-      const data = response.data;
-      this.successMsg = true;
-      this.loader = false;
-      this.dataItem = {};
-      this.$store.commit("setUser", data.user);
-      this.$store.commit("setToken", data.token);
-      localStorage.setItem("token", data.token);
-      localStorage.setItem("user", JSON.stringify(data.user));
-
-      toast()
-        .success("Welcome!", "You have successfully registered.")
-        .with({
-          shape: "square",
-          duration: 3000,
-          speed: 1000,
-          positionX: "end",
-          positionY: "top",
-          color: "bg-green-500",
-          fontColor: "white",
-          fontTone: 200,
-        })
-        .show();
-
-      // Redirect user
-      this.$router.push(`/equipment/${pageUrl}`);
-    } catch (err) {
-      console.error("Error occurred", err);
-      toast()
-        .danger("Server Error", "An unexpected error occurred. Please try again.")
-        .with({
-          shape: "square",
-          duration: 3000,
-          speed: 1000,
-          positionX: "end",
-          positionY: "top",
-          color: "bg-red-500",
-          fontColor: "white",
-          fontTone: 200,
-        })
-        .show();
     }
   }
-}
-
 };
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

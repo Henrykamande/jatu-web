@@ -37,19 +37,19 @@
                 <span class="font-semibold text-xs">{{ userName }}</span>
               </button>
             </div>
-            <div v-if="showDropdown" class="absolute right-0 mt-14 w-30 bg-gray-100 border rounded-md shadow">
+            <div v-if="showDropdown" class="absolute right-0 mt-14 w-auto bg-gray-100 border rounded-md shadow">
               <ul>
                 <li>
-                  <nuxt-link to="/your-account" class="block px-4 py-2 hover:bg-gray-100">Account</nuxt-link>
+                  <nuxt-link to="/my-details/account" class="block px-2 py-2 hover:bg-gray-100">Account</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/your-equipments" class="block px-4 py-2 hover:bg-gray-100">Equipments</nuxt-link>
+                  <nuxt-link to="/my-details/equipments" class="block px-2 py-2 hover:bg-gray-100">Equipments</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/your-farms" class="block px-4 py-2 hover:bg-gray-100">Farms</nuxt-link>
+                  <nuxt-link to="/my-details/farms" class="block px-2 py-2 hover:bg-gray-100">Farms</nuxt-link>
                 </li>
                 <li>
-                  <button @click="logout" class="flex px-4 py-2 text-red-600 hover:bg-gray-100 w-full text-left">
+                  <button @click="logout" class="flex px-2 py-2 text-red-600 hover:bg-gray-100 w-full text-left">
                     <span>Logout</span>
                   </button>
                 </li>

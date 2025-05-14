@@ -1,11 +1,11 @@
 <template>
-  <div class="px-2 lg:min-h-screen mb-5">
+  <div class="px-2 lg:min-h-screen my-6">
     <h2 class="text-center text-wrap font-bold text-3xl text-green-600">Welcome to Jubilant Afro Farms</h2>
 
     <!-- Width > 640px --- DESKTOP -->
-    <div class="bg-white mt-6 p-6 md:block sm:hidden w-3/5 hidden border border-green-300 mx-auto rounded shadow-lg">
+    <div class="bg-white p-6 md:block sm:hidden w-3/5 hidden border border-green-300 mx-auto rounded shadow-lg">
       <!-- Container for the form fields -->
-      <div class="flex flex-col gap-6 py-10">
+      <div class="flex flex-col gap-6 py-8">
         <!-- Email input -->
         <div class="flex flex-col md:flex-row gap-4 items-center">
           <label class="font-semibold md:w-24 text-green-600">Email:</label>
@@ -94,16 +94,19 @@ export default {
         this.dataItem.password == undefined
       ) {
         toast()
-          .danger("Sorry!", "Please fill all the required fields!")
+          .danger("⚠️ Attention!", "Please fill all the required fields")
           .with({
-            shape: "square",
-            duration: 3000,
-            speed: 1000,
-            positionX: "end",
+            shape: "rounded",
+            duration: 4000,
+            speed: 700,
+            positionX: "center",
             positionY: "top",
-            color: "bg-red-600",
+            color: "bg-red-700",
             fontColor: "white",
-            fontTone: 200
+            fontTone: 100,
+            shadow: true,
+            opacity: 90,
+            icon: "warning",
           })
           .show();
       } else {
@@ -114,6 +117,28 @@ export default {
           this.loader = true;
           await http.post(url, details).then(res => {
 
+            if (!res.data.state) {
+              // Show error toast based on the API response message
+              toast()
+                .danger("⚠️ Attention!", res.data.msg)
+                .with({
+                  shape: "rounded",
+                  duration: 4000,
+                  speed: 700,
+                  positionX: "center",
+                  positionY: "top",
+                  color: "bg-red-700",
+                  fontColor: "white",
+                  fontTone: 100,
+                  shadow: true,
+                  opacity: 90,
+                  icon: "warning",
+                })
+                .show();
+              this.loader = false;
+              return;
+            }
+
             if (res.data.state) {
               const data = res.data;
               self.dataItem = {};
@@ -122,20 +147,24 @@ export default {
               localStorage.setItem("token", data.token);
               localStorage.setItem("user", JSON.stringify(data.user));
 
-              // redirect user to the page they were trying to 
               toast()
-                .success("Welcome back!", "Jubilant Afro Farms")
+                .success("🎉 Welcome back!", "Jubilant Afro Farms")
                 .with({
-                  shape: "square",
-                  duration: 3000,
-                  speed: 1000,
-                  positionX: "end",
+                  shape: "rounded",
+                  duration: 4000,
+                  speed: 800,
+                  positionX: "center",
                   positionY: "top",
-                  color: "bg-green-500",
+                  color: "bg-green-600",
                   fontColor: "white",
-                  fontTone: 200,
+                  fontTone: 100,
+                  shadow: true,
+                  opacity: 85,
+                  icon: "check-circle",
                 })
                 .show();
+
+              // redirect user to the page they were trying to 
               this.$router.push("/");
               // if (this.cart.length > 0) {
               //     setTimeout(() => {

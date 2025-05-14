@@ -3,392 +3,354 @@
     "name": "about",
     "path": "/about",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\about\\\\index.vue",
-    "chunkName": "pages/about/index",
-    "_name": "_8fcf8fe6"
+    "chunkName": "pages/about/index"
   },
   {
     "name": "blog",
     "path": "/blog",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\blog\\\\index.vue",
-    "chunkName": "pages/blog/index",
-    "_name": "_498ce538"
+    "chunkName": "pages/blog/index"
   },
   {
     "name": "cart",
     "path": "/cart",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\cart\\\\index.vue",
-    "chunkName": "pages/cart/index",
-    "_name": "_1e6f1efa"
+    "chunkName": "pages/cart/index"
   },
   {
     "name": "checkout",
     "path": "/checkout",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\checkout\\\\index.vue",
-    "chunkName": "pages/checkout/index",
-    "_name": "_281afdd8"
+    "chunkName": "pages/checkout/index"
   },
   {
     "name": "contact-us",
     "path": "/contact-us",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\contact-us\\\\index.vue",
-    "chunkName": "pages/contact-us/index",
-    "_name": "_b2a26c62"
+    "chunkName": "pages/contact-us/index"
   },
   {
     "name": "engage-expert",
     "path": "/engage-expert",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\engage-expert\\\\index.vue",
-    "chunkName": "pages/engage-expert/index",
-    "_name": "_4f68a438"
+    "chunkName": "pages/engage-expert/index"
   },
   {
     "name": "equipment",
     "path": "/equipment",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\equipment\\\\index.vue",
-    "chunkName": "pages/equipment/index",
-    "_name": "_1c241928"
+    "chunkName": "pages/equipment/index"
   },
   {
     "name": "events",
     "path": "/events",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\events\\\\index.vue",
-    "chunkName": "pages/events/index",
-    "_name": "_c2ad313e"
+    "chunkName": "pages/events/index"
   },
   {
     "name": "expert-success",
     "path": "/expert-success",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\expert-success\\\\index.vue",
-    "chunkName": "pages/expert-success/index",
-    "_name": "_3c84eeba"
+    "chunkName": "pages/expert-success/index"
   },
   {
     "name": "farmlands",
     "path": "/farmlands",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\farmlands\\\\index.vue",
-    "chunkName": "pages/farmlands/index",
-    "_name": "_617185f0"
+    "chunkName": "pages/farmlands/index"
   },
   {
     "name": "financing",
     "path": "/financing",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\financing\\\\index.vue",
-    "chunkName": "pages/financing/index",
-    "_name": "_64ac7b43"
+    "chunkName": "pages/financing/index"
   },
   {
     "name": "gakuo",
     "path": "/gakuo",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\gakuo\\\\index.vue",
-    "chunkName": "pages/gakuo/index",
-    "_name": "_0c8ec0a2"
+    "chunkName": "pages/gakuo/index"
   },
   {
     "name": "gasaya",
     "path": "/gasaya",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\gasaya\\\\index.vue",
-    "chunkName": "pages/gasaya/index",
-    "_name": "_4ed4026a"
+    "chunkName": "pages/gasaya/index"
   },
   {
     "name": "investor-success",
     "path": "/investor-success",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\investor-success\\\\index.vue",
-    "chunkName": "pages/investor-success/index",
-    "_name": "_4924298c"
+    "chunkName": "pages/investor-success/index"
   },
   {
     "name": "join-event",
     "path": "/join-event",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\join-event\\\\index.vue",
-    "chunkName": "pages/join-event/index",
-    "_name": "_5e185583"
+    "chunkName": "pages/join-event/index"
   },
   {
     "name": "joseph",
     "path": "/joseph",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\joseph\\\\index.vue",
-    "chunkName": "pages/joseph/index",
-    "_name": "_1cf99faa"
+    "chunkName": "pages/joseph/index"
   },
   {
     "name": "location",
     "path": "/location",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\location\\\\index.vue",
-    "chunkName": "pages/location/index",
-    "_name": "_3abda345"
+    "chunkName": "pages/location/index"
   },
   {
     "name": "management",
     "path": "/management",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\management\\\\index.vue",
-    "chunkName": "pages/management/index",
-    "_name": "_008b0c12"
+    "chunkName": "pages/management/index"
   },
   {
     "name": "marketing",
     "path": "/marketing",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\marketing\\\\index.vue",
-    "chunkName": "pages/marketing/index",
-    "_name": "_e1bc8058"
+    "chunkName": "pages/marketing/index"
   },
   {
     "name": "meeting-success",
     "path": "/meeting-success",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\meeting-success\\\\index.vue",
-    "chunkName": "pages/meeting-success/index",
-    "_name": "_f394c2ae"
+    "chunkName": "pages/meeting-success/index"
   },
   {
     "name": "newsletter-success",
     "path": "/newsletter-success",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\newsletter-success\\\\index.vue",
-    "chunkName": "pages/newsletter-success/index",
-    "_name": "_8060806a"
+    "chunkName": "pages/newsletter-success/index"
   },
   {
     "name": "order",
     "path": "/order",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\order\\\\index.vue",
-    "chunkName": "pages/order/index",
-    "_name": "_00a4bca8"
+    "chunkName": "pages/order/index"
   },
   {
     "name": "order-farm",
     "path": "/order-farm",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\order-farm\\\\index.vue",
-    "chunkName": "pages/order-farm/index",
-    "_name": "_2b68dfa5"
+    "chunkName": "pages/order-farm/index"
   },
   {
     "name": "our-services",
     "path": "/our-services",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\our-services\\\\index.vue",
-    "chunkName": "pages/our-services/index",
-    "_name": "_7185f20a"
+    "chunkName": "pages/our-services/index"
   },
   {
     "name": "owner-success",
     "path": "/owner-success",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\owner-success\\\\index.vue",
-    "chunkName": "pages/owner-success/index",
-    "_name": "_79e8319e"
+    "chunkName": "pages/owner-success/index"
   },
   {
     "name": "privacy",
     "path": "/privacy",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\privacy\\\\index.vue",
-    "chunkName": "pages/privacy/index",
-    "_name": "_5f178932"
+    "chunkName": "pages/privacy/index"
   },
   {
     "name": "products",
     "path": "/products",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\products\\\\index.vue",
-    "chunkName": "pages/products/index",
-    "_name": "_0978de36"
+    "chunkName": "pages/products/index"
   },
   {
     "name": "projects",
     "path": "/projects",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\projects\\\\index.vue",
-    "chunkName": "pages/projects/index",
-    "_name": "_95a52540"
+    "chunkName": "pages/projects/index"
   },
   {
     "name": "services",
     "path": "/services",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\services\\\\index.vue",
-    "chunkName": "pages/services/index",
-    "_name": "_15585efc"
+    "chunkName": "pages/services/index"
   },
   {
     "name": "shop",
     "path": "/shop",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\shop\\\\index.vue",
-    "chunkName": "pages/shop/index",
-    "_name": "_0232c538"
+    "chunkName": "pages/shop/index"
   },
   {
     "name": "simo",
     "path": "/simo-index",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\simo-index.vue",
-    "chunkName": "pages/simo-index",
-    "_name": "_c2ba7fb6"
+    "chunkName": "pages/simo-index"
   },
   {
     "name": "success",
     "path": "/success",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\success\\\\index.vue",
-    "chunkName": "pages/success/index",
-    "_name": "_28d73c52"
+    "chunkName": "pages/success/index"
   },
   {
     "name": "whishlist",
     "path": "/whishlist",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\whishlist\\\\index.vue",
-    "chunkName": "pages/whishlist/index",
-    "_name": "_8c8cd2a2"
+    "chunkName": "pages/whishlist/index"
   },
   {
     "name": "winnie",
     "path": "/winnie",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\winnie\\\\index.vue",
-    "chunkName": "pages/winnie/index",
-    "_name": "_539128ac"
+    "chunkName": "pages/winnie/index"
   },
   {
     "name": "blog-blog-copy",
     "path": "/blog/blog-copy",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\blog\\\\blog-copy.vue",
-    "chunkName": "pages/blog/blog-copy",
-    "_name": "_d9f7d5b4"
+    "chunkName": "pages/blog/blog-copy"
   },
   {
     "name": "blog-index-copy",
     "path": "/blog/index-copy",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\blog\\\\index-copy.vue",
-    "chunkName": "pages/blog/index-copy",
-    "_name": "_f522d7cc"
+    "chunkName": "pages/blog/index-copy"
   },
   {
     "name": "contact-us-ali",
     "path": "/contact-us/ali-index",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\contact-us\\\\ali-index.vue",
-    "chunkName": "pages/contact-us/ali-index",
-    "_name": "_265ffde0"
+    "chunkName": "pages/contact-us/ali-index"
   },
   {
     "name": "equipment-list-farmland-equipment",
     "path": "/equipment/list-farmland-equipment",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\equipment\\\\list-farmland-equipment\\\\index.vue",
-    "chunkName": "pages/equipment/list-farmland-equipment/index",
-    "_name": "_44385c17"
+    "chunkName": "pages/equipment/list-farmland-equipment/index"
   },
   {
     "name": "equipment-rent-farmland-equipment",
     "path": "/equipment/rent-farmland-equipment",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\equipment\\\\rent-farmland-equipment\\\\index.vue",
-    "chunkName": "pages/equipment/rent-farmland-equipment/index",
-    "_name": "_12a6c572"
+    "chunkName": "pages/equipment/rent-farmland-equipment/index"
   },
   {
     "name": "global-auth-login",
     "path": "/global-auth/login",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\global-auth\\\\login\\\\index.vue",
-    "chunkName": "pages/global-auth/login/index",
-    "_name": "_52c358ba"
+    "chunkName": "pages/global-auth/login/index"
   },
   {
     "name": "global-auth-register",
     "path": "/global-auth/register",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\global-auth\\\\register\\\\index.vue",
-    "chunkName": "pages/global-auth/register/index",
-    "_name": "_50676d65"
+    "chunkName": "pages/global-auth/register/index"
+  },
+  {
+    "name": "my-details-account",
+    "path": "/my-details/account",
+    "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\my-details\\\\account\\\\index.vue",
+    "chunkName": "pages/my-details/account/index"
+  },
+  {
+    "name": "my-details-equipments",
+    "path": "/my-details/equipments",
+    "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\my-details\\\\equipments\\\\index.vue",
+    "chunkName": "pages/my-details/equipments/index"
+  },
+  {
+    "name": "my-details-farms",
+    "path": "/my-details/farms",
+    "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\my-details\\\\farms\\\\index.vue",
+    "chunkName": "pages/my-details/farms/index"
   },
   {
     "name": "services-urlcopy",
     "path": "/services/urlcopy",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\services\\\\urlcopy.vue",
-    "chunkName": "pages/services/urlcopy",
-    "_name": "_538de60e"
+    "chunkName": "pages/services/urlcopy"
   },
   {
     "name": "equipment-apply-url",
     "path": "/equipment/apply/:url?",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\equipment\\\\apply\\\\_url.vue",
-    "chunkName": "pages/equipment/apply/_url",
-    "_name": "_55a91790"
+    "chunkName": "pages/equipment/apply/_url"
   },
   {
     "name": "equipment-rent-farmland-equipment-url",
     "path": "/equipment/rent-farmland-equipment/:url?",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\equipment\\\\rent-farmland-equipment\\\\_url.vue",
-    "chunkName": "pages/equipment/rent-farmland-equipment/_url",
-    "_name": "_6bbbab40"
+    "chunkName": "pages/equipment/rent-farmland-equipment/_url"
   },
   {
     "name": "auth-url",
     "path": "/auth/:url?",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\auth\\\\_url.vue",
-    "chunkName": "pages/auth/_url",
-    "_name": "_392c4d80"
+    "chunkName": "pages/auth/_url"
   },
   {
     "name": "blog-url",
     "path": "/blog/:url",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\blog\\\\_url.vue",
-    "chunkName": "pages/blog/_url",
-    "_name": "_b1610a8c"
+    "chunkName": "pages/blog/_url"
   },
   {
     "name": "brand-url",
     "path": "/brand/:url?",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\brand\\\\_url.vue",
-    "chunkName": "pages/brand/_url",
-    "_name": "_61baf0bf"
+    "chunkName": "pages/brand/_url"
   },
   {
     "name": "engage-expert-url",
     "path": "/engage-expert/:url?",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\engage-expert\\\\_url.vue",
-    "chunkName": "pages/engage-expert/_url",
-    "_name": "_030226e4"
+    "chunkName": "pages/engage-expert/_url"
   },
   {
     "name": "farmlands-url",
     "path": "/farmlands/:url",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\farmlands\\\\_url.vue",
-    "chunkName": "pages/farmlands/_url",
-    "_name": "_3802e8ea"
+    "chunkName": "pages/farmlands/_url"
   },
   {
     "name": "join-event-url",
     "path": "/join-event/:url?",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\join-event\\\\_url.vue",
-    "chunkName": "pages/join-event/_url",
-    "_name": "_7e8155e2"
+    "chunkName": "pages/join-event/_url"
   },
   {
     "name": "order-farm-url",
     "path": "/order-farm/:url",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\order-farm\\\\_url.vue",
-    "chunkName": "pages/order-farm/_url",
-    "_name": "_5c03fead"
+    "chunkName": "pages/order-farm/_url"
   },
   {
     "name": "product-url",
     "path": "/product/:url?",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\product\\\\_url.vue",
-    "chunkName": "pages/product/_url",
-    "_name": "_b8d677b2"
+    "chunkName": "pages/product/_url"
   },
   {
     "name": "projects-url",
     "path": "/projects/:url",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\projects\\\\_url.vue",
-    "chunkName": "pages/projects/_url",
-    "_name": "_2ee94d92"
+    "chunkName": "pages/projects/_url"
   },
   {
     "name": "register-url",
     "path": "/register/:url?",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\register\\\\_url.vue",
-    "chunkName": "pages/register/_url",
-    "_name": "_6189847b"
+    "chunkName": "pages/register/_url"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_40100d9a"
+    "chunkName": "pages/index"
   },
   {
     "name": "category-subcategory",
     "path": "/:category/:subcategory",
     "component": "C:\\\\Users\\\\user\\\\Documents\\\\PROJECTS\\\\1\\\\jubilant-afrofarms-site\\\\pages\\\\_category\\\\_subcategory\\\\index.vue",
-    "chunkName": "pages/_category/_subcategory/index",
-    "_name": "_08d3eb9e"
+    "chunkName": "pages/_category/_subcategory/index"
   }
 ]

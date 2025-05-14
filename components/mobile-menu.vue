@@ -21,19 +21,19 @@
               <font-awesome-icon :icon="['fas', 'user-circle']" class="text-white text-xl md:text-2xl" />
             </button>
             <div v-if="showDropdown"
-              class="absolute flex flex-col items-center right-0 text-gray-500 mt-10 w-32 bg-white border rounded-md shadow">
+              class="absolute flex flex-col items-center right-0 text-gray-400 font-normal mt-10 w-32 bg-white border rounded-md shadow">
               <ul>
                 <li>
-                  <nuxt-link to="/your-account" class="block py-2 hover:bg-gray-100">Account</nuxt-link>
+                  <nuxt-link to="/my-details/account" class="block py-1 hover:bg-gray-100">Account</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/your-equipments" class="block py-2 hover:bg-gray-100">Equipments</nuxt-link>
+                  <nuxt-link to="/my-details/equipments" class="block py-1 hover:bg-gray-100">Equipments</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/your-farms" class="block py-2 hover:bg-gray-100">Farms</nuxt-link>
+                  <nuxt-link to="/my-details/farms" class="block py-1 hover:bg-gray-100">Farms</nuxt-link>
                 </li>
                 <li>
-                  <button @click="logout" class="flex py-2 text-red-600 hover:bg-gray-100 w-full text-left">
+                  <button @click="logout" class="flex py-1 text-red-600 hover:bg-gray-100 w-full text-left">
                     <span>Logout</span>
                   </button>
                 </li>

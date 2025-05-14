@@ -1,8 +1,9 @@
 <template>
-  <div class="container mx-auto md:px-48 md:pt-5 px-4 lg:min-h-screen">
-    <h2 class="text-center font-bold text-3xl text-green-600">Welcome to Jubilant Afro Farms</h2>
-    <div class="bg-white p-6 rounded shadow-md">
-      <h3 class="font-bold text-2xl text-green-600 py-4">Create An Account</h3>
+  <div class="container mx-auto md:px-48 px-4 lg:min-h-screen">
+    <h2 class="text-center font-bold mt-6 text-3xl text-green-600">Welcome to Jubilant Afro Farms</h2>
+
+    <div class="bg-white p-6 border border-green-300 rounded-lg shadow-lg">
+      <h3 class="py-4 font-bold text-2xl text-green-600">Create An Account</h3>
 
       <!-- Row 1: Name Inputs -->
       <div class="grid md:grid-cols-2 gap-6">
@@ -81,6 +82,7 @@
     </div>
   </div>
 
+
 </template>
 
 <script>
@@ -106,36 +108,90 @@ export default {
 
   methods: {
     async register() {
-    const details = this.dataItem;
-    const pageUrl = this.$route.params.url;
+      const details = this.dataItem;
+      // const pageUrl = this.$route.params.url;
 
-    if (!details.first_name || !details.last_name || !details.email || !details.phone) {
-      toast()
-        .danger("Oops!", "Please fill all the required fields!")
-        .with({
-          shape: "square",
-          duration: 3000,
-          speed: 1000,
-          positionX: "end",
-          positionY: "top",
-          color: "bg-red-500",
-          fontColor: "white",
-          fontTone: 200,
-        })
-        .show();
-      return;
-    }
-
-    try {
-      const url = `/api/users`;
-      this.loader = true;
-
-      const response = await http.post(url, details);
-
-      if (!response.data.state) {
-        // Show error toast based on the API response message
+      if (!details.first_name || !details.last_name || !details.email || !details.phone) {
         toast()
-          .danger("Error", response.data.msg)
+          .danger("⚠️ Attention!", "All required fields must be completed.")
+          .with({
+            shape: "rounded",
+            duration: 4000,
+            speed: 700,
+            positionX: "center",
+            positionY: "top",
+            color: "bg-red-700",
+            fontColor: "white",
+            fontTone: 100,
+            shadow: true,
+            opacity: 90,
+            icon: "warning",
+          })
+          .show();
+        return;
+      }
+
+      try {
+        const url = `/api/users`;
+        this.loader = true;
+
+        const response = await http.post(url, details);
+
+        if (!response.data.state) {
+          // Show error toast based on the API response message
+          toast()
+            .danger("⚠️ Attention!", response.data.msg)
+            .with({
+              shape: "rounded",
+              duration: 4000,
+              speed: 700,
+              positionX: "center",
+              positionY: "top",
+              color: "bg-red-700",
+              fontColor: "white",
+              fontTone: 100,
+              shadow: true,
+              opacity: 90,
+              icon: "warning",
+            })
+            .show();
+          this.loader = false;
+          return;
+        }
+
+        // Registration successful
+        const data = response.data;
+        this.successMsg = true;
+        this.loader = false;
+        this.dataItem = {};
+        this.$store.commit("setUser", data.user);
+        this.$store.commit("setToken", data.token);
+        localStorage.setItem("token", data.token);
+        localStorage.setItem("user", JSON.stringify(data.user));
+
+        toast()
+          .success("🎉 Welcome!", "You have successfully registered.")
+          .with({
+            shape: "rounded",
+            duration: 4000,
+            speed: 800,
+            positionX: "center",
+            positionY: "top",
+            color: "bg-green-600",
+            fontColor: "white",
+            fontTone: 100,
+            shadow: true,
+            opacity: 85,
+            icon: "check-circle",
+          })
+          .show();
+
+        // Redirect user
+        this.$router.push("/");
+      } catch (err) {
+
+        toast()
+          .danger("Server Error", "An unexpected error occurred. Please try again.")
           .with({
             shape: "square",
             duration: 3000,
@@ -147,53 +203,8 @@ export default {
             fontTone: 200,
           })
           .show();
-        this.loader = false;
-        return;
       }
-
-      // Registration successful
-      const data = response.data;
-      this.successMsg = true;
-      this.loader = false;
-      this.dataItem = {};
-      this.$store.commit("setUser", data.user);
-      this.$store.commit("setToken", data.token);
-      localStorage.setItem("token", data.token);
-      localStorage.setItem("user", JSON.stringify(data.user));
-
-      toast()
-        .success("Welcome!", "You have successfully registered.")
-        .with({
-          shape: "square",
-          duration: 3000,
-          speed: 1000,
-          positionX: "end",
-          positionY: "top",
-          color: "bg-green-400",
-          fontColor: "white",
-          fontTone: 200,
-        })
-        .show();
-
-      // Redirect user
-      this.$router.push("/");
-    } catch (err) {
-      console.error("Error occurred", err);
-      toast()
-        .danger("Server Error", "An unexpected error occurred. Please try again.")
-        .with({
-          shape: "square",
-          duration: 3000,
-          speed: 1000,
-          positionX: "end",
-          positionY: "top",
-          color: "bg-red-500",
-          fontColor: "white",
-          fontTone: 200,
-        })
-        .show();
     }
-  }
   }
 };
 </script>
