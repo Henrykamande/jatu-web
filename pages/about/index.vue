@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="bg-white p-2">
-        <img src="~assets/images/jubilantafrofarms.jpg" alt class="object-cover md:h-96" />
+        <img src="~assets/images/jani-holdings.jpeg" alt class="object-cover md:h-96" />
       </div>
     </div>
     <!-- end of div 1 -->

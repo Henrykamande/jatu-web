@@ -639,7 +639,6 @@ export default {
       formError: false
     };
   },
-
   async asyncData({ params, error }) {
     const serialNo = params.url;
     // console.log(serialNo, "Farm serial no.")

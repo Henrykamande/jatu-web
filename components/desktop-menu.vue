@@ -37,7 +37,7 @@
                 <span class="font-semibold text-xs">{{ userName }}</span>
               </button>
             </div>
-            <div v-if="showDropdown" class="absolute right-0 mt-14 w-28 bg-gray-100 border rounded-md shadow">
+            <!-- <div v-if="showDropdown" class="absolute right-0 mt-14 w-28 bg-gray-100 border rounded-md shadow">
               <ul>
                 <li>
                   <nuxt-link :to="`/my-details/account/${userSerialNo}`" class="block px-2 py-2 hover:bg-gray-100">Account</nuxt-link>
@@ -55,7 +55,7 @@
                   </button>
                 </li>
               </ul>
-            </div>
+            </div> -->
           </div>
         </div>
         <!-- v-else -->
