@@ -21,7 +21,7 @@
       <div class="col-span-6">
         <nuxt-link to="/">
           <img
-            src="~assets/images/jubilant-afrofarms-logo.png"
+            src="~assets/images/jani-logo.png"
             alt
             class="w-3/4 h-12 md:w-full md:h-20 md:ml-2 object-contain"
           />

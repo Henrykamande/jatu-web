@@ -240,7 +240,15 @@
 
 <script>
 import { http } from "~/common/index.js";
+import { mapGetters } from "vuex";
+
 export default {
+  computed: {
+    ...mapGetters(["user"]),
+    userSerialNo() {
+      return this.user ? this.user.serialNo : null;
+    }
+  },
   data() {
     return {
       dataItem: {
@@ -248,6 +256,7 @@ export default {
         preferredContract: "",
         pricing: "",
         condition: "",
+        userSerialNo: null
       },
       loader: false,
       successMsg: false,
@@ -255,11 +264,12 @@ export default {
       formError: false
     };
   },
+  mounted() {
+    this.dataItem.userSerialNo = this.userSerialNo;
+  },
   methods: {
     generateRandomString() {
-      return Math.random()
-        .toString(36)
-        .substring(7);
+      return Math.random().toString(36).substring(7);
     },
     async handleMediaUpload(event) {
       const file = event.target.files[0];
@@ -273,17 +283,18 @@ export default {
       this.dataItem.imageUrls = fileName;
       this.dataItem.serialNo = "eq-" + this.generateRandomString();
     },
-    
+
     async sendEquimentRegDetails() {
-      const details = this.dataItem;
       const formData = new FormData();
       const dateObj = new Date(this.dataItem.timeLine);
       const dateString = dateObj.toDateString();
 
-      if (this.dataItem.machineType == undefined) {
+      if (!this.dataItem.machineType) {
         this.formError = true;
       } else {
         this.formError = false;
+
+        formData.append("userSerialNo", this.dataItem.userSerialNo);
         formData.append("serialNo", this.dataItem.serialNo);
         formData.append("machineType", this.dataItem.machineType);
         formData.append("otherImages", this.dataItem.value);
@@ -304,29 +315,29 @@ export default {
         formData.append("averagePrice", this.dataItem.averagePrice);
         formData.append("condition", this.dataItem.condition);
         formData.append("timeLine", dateString);
+
         try {
           const url = `/api/list-equipment`;
-          const self = this;
           this.loader = true;
-          console.log(formData);
           await http.post(url, formData).then(res => {
             if (res.data.state) {
-              self.successMsg = true;
-              self.loader = false;
-              self.dataItem = {};
+              this.successMsg = true;
+              this.loader = false;
+              this.dataItem = {};
               document.querySelector('input[type="file"]').value = "";
             } else {
-              self.sendEquipmentRegDetails = true;
-              self.loader = false;
+              this.sendEquipmentRegDetails = true;
+              this.loader = false;
             }
           });
         } catch (err) {
-          console.log("error occured", err);
+          console.error("Error occurred:", err);
         }
       }
     }
   }
 };
+
 </script>
 
 <style lang="scss" scoped></style>

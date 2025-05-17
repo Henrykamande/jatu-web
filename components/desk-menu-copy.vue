@@ -13,7 +13,7 @@
         <div>
           <nuxt-link to="/">
             <img
-              src="~assets/images/jubilant-afrofarms-logo.png"
+              src="~assets/images/jani-logo.png"
               alt
               class="h-16 md:h-16 object-contain"
               style="width: 200px; height: 200px; transform: scale(1.7)"

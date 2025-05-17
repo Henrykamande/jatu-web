@@ -10,7 +10,7 @@
       <div class="col-span-3 flex items-center">
         <div>
           <nuxt-link to="/">
-            <img src="~assets/images/jubilant-afrofarms-logo.png" alt class="h-full md:h-16 md:ml-1 py-1 object-contain"
+            <img src="~assets/images/jani-logo.png" alt class="h-full md:h-16 md:ml-1 py-1 object-contain"
               style="width: 200px; height: 200px; transform: scale(1.7)" />
           </nuxt-link>
         </div>
@@ -37,10 +37,11 @@
                 <span class="font-semibold text-xs">{{ userName }}</span>
               </button>
             </div>
-            <!-- <div v-if="showDropdown" class="absolute right-0 mt-14 w-28 bg-gray-100 border rounded-md shadow">
+            <div v-if="showDropdown" class="absolute right-0 mt-14 w-28 bg-gray-100 border rounded-md shadow">
               <ul>
                 <li>
-                  <nuxt-link :to="`/my-details/account/${userSerialNo}`" class="block px-2 py-2 hover:bg-gray-100">Account</nuxt-link>
+                  <nuxt-link :to="`/my-details/account`"
+                    class="block px-2 py-2 hover:bg-gray-100">Account</nuxt-link>
                 </li>
                 <li>
                   <nuxt-link to="/my-details/equipments"
@@ -55,15 +56,13 @@
                   </button>
                 </li>
               </ul>
-            </div> -->
+            </div>
           </div>
         </div>
         <!-- v-else -->
-        <div class="text-white w-16 bg-orange-400 px-2 py-1 rounded font-bold" v-else>
-          <nuxt-link to="/global-auth/login">
-            Login
-          </nuxt-link>
-        </div>
+        <nuxt-link class="text-white w-16 bg-orange-400 px-2 py-1 rounded font-bold" v-else to="/global-auth/login">
+          Login
+        </nuxt-link>
       </div>
     </div>
     <!-- end  of top bar-->
@@ -144,22 +143,13 @@ import { http } from "~/common/index.js";
 import { mapGetters } from "vuex";
 export default {
   computed: {
-    ...mapGetters(["imageUrl", "user"]),
+    ...mapGetters(["imageUrl", "user", "token", "isAuthenticated"]),
     ...mapGetters("product", ["cart"]),
-    isAuthenticated() {
-      return process.client ? !!localStorage.getItem("token") : false;
-    },
     userName() {
-      if (process.client) {
-        const user = JSON.parse(localStorage.getItem("user"));
-        return `${user.first_name || "Guest"} ${user.last_name || ""}`.trim()
-      }
+      return this.user ? `${this.user.first_name || "Guest"} ${this.user.last_name || ""}`.trim() : "Guest";
     },
     userSerialNo() {
-      if (process.client) {
-        const user = JSON.parse(localStorage.getItem("user"));
-        return user.serialNo;
-      }
+      return this.user ? this.user.serialNo : null;
     }
   },
   data() {
@@ -173,51 +163,47 @@ export default {
       searchSuggestions: [],
       blured: true,
       disabled: true,
-      showDropdown: false,
+      showDropdown: false
     };
   },
   async fetch() {
-    const url = `api/categories`;
-    const servicesUrl = `api/services`;
     const host = this.imageUrl;
-    const data = await fetch(`${host}/${url}`).then(res => res.json());
-    // fetch services
-    const servicesData = await fetch(`${host}/${servicesUrl}`).then(res =>
-      res.json()
-    );
-    // end
-    this.categories = data.records;
-    this.services = servicesData.records;
+    try {
+      const [categoriesData, servicesData] = await Promise.all([
+        fetch(`${host}/api/categories`).then(res => res.json()),
+        fetch(`${host}/api/services`).then(res => res.json())
+      ]);
+      this.categories = categoriesData.records;
+      this.services = servicesData.records;
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
   },
   watch: {
     $route() {
       this.searchResults = [];
     }
   },
+  mounted() {
+    this.$store.dispatch("initAuth"); // Initialize authentication from Vuex
+  },
   methods: {
-    userMenu() {
-      const menuBtn = document.querySelector("#menu-btn");
-      const dropdown = document.querySelector("#dropdown");
-
-      dropdown.classList.toggle("hidden");
-      dropdown.classList.toggle("block");
-    },
     showMenu() {
       this.showDropdown = !this.showDropdown;
     },
     logout() {
-      this.$store.commit("logout");
+      this.$store.commit("logout"); // Logout via Vuex mutation
       this.$router.push("/");
     },
     async search() {
       const keyword = this.searchPhrase.trim().toLowerCase();
-      const url = `/api/products/search/${keyword}`;
+      if (!keyword) return;
 
       try {
-        const { data } = await http.get(url);
-        const { searchResults } = data;
-        this.searchResults = searchResults;
-      } catch (err) {
+        const { data } = await http.get(`/api/products/search/${keyword}`);
+        this.searchResults = data.searchResults || [];
+      } catch (error) {
+        console.error("Search error:", error);
         this.searchResults = [];
       }
     },
@@ -229,6 +215,7 @@ export default {
     }
   }
 };
+
 </script>
 
 <style scoped>

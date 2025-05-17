@@ -42,17 +42,15 @@
           </div>
         </div>
         <!-- v-else -->
-        <div class="text-white bg-orange-400 rounded font-bold px-2 py-0 text-sm" v-else>
-          <nuxt-link to="/global-auth/login">
-            Login
-          </nuxt-link>
-        </div>
+        <nuxt-link class="text-white bg-orange-400 rounded font-bold px-2 py-0 text-sm" v-else to="/global-auth/login">
+          Login
+        </nuxt-link>
       </div>
       <!-- end of top bar -->
 
       <div class="col-span-6">
         <nuxt-link to="/">
-          <img src="~assets/images/jubilant-afrofarms-logo.png" alt class="w-3/4 h-12 md:w-full md:h-20 md:ml-2 object-contain" />
+          <img src="~assets/images/jani-logo.png" alt class="w-1/2 h-12 md:w-full md:h-20 md:ml-2 object-contain" />
         </nuxt-link>
       </div>
       <!-- end of div 1 -->
@@ -296,17 +294,8 @@ import { http } from "~/common/index.js";
 import { mapGetters } from "vuex";
 export default {
   computed: {
-    ...mapGetters(["imageUrl"]),
+    ...mapGetters(["imageUrl",  "isAuthenticated"]),
     ...mapGetters("product", ["cart"]),
-    isAuthenticated() {
-      return process.client ? !!localStorage.getItem("token") : false;
-    },
-    userName() {
-      if (process.client) {
-        const user = JSON.parse(localStorage.getItem("user"));
-        return `${user.first_name || "Guest"} ${user.last_name || ""}`.trim()
-      }
-    }
   },
   data() {
     return {

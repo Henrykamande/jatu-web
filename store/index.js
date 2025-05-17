@@ -18,6 +18,9 @@ export const mutations = {
     state.token = token;
     Cookie.set("jwt", token);
   },
+  updateUser(state, updatedUser) {
+    state.user = updatedUser;
+  },
   logout(state, req) {
     localStorage.removeItem("token");
     localStorage.removeItem("user");

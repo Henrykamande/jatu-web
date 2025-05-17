@@ -40,7 +40,7 @@
       <div class="col-span-3 flex items-center justify-start">
         <div>
           <nuxt-link to="/">
-            <img src="~assets/images/jubilant-afrofarms-logo.png" alt class="h-16 md:h-16 md:pt-2 object-contain"
+            <img src="~assets/images/jani-logo.png" alt class="h-16 md:h-16 md:pt-2 object-contain"
               style="width: 200px; height: 200px; transform: scale(1.7)" />
           </nuxt-link>
         </div>
