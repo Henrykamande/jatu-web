@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="flex text-white px-6 py-2 justify-between font-bold" style="background: #d8713d">
-      <div style="color: #fff; font-family: Caveat">"Together, We Feed Africa"</div>
+      <div style="color: #fff; font-family: Caveat">"Together, We Can Feed Africa"</div>
       <div style="color: #fff">info@jubilantafrofarms.com</div>
     </div>
     <!-- top header -->
@@ -25,7 +25,7 @@
       <!-- div 4 -->
       <div class="col-span-2 place-content-end flex font-bold text-xl">
         <!-- favourites icon -->
-        Call: +254 748 193 219
+        Call: +254 752 940 909
       </div>
 
       <div class="col-span-1 text-gray-600 flex justify-center">

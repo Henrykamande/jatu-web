@@ -120,7 +120,7 @@
         >
 
         <div class="flex mt-4">
-          <a href="#" target="_blank">
+          <a href="https://www.facebook.com/share/152Vha19RMg/GM" target="_blank">
             <svg
               class="
                 bi bi-facebook
@@ -142,7 +142,7 @@
             </svg>
           </a>
           <!-- linked in -->
-          <a href="#" target="_blank">
+          <a href="https://www.instagram.com/jani_afrofarms?igsh=ZmxjNXV1cG43eWl6" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6 ml-4 md:h-10 md:w-10 mr-4 text-indigo-50"

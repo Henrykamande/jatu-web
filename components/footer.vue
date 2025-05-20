@@ -30,7 +30,7 @@
             />
           </svg>
 
-          <span class="ml-3 font-bold">+254 748 193 219</span>
+          <span class="ml-3 font-bold">+254 752 940 909</span>
         </div>
 
         <div class="flex items-center">
@@ -40,7 +40,7 @@
             :icon="['fab', 'whatsapp']"
           />
 
-          <span class="ml-3 font-bold">+254 748 193 219</span>
+          <span class="ml-3 font-bold">+254 752 940 909</span>
         </div>
 
         <div class="flex items-center">
@@ -63,7 +63,7 @@
         </div>
 
         <div class="flex mt-4">
-          <a href="#">
+          <a href="https://www.instagram.com/jani_afrofarms?igsh=ZmxjNXV1cG43eWl6">
             <font-awesome-icon
               class="h-6 w-6 md:h-8 md:w-8 mx-2 cursor-pointer"
               style="color: #fff"
@@ -71,7 +71,7 @@
             />
           </a>
 
-          <a href="#">
+          <a href="https://www.facebook.com/share/152Vha19RMg/GM">
             <font-awesome-icon
               class="h-6 w-6 md:h-8 md:w-8 mx-2 cursor-pointer"
               style="color: #fff"
@@ -154,7 +154,7 @@
     <!-- sub footer -->
     <div class="md:flex md:justify-between bg-green-900 p-2 text-white">
       <div>
-        "Together, We feed Africa"
+        "Together, We Can Feed Africa"
       </div>
       <div>
         Copyright {{ new Date().getFullYear() }} &copy;Jubilant Afro Farms, All Rights Reserved

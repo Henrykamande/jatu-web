@@ -19,7 +19,7 @@
             />
           </svg>
           <span class="block font-semibold text-gray-500"
-            >Phone No: +254 748 193 219</span
+            >Phone No: +254 752 940 909</span
           >
         </div>
         <!-- end -->

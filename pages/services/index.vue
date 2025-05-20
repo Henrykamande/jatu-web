@@ -2883,7 +2883,7 @@ export default {
         "right"
       );
       doc.text("Website: www.jubilantafrofarms.com", pageWidth - 10, 25, "right");
-      doc.text("Contact: +254 748 193 219", pageWidth - 10, 30, "right");
+      doc.text("Contact: +254 752 940 909", pageWidth - 10, 30, "right");
       doc.text("Email: info@jubilantafrofarms.com", pageWidth - 10, 35, "right");
 
       //Setting Items Title:
@@ -3044,7 +3044,7 @@ export default {
         "right"
       );
       doc.text("Website: www.jubilantafrofarms.com", pageWidth - 10, 25, "right");
-      doc.text("Contact: +254 748 193 219", pageWidth - 10, 30, "right");
+      doc.text("Contact: ", pageWidth - 10, 30, "right");
       doc.text("Email: info@jubilantafrofarms.com", pageWidth - 10, 35, "right");
 
       //Setting Items Title:

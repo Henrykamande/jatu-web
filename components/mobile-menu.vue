@@ -12,7 +12,7 @@
           font-bold
         ">
         <div class="text-xs">Jubilant Afro Farms</div>
-        <div class="text-xs">+254 748 193 219</div>
+        <div class="text-xs">+254 752 940 909</div>
 
         <!-- user account -->
         <div v-if="isAuthenticated">

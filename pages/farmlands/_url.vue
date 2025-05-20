@@ -231,79 +231,87 @@
     </div>
     <!-- USER INPUT -->
     <div class="hidden md:flex flex-col my-6 mx-auto max-w-screen-lg">
-      <div class="my-3">
-        <h1 class="font-bold text-2xl text-gray-800 text-center mb-6">HOW MANY ACRES DO YOU WANT?</h1>
-        <div class="flex justify-between gap-3">
-          <div class="flex flex-1 flex-col">
-            <label class="mb-2 font-bold text-gray-700">Your Name *</label>
-            <input v-model="userContacts.name" type="text"
-              class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
-              placeholder="Enter your name" />
-          </div>
+      <h1 class="font-bold text-2xl text-gray-800 text-center mb-6">HOW MANY ACRES DO YOU WANT?</h1>
 
-          <div class="flex flex-1 flex-col">
-            <label class="mb-2 font-bold text-gray-700">Phone Number *</label>
-            <input v-model="userContacts.phoneNumber" type="text"
-              class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
-              placeholder="Enter your phone number" />
-          </div>
-
-          <div class="flex flex-1 flex-col">
-            <label class="mb-2 font-bold text-gray-700">Email *</label>
-            <input v-model="userContacts.contactEmail" type="email"
-              class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
-              placeholder="Enter your email" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Form -->
-      <div class="flex flex-col gap-6">
-        <!-- Name Field -->
-       <div class="flex justify-between gap-3">
-        <div class="flex flex-1 flex-col">
-          <label class="mb-2 font-bold text-gray-700">Acres *</label>
-          <input v-model="userContacts.acres" type="number"
-            class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
-            placeholder="Number of acres" 
-          />
-        </div>
-        <div class="flex flex-1"></div>
-        <div class="flex flex-1"></div>
-       </div>
-
-
-        <!-- success message -->
-        <div v-show="successMsg" class="bg-blue-100 mt-2 border rounded-md border-blue-500 text-blue-700 px-4 py-3"
-          role="alert">
-          <p class="font-bold">Message sent</p>
-          <p class="text-sm">Thanks for your order, we shall get back to you soon.</p>
-        </div>
-        <!-- end -->
-
-        <!-- error message -->
-        <div v-show="emailError" role="alert" class="mt-2">
-          <div class="bg-red-500 text-white font-bold rounded-t px-4 py-2">Something went Wrong!</div>
-          <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
-            <p>Please check your internet connection and try again.</p>
-          </div>
-        </div>
-        <!-- end -->
-
-        <div v-show="formError" class="mt-6">
-          <div class="bg-red-500 text-white font-bold rounded-t-md px-4 py-2">Please fill all the required fields</div>
-          <div class="border border-t-0 border-red-400 bg-red-100 px-4 py-3 text-red-700 rounded-b-md">
-            <p>Your name, phone number, and message are mandatory.</p>
+      <div v-if="isAuthenticated">
+        <div class="my-3">
+          <div class="flex justify-between gap-3">
+            <div class="flex flex-1 flex-col">
+              <label class="mb-2 font-bold text-gray-700">Your Name *</label>
+              <input v-model="userContacts.name" type="text"
+                class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
+                placeholder="Enter your name" />
+            </div>
+            <div class="flex flex-1 flex-col">
+              <label class="mb-2 font-bold text-gray-700">Phone Number *</label>
+              <input v-model="userContacts.phoneNumber" type="text"
+                class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
+                placeholder="Enter your phone number" />
+            </div>
+            <div class="flex flex-1 flex-col">
+              <label class="mb-2 font-bold text-gray-700">Email *</label>
+              <input v-model="userContacts.contactEmail" type="email"
+                class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
+                placeholder="Enter your email" />
+            </div>
           </div>
         </div>
 
-        <div class="flex flex-col-reverse justify-center items-center">
+        <!-- Form -->
+        <div class="flex flex-col gap-6">
+          <div class="flex justify-between gap-3">
+            <div class="flex flex-1 flex-col">
+              <label class="mb-2 font-bold text-gray-700">Acres *</label>
+              <input v-model="userContacts.acres" type="number"
+                class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
+                placeholder="Number of acres" />
+            </div>
+            <div class="flex flex-1"></div>
+            <div class="flex flex-1"></div>
+          </div>
+
+          <!-- Success Message -->
+          <div v-show="successMsg" class="bg-blue-100 border rounded-md border-blue-500 text-blue-700 px-4 py-3"
+            role="alert">
+            <p class="font-bold">Message sent</p>
+            <p class="text-sm">Thanks for your order, we shall get back to you soon.</p>
+          </div>
+
+          <!-- Error Messages -->
+          <div v-show="emailError" role="alert" class="mt-2">
+            <div class="bg-red-500 text-white font-bold rounded-t px-4 py-2">Something went Wrong!</div>
+            <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+              <p>Please check your internet connection and try again.</p>
+            </div>
+          </div>
+
+          <div v-show="formError" class="mt-6">
+            <div class="bg-red-500 text-white font-bold rounded-t-md px-4 py-2">Please fill all the required fields
+            </div>
+            <div class="border border-t-0 border-red-400 bg-red-100 px-4 py-3 text-red-700 rounded-b-md">
+              <p>Your name, phone number, and message are mandatory.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button Centered -->
+        <div class="flex justify-center mt-6">
           <button @click="sendContacts" type="button"
-            class="mt-2 py-2 px-5 mr-3 bg-orange-500 hover:bg-orange-600 rounded-3xl font-bold text-white focus:outline-none">Submit</button>
-          <img v-show="loader" src="~assets/images/loader.gif" alt class="mt-4" style="width: 30px; height: 30px" />
+            class="py-2 px-5 bg-orange-500 hover:bg-orange-600 rounded-3xl font-bold text-white focus:outline-none">
+            Submit
+          </button>
         </div>
       </div>
+
+      <div v-else class="flex justify-center">
+        <nuxt-link to="/global-auth/login"
+          class="py-2 px-5 bg-orange-500 hover:bg-orange-600 rounded-3xl font-bold text-white focus:outline-none">
+          Apply
+        </nuxt-link>
+      </div>
+
     </div>
+
 
     <!-- MOBILE -->
 
@@ -553,69 +561,79 @@
       </div>
 
       <!-- User input -->
-      <div class="py-4 px-2 w-full md:mx-auto">
-        <div class="my-3">
-          <h1 class="font-bold text-2xl text-gray-800 text-center mb-6">HOW MANY ACRES DO YOU WANT?</h1>
-          <div class="flex flex-col gap-6">
-            <!-- Name Field -->
-            <div class="flex flex-col">
-              <label class="mb-2 font-bold text-gray-700">Name *</label>
-              <input v-model="userContacts.name" type="text"
-                class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
-                placeholder="Enter your name" />
-            </div>
+      <div class="">
+        <h1 class="font-bold text-2xl text-gray-800 text-center mb-6">HOW MANY ACRES DO YOU WANT?</h1>
 
-            <div class="flex flex-col">
-              <label class="mb-2 font-bold text-gray-700">Phone Number *</label>
-              <input v-model="userContacts.phoneNumber" type="text"
-                class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
-                placeholder="Enter your phone number" />
-            </div>
+        <div v-if="isAuthenticated">
+          <div class="py-4 px-2 w-full md:mx-auto">
+            <div class="my-3">
+              <div class="flex flex-col gap-6">
+                <!-- Name Field -->
+                <div class="flex flex-col">
+                  <label class="mb-2 font-bold text-gray-700">Name *</label>
+                  <input v-model="userContacts.name" type="text"
+                    class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
+                    placeholder="Enter your name" />
+                </div>
 
-            <div class="flex flex-col">
-              <label class="mb-2 font-bold text-gray-700">Email *</label>
-              <input v-model="userContacts.contactEmail" type="email"
-                class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
-                placeholder="Enter your email" />
+                <div class="flex flex-col">
+                  <label class="mb-2 font-bold text-gray-700">Phone Number *</label>
+                  <input v-model="userContacts.phoneNumber" type="text"
+                    class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
+                    placeholder="Enter your phone number" />
+                </div>
+
+                <div class="flex flex-col">
+                  <label class="mb-2 font-bold text-gray-700">Email *</label>
+                  <input v-model="userContacts.contactEmail" type="email"
+                    class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
+                    placeholder="Enter your email" />
+                </div>
+              </div>
             </div>
+          </div>
+
+          <!-- Form -->
+          <div class="flex flex-col">
+            <label class="mb-2 font-bold text-gray-700">Acres *</label>
+            <input v-model="userContacts.acres" type="number"
+              class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
+              placeholder="Number of acres" />
+          </div>
+          <!-- success message -->
+          <div v-show="successMsg" class="bg-blue-100 mt-6 border border-blue-500 text-blue-700 px-4 py-3 rounded-md"
+            role="alert">
+            <p class="font-bold">Message sent</p>
+            <p class="text-sm">Thanks for your order, we shall get back to you soon.</p>
+          </div>
+          <!-- end -->
+
+          <!-- Error Messages -->
+          <div v-show="emailError" role="alert" class="mt-6">
+            <div class="bg-red-500 text-white font-bold rounded-t-md px-4 py-2">Something went Wrong!</div>
+            <div class="border border-t-0 border-red-400 bg-red-100 px-4 py-3 text-red-700 rounded-b-md">
+              <p>Please check your internet connection and try again.</p>
+            </div>
+          </div>
+
+          <div v-show="formError" class="mt-6">
+            <div class="bg-red-500 text-white font-bold rounded-t-md px-4 py-2">Please fill all the required fields
+            </div>
+            <div class="border border-t-0 border-red-400 bg-red-100 px-4 py-3 text-red-700 rounded-b-md">
+              <p>Your name, phone number, and email are mandatory.</p>
+            </div>
+          </div>
+
+          <div class="flex items-center flex-col-reverse">
+            <button @click="sendContacts" type="button"
+              class="mt-2 py-2 px-5 mr-3 bg-orange-500 hover:bg-orange-600 rounded-3xl font-bold text-white focus:outline-none">Submit</button>
+            <img v-show="loader" src="~assets/images/loader.gif" alt class="mt-4" style="width: 30px; height: 30px" />
           </div>
         </div>
 
-        <!-- Form -->
-        <div class="flex flex-col">
-          <label class="mb-2 font-bold text-gray-700">Acres *</label>
-          <input v-model="userContacts.acres" type="number"
-            class="flex-1 shadow border py-3 px-4 rounded-md outline-none focus:border-gray-500"
-            placeholder="Number of acres" />
-        </div>
-        <!-- success message -->
-        <div v-show="successMsg" class="bg-blue-100 mt-6 border border-blue-500 text-blue-700 px-4 py-3 rounded-md"
-          role="alert">
-          <p class="font-bold">Message sent</p>
-          <p class="text-sm">Thanks for your order, we shall get back to you soon.</p>
-        </div>
-        <!-- end -->
+        <nuxt-link v-else to="/global-auth/login"
+          class="mt-2 py-2 px-5 mr-3 bg-orange-500 hover:bg-orange-600 rounded-3xl font-bold text-white focus:outline-none">Apply</nuxt-link>
 
-        <!-- Error Messages -->
-        <div v-show="emailError" role="alert" class="mt-6">
-          <div class="bg-red-500 text-white font-bold rounded-t-md px-4 py-2">Something went Wrong!</div>
-          <div class="border border-t-0 border-red-400 bg-red-100 px-4 py-3 text-red-700 rounded-b-md">
-            <p>Please check your internet connection and try again.</p>
-          </div>
-        </div>
-
-        <div v-show="formError" class="mt-6">
-          <div class="bg-red-500 text-white font-bold rounded-t-md px-4 py-2">Please fill all the required fields</div>
-          <div class="border border-t-0 border-red-400 bg-red-100 px-4 py-3 text-red-700 rounded-b-md">
-            <p>Your name, phone number, and email are mandatory.</p>
-          </div>
-        </div>
-
-        <div class="flex items-center flex-col-reverse">
-          <button @click="sendContacts" type="button"
-            class="mt-2 py-2 px-5 mr-3 bg-orange-500 hover:bg-orange-600 rounded-3xl font-bold text-white focus:outline-none">Submit</button>
-          <img v-show="loader" src="~assets/images/loader.gif" alt class="mt-4" style="width: 30px; height: 30px" />
-        </div>
       </div>
     </div>
   </div>
@@ -628,7 +646,10 @@ import { handleErr } from "../../server/helpers/common";
 
 export default {
   computed: {
-    ...mapGetters(["imageUrl"])
+    ...mapGetters(["imageUrl", "user", "isAuthenticated"]),
+    userSerialNo() {
+      return this.user ? this.user.serialNo : null;
+    }
   },
   data() {
     return {
@@ -641,13 +662,11 @@ export default {
   },
   async asyncData({ params, error }) {
     const serialNo = params.url;
-    // console.log(serialNo, "Farm serial no.")
     const url = `/api/available/farms/serial-no/${serialNo}`;
 
     try {
       const { data } = await http.get(url);
       const { record, meta } = data;
-      // console.log(record, "Farm record")
       return {
         record,
         meta
@@ -661,7 +680,7 @@ export default {
   },
   methods: {
     async sendContacts() {
-      const details = this.userContacts;
+      this.userContacts.userSerialNo = this.user.serialNo;
       if (
         this.userContacts.acres == undefined ||
         this.userContacts.name == undefined ||

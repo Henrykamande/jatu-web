@@ -3,7 +3,7 @@
     <div class="flex text-white px-6 py-2 justify-between font-bold bg-orange-500">
       <div style="color: #fff; font-family: Caveat">
         <div class="flex">
-          <a href="#" target="_blank">
+          <a href="https://www.facebook.com/share/152Vha19RMg/GM" target="_blank">
             <svg class="bi bi-facebook h-6 w-6 md:h-6 md:w-6 mr-2 cursor-pointer text-gray-300 hover:text-white"
               xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
               <path
@@ -20,7 +20,7 @@
           </a>
 
           <!-- instagram -->
-          <a href="#" target="_blank">
+          <a href="https://www.instagram.com/jani_afrofarms?igsh=ZmxjNXV1cG43eWl6" target="_blank">
             <svg class="bi bi-instagram h-6 w-6 md:h-6 md:w-6 cursor-pointer text-gray-300 hover:text-white"
               xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
               <path
@@ -66,7 +66,7 @@
 
       <!-- div 4 -->
       <div class="col-span-2 flex justify-end pr-8 font-bold text-xl">
-        Call: +254 748 193 219
+        Call: +254 752 940 909
       </div>
       <div class="col-span-1 text-gray-600 flex justify-center">
         <div v-if="isAuthenticated">

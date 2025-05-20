@@ -92,7 +92,7 @@
           Sold Out
         </div>
 
-        <div class="mt-3">Call Us On: +254 748 193 219</div>
+        <div class="mt-3">Call Us On: +254 752 940 909</div>
       </div>
       <div>
         <!-- <div class="bg-gray-200 p-2 mb-2">
