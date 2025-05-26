@@ -1,8 +1,8 @@
 import axios from "axios";
 // Add a request interceptor
 
-export const rootUrl = "http://localhost:7800";
-// const rootUrl = "";
+// export const rootUrl = "http://localhost:7800";
+const rootUrl = "";
 export const host = `${rootUrl}/api`;
 //  export const host = '';
 export const base = `${rootUrl}`;

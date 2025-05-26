@@ -4,7 +4,7 @@
       <v-col cols="12" sm="12" md="9">
         <v-card class="elevation-12">
           <v-toolbar color="primary" dark flat>
-            <v-toolbar-title>JANI Market</v-toolbar-title>
+            <v-toolbar-title>Jubilant Afro Farms</v-toolbar-title>
             <v-spacer />
             <v-icon>mdi-bank</v-icon>
           </v-toolbar>

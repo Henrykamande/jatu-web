@@ -4,7 +4,7 @@
       <v-col cols="12" sm="7" md="7">
         <v-card class="elevation-12">
           <v-toolbar color="primary" dark flat>
-            <v-toolbar-title>Jubilantafrofarms Connect</v-toolbar-title>
+            <v-toolbar-title>Jubilant Afro Farms</v-toolbar-title>
             <v-spacer />
             <v-icon>mdi-bank</v-icon>
           </v-toolbar>
@@ -13,7 +13,7 @@
               <v-col cols="12" md="6" style="text-align: center">
                 <v-img
                   style="margin-left: 100px; margin-top: 10px"
-                  src="@/assets/jubilantafrofarms-logo.png"
+                  src="@/assets/jani-logo.png"
                 ></v-img>
               </v-col>
 
