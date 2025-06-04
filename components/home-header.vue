@@ -72,29 +72,90 @@
         <div v-if="isAuthenticated">
           <div class="col-span-1 flex place-content-center relative">
             <div>
-              <button @click="showMenu" class="flex flex-col items-center border border-gray-200 p-1 rounded ">
+
+               <!-- Enhanced User Menu Button -->
+  <button 
+    @click="showMenu" 
+    class="group relative flex flex-col items-center justify-center bg-white/10 backdrop-blur-sm border border-white/20 hover:border-white/40 p-3 rounded-2xl transition-all duration-300 transform hover:scale-105 hover:bg-white/20 focus:outline-none focus:ring-4 focus:ring-white/30 shadow-lg hover:shadow-xl"
+  >
+    <!-- User Avatar with Status Indicator -->
+    <div class="relative mb-2">
+      <div class="w-10 h-10 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow duration-300">
+        <font-awesome-icon 
+          :icon="['fas', 'user-circle']" 
+          class="text-white text-xl group-hover:scale-110 transition-transform duration-300" 
+        />
+      </div>
+      
+      <!-- Online Status Indicator -->
+      <div class="absolute -bottom-1 -right-1 w-4 h-4 bg-green-400 border-2 border-white rounded-full shadow-sm">
+        <div class="w-full h-full bg-green-400 rounded-full animate-pulse"></div>
+      </div>
+    </div>
+    
+    <!-- Username with Truncation -->
+    <span class="font-semibold text-xs text-white/90 group-hover:text-white transition-colors duration-300 max-w-20 truncate">
+      {{ userName }}
+    </span>
+    
+    <!-- Dropdown Indicator -->
+    <svg 
+      class="w-3 h-3 text-white/70 group-hover:text-white mt-1 transition-all duration-300 group-hover:translate-y-0.5" 
+      fill="none" 
+      stroke="currentColor" 
+      viewBox="0 0 24 24"
+    >
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+    </svg>
+    
+    <!-- Hover Effect Overlay -->
+    <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/0 to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+  </button>
+              <!-- <button @click="showMenu" class="flex flex-col items-center border border-gray-200 p-1 rounded ">
                 <font-awesome-icon :icon="['fas', 'user-circle']" class="text-white md:text-2xl" />
                 <span class="font-semibold text-xs">{{ userName }}</span>
-              </button>
+              </button> -->
             </div>
-            <div v-if="showDropdown" class="absolute right-0 mt-14 w-30 bg-gray-100 border rounded-md shadow">
-              <ul>
-                <li>
-                  <nuxt-link to="/my-details/account" class="block px-2 py-2 hover:bg-gray-100">Account</nuxt-link>
-                </li>
-                <li>
-                  <nuxt-link to="/my-details/equipments" class="block px-2 py-2 hover:bg-gray-100">Equipments</nuxt-link>
-                </li>
-                <li>
-                  <nuxt-link to="/my-details/farms" class="block px-2 py-2 hover:bg-gray-100">Farms</nuxt-link>
-                </li>
-                <li>
-                  <button @click="logout" class="flex px-2 py-2 text-red-600 hover:bg-gray-100 w-full text-left">
-                    <span>Logout</span>
-                  </button>
-                </li>
-              </ul>
-            </div>
+          <div
+  v-if="showDropdown"
+  class="absolute right-0 mt-14 w-40 bg-white border border-gray-200 rounded-lg shadow-lg z-50"
+>
+  <ul class="divide-y divide-gray-200">
+    <li>
+      <nuxt-link
+        :to="`/my-details/account`"
+        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors"
+      >
+        Account
+      </nuxt-link>
+    </li>
+    <li>
+      <nuxt-link
+        to="/my-details/equipments"
+        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors"
+      >
+        Equipments
+      </nuxt-link>
+    </li>
+    <li>
+      <nuxt-link
+        to="/my-details/farms"
+        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 transition-colors"
+      >
+        Farms
+      </nuxt-link>
+    </li>
+    <li>
+      <button
+        @click="logout"
+        class="w-full text-left px-4 py-2 text-sm text-red-600 hover:bg-red-50 hover:text-red-700 transition-colors"
+      >
+        Logout
+      </button>
+    </li>
+  </ul>
+</div>
+                  
           </div>
         </div>
         <!-- v-else -->
@@ -124,15 +185,15 @@
               Support</nuxt-link>
           </li>
 
-          <li class="menu-li group inline-block relative">
+          <!-- <li class="menu-li group inline-block relative">
             <nuxt-link class="font-medium text-lg text-white p-2 hover:text-orange-500" to="/projects">Partnership
-              Projects</nuxt-link>
+              Projects</nuxt-link> -->
             <!-- <div class="absolute left-0 top-fdivl bg-white text-gray-800 rounded-md shadow-lg hidden group-hover:block">
               <nuxt-link to="/agriculture" class="block px-4 py-2 hover:bg-gray-100">Agriculture</nuxt-link>
               <nuxt-link to="/mining" class="block px-4 py-2 hover:bg-gray-100">Mining</nuxt-link>
               <nuxt-link to="/real-estate" class="block px-4 py-2 hover:bg-gray-100">Real Estate</nuxt-link>
             </div> -->
-          </li>
+          <!-- </li> -->
 
           <!-- Services -->
           <li class="menu-li group inline-block relative">

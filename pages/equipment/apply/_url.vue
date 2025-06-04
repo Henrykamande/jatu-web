@@ -180,6 +180,8 @@
         
   <script>
 import { http } from "~/common/index.js";
+
+
 export default {
   data() {
     return {
@@ -189,19 +191,40 @@ export default {
       formError: false
     };
   },
+ 
+  computed: {
+  isAuthenticated() {
+    return process.client ? !!localStorage.getItem("token") : false;
+  },
+  currentUser() {
+    if (process.client) {
+      const user = localStorage.getItem("user");
+      return user ? JSON.parse(user) : null;
+    }
+    return null;
+  },
+  selectedEquipment() {
+      return this.$store.getters['equipment/selectedEquipment']
+    }
+},
   methods: {
     async sendApplicationDetails() {
+
       const details = this.eqApplications;
       if (this.eqApplications.countryAt == undefined) {
         this.formError = true;
       } else {
         this.formError = false;
         try {
+
           const url = `/api/equipment-applications`;
           const details = this.eqApplications;
+          details.user = this.currentUser;
+          details.equipmentToRent = this.selectedEquipment
+          
           const self = this;
           this.loader = true;
-
+         
           await http.post(url, details).then(res => {
             if (res.data.state) {
               self.successMsg = true;

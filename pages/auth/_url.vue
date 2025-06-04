@@ -86,7 +86,7 @@ import { http } from "~/common/index.js";
 const { toast } = require("tailwind-toast");
 export default {
   computed: {
-    ...mapGetters("product", ["cart"]),
+    ...mapGetters("product", ["cart"], "getUser"),
     dynamicUrl() {
       return this.$route.params.url
     }

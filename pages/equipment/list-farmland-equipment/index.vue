@@ -244,10 +244,12 @@ import { mapGetters } from "vuex";
 
 export default {
   computed: {
+
     ...mapGetters(["user"]),
     userSerialNo() {
       return this.user ? this.user.serialNo : null;
     }
+  
   },
   data() {
     return {
