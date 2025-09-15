@@ -33,6 +33,7 @@
     "vuex-persistedstate": "^4.1.0"
   },
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.7.10",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@nuxtjs/fontawesome": "^1.1.2",
