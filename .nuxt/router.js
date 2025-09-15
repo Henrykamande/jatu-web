@@ -50,6 +50,7 @@ const _03bffcec = () => interopDefault(import('..\\pages\\my-details\\equipments
 const _20eb5ba6 = () => interopDefault(import('..\\pages\\my-details\\farms\\index.vue' /* webpackChunkName: "pages/my-details/farms/index" */))
 const _2c787b34 = () => interopDefault(import('..\\pages\\services\\urlcopy.vue' /* webpackChunkName: "pages/services/urlcopy" */))
 const _74493275 = () => interopDefault(import('..\\pages\\my-details\\equipments\\index1.vue' /* webpackChunkName: "pages/my-details/equipments/index1" */))
+const _f4a8a41c = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 const _4f2ce240 = () => interopDefault(import('..\\pages\\equipment\\apply\\_url.vue' /* webpackChunkName: "pages/equipment/apply/_url" */))
 const _bd912830 = () => interopDefault(import('..\\pages\\equipment\\rent-farmland-equipment\\_url.vue' /* webpackChunkName: "pages/equipment/rent-farmland-equipment/_url" */))
 const _f480ba0e = () => interopDefault(import('..\\pages\\equipment\\rent-farmland-equipment\\_url1.vue' /* webpackChunkName: "pages/equipment/rent-farmland-equipment/_url1" */))
@@ -65,7 +66,6 @@ const _78159156 = () => interopDefault(import('..\\pages\\order-farm\\_url.vue' 
 const _49d2e702 = () => interopDefault(import('..\\pages\\product\\_url.vue' /* webpackChunkName: "pages/product/_url" */))
 const _30bedf8c = () => interopDefault(import('..\\pages\\projects\\_url.vue' /* webpackChunkName: "pages/projects/_url" */))
 const _1a40c723 = () => interopDefault(import('..\\pages\\register\\_url.vue' /* webpackChunkName: "pages/register/_url" */))
-const _f4a8a41c = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 const _2e40de46 = () => interopDefault(import('..\\pages\\_category\\_subcategory\\index.vue' /* webpackChunkName: "pages/_category/_subcategory/index" */))
 
 const emptyFn = () => {}
@@ -264,6 +264,10 @@ export const routerOptions = {
     component: _74493275,
     name: "my-details-equipments-index1"
   }, {
+    path: "/",
+    component: _f4a8a41c,
+    name: "index"
+  }, {
     path: "/equipment/apply/:url?",
     component: _4f2ce240,
     name: "equipment-apply-url"
@@ -323,10 +327,6 @@ export const routerOptions = {
     path: "/register/:url?",
     component: _1a40c723,
     name: "register-url"
-  }, {
-    path: "/",
-    component: _f4a8a41c,
-    name: "index"
   }, {
     path: "/:category/:subcategory",
     component: _2e40de46,
