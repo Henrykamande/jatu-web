@@ -1,4 +1,6 @@
 export default {
+    target: 'server', // (default) remove if not present
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: "Jubilant Afro farms",

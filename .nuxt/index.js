@@ -13,8 +13,8 @@ import { createStore } from './store.js'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_3c6b550c from 'nuxt_plugin_plugin_3c6b550c' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_templatesplugin662d8d59_622361aa from 'nuxt_plugin_templatesplugin662d8d59_622361aa' // Source: .\\templates.plugin.662d8d59.js (mode: 'all')
+import nuxt_plugin_plugin_a51af34a from 'nuxt_plugin_plugin_a51af34a' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_templatesplugin6a9ed7d8_39ff86a0 from 'nuxt_plugin_templatesplugin6a9ed7d8_39ff86a0' // Source: .\\templates.plugin.6a9ed7d8.js (mode: 'all')
 import nuxt_plugin_capitalize_211e3ee2 from 'nuxt_plugin_capitalize_211e3ee2' // Source: ..\\plugins\\capitalize (mode: 'all')
 import nuxt_plugin_vuexpersist_13f465a2 from 'nuxt_plugin_vuexpersist_13f465a2' // Source: ..\\plugins\\vuex-persist (mode: 'client')
 import nuxt_plugin_vuedatepicker_19e66559 from 'nuxt_plugin_vuedatepicker_19e66559' // Source: ..\\plugins\\vue-datepicker (mode: 'client')
@@ -214,12 +214,12 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_3c6b550c === 'function') {
-    await nuxt_plugin_plugin_3c6b550c(app.context, inject)
+  if (typeof nuxt_plugin_plugin_a51af34a === 'function') {
+    await nuxt_plugin_plugin_a51af34a(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_templatesplugin662d8d59_622361aa === 'function') {
-    await nuxt_plugin_templatesplugin662d8d59_622361aa(app.context, inject)
+  if (typeof nuxt_plugin_templatesplugin6a9ed7d8_39ff86a0 === 'function') {
+    await nuxt_plugin_templatesplugin6a9ed7d8_39ff86a0(app.context, inject)
   }
 
   if (typeof nuxt_plugin_capitalize_211e3ee2 === 'function') {
