@@ -15,14 +15,14 @@
       <!-- logo div -->
       <div class="col-span-2 flex items-center">
         <div>
-          <nuxt-link to="/">
+          <!-- <nuxt-link to="/">
             <img
               :src="require('~assets/images/jubilantafrofarms-logo.png')"
               alt
               class="h-16 md:h-16 md:ml-1 object-contain"
               style="width: 142px; height: 90px"
             />
-          </nuxt-link>
+          </nuxt-link> -->
         </div>
         <div class="flex justify-center text-xl font-bold">
           Call: +254700000000
