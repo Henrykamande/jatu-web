@@ -1,8 +1,7 @@
 export default {
-    //target: 'server', // (default) remove if not present
+     // (default) remove if not present
 
-
-    target: 'static',
+  target: 'static',
   buildModules: ['@nuxt/postcss8'],   // important for PostCSS 8 with Nuxt 2
   css: ['@/assets/css/tailwind.css'],
   build: {
