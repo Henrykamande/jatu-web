@@ -1,5 +1,18 @@
 export default {
-    target: 'server', // (default) remove if not present
+    //target: 'server', // (default) remove if not present
+
+
+    target: 'static',
+  buildModules: ['@nuxt/postcss8'],   // important for PostCSS 8 with Nuxt 2
+  css: ['@/assets/css/tailwind.css'],
+  build: {
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
