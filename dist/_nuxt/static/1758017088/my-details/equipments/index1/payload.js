@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/my-details/equipments/index1", (function(a,b){return {data:[{}],fetch:{"data-v-3275463a:0":{categories:[],services:[],searchInput:null,searchPhrase:"",active:a,searchResults:[],searchSuggestions:[],blured:b,disabled:b,showDropdown:a},"data-v-8fcdd38a:0":{_error:{message:"fetch failed",statusCode:500}}},mutations:[]}}(false,true)));

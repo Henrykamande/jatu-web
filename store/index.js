@@ -22,8 +22,10 @@ export const mutations = {
     state.user = updatedUser;
   },
   logout(state, req) {
-    localStorage.removeItem("token");
-    localStorage.removeItem("user");
+    if (process.client) {
+      localStorage.removeItem("token");
+      localStorage.removeItem("user");
+    }
     state.token = null;
     state.user = null;
     Cookie.remove("jwt");
@@ -96,12 +98,18 @@ export const actions = {
         decodeURI(userCookie.split("=")[1]).replace(/%2C/g, ",")
       );
       token = tokenCookie.split("=")[1];
-    } else {
+    } else if (process.client) {
       token = localStorage.getItem("token");
       const userString = localStorage.getItem("user");
-      user = JSON.parse(userString);
+      if (userString) {
+        user = JSON.parse(userString);
+      }
     }
-    context.commit("setToken", token);
-    context.commit("setUser", user);
+    if (token) {
+      context.commit("setToken", token);
+    }
+    if (user) {
+      context.commit("setUser", user);
+    }
   },
 };

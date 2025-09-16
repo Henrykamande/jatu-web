@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/services", (function(a,b){return {data:[{record:{},services:[],countries:[],meta:{}}],fetch:{"data-v-3275463a:0":{categories:[],services:[],searchInput:null,searchPhrase:"",active:a,searchResults:[],searchSuggestions:[],blured:b,disabled:b,showDropdown:a},"data-v-8fcdd38a:0":{_error:{message:"fetch failed",statusCode:500}}},mutations:[]}}(false,true)));
