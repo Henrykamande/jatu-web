@@ -73,7 +73,6 @@
 import { http } from "~/common/index.js";
 import { mapGetters } from "vuex";
 import Product from "@/components/product.vue";
-import headerImagePath from "~assets/images/farming.png";
 export default {
   components: {
     Product,
@@ -84,7 +83,7 @@ export default {
   data() {
     return {
       category: {},
-      headerImage: headerImagePath,
+      headerImage: require('~/assets/images/farming.png'),
       priceFilter: null,
       alcoholFilter: null,
       sizeFilter: null,

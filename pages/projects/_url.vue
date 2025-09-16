@@ -794,8 +794,6 @@ import "jspdf-autotable";
 import { http } from "~/common/index.js";
 import { mapGetters } from "vuex";
 import Product from "@/components/product.vue";
-import backgroundImagePath from "~assets/images/bg.jpg";
-import headerImagePath from "~assets/images/orange-bg.png";
 export default {
   components: {
     Product
@@ -844,8 +842,8 @@ export default {
   data() {
     return {
       date_today: new Date(),
-      bgImage: backgroundImagePath,
-      headerImage: headerImagePath,
+      bgImage: require('~/assets/images/bg.jpg'),
+      headerImage: require('~/assets/images/orange-bg.png'),
       zoneName: "",
       zonalPrice: 0,
       selectedZone: {},
@@ -1274,7 +1272,7 @@ export default {
         doc.internal.pageSize.width || doc.internal.pageSize.getWidth();
 
       var img = new Image();
-      img.src = require("~assets/images/jubilantafrofarms-logo.png");
+      img.src = require('~/assets/images/jubilantafrofarms-logo.png');
       doc.addImage(img, "png", 10, 5, 45, 40);
 
       doc.setFontSize(15);
