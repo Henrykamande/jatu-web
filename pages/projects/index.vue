@@ -73,7 +73,7 @@
 import { http } from "~/common/index.js";
 import { mapGetters } from "vuex";
 import Product from "@/components/product.vue";
-import headerImagePath from "~/assets/images/farming.png";
+import headerImagePath from "~assets/images/farming.png";
 export default {
   components: {
     Product,
