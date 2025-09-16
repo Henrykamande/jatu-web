@@ -1,28 +1,28 @@
-export { default as AliFooter } from '../..\\components\\ali-footer.vue'
-export { default as DeskMenuCopy } from '../..\\components\\desk-menu-copy.vue'
-export { default as DesktopMenu } from '../..\\components\\desktop-menu.vue'
-export { default as Footer } from '../..\\components\\footer.vue'
-export { default as Header } from '../..\\components\\header.vue'
-export { default as HomeHeader } from '../..\\components\\home-header.vue'
-export { default as Login } from '../..\\components\\login.vue'
-export { default as Logo } from '../..\\components\\Logo.vue'
-export { default as MobileCopy } from '../..\\components\\mobile-copy.vue'
-export { default as MobileMenu } from '../..\\components\\mobile-menu.vue'
-export { default as Modal } from '../..\\components\\modal.vue'
-export { default as Product } from '../..\\components\\product.vue'
-export { default as Register } from '../..\\components\\register.vue'
-export { default as TopBar } from '../..\\components\\top-bar.vue'
-export { default as WhatsappModal } from '../..\\components\\whatsapp-modal.vue'
-export { default as HomeAbout } from '../..\\components\\home\\about.vue'
-export { default as HomeClearance } from '../..\\components\\home\\clearance.vue'
-export { default as HomeDesktopMenuCopy } from '../..\\components\\home\\desktop-menu-copy.vue'
-export { default as HomeHotmaxSlider } from '../..\\components\\home\\hotmax-slider.vue'
-export { default as HomeMegaMenu } from '../..\\components\\home\\mega-menu.vue'
-export { default as HomeOffers } from '../..\\components\\home\\offers.vue'
-export { default as HomeSliderCopy } from '../..\\components\\home\\slider-copy.vue'
-export { default as HomeSlider } from '../..\\components\\home\\slider.vue'
-export { default as HomeSlider2 } from '../..\\components\\home\\slider2.vue'
-export { default as HomeTrending } from '../..\\components\\home\\trending.vue'
+export const AliFooter = () => import('../..\\components\\ali-footer.vue' /* webpackChunkName: "components/ali-footer" */).then(c => wrapFunctional(c.default || c))
+export const DeskMenuCopy = () => import('../..\\components\\desk-menu-copy.vue' /* webpackChunkName: "components/desk-menu-copy" */).then(c => wrapFunctional(c.default || c))
+export const DesktopMenu = () => import('../..\\components\\desktop-menu.vue' /* webpackChunkName: "components/desktop-menu" */).then(c => wrapFunctional(c.default || c))
+export const Footer = () => import('../..\\components\\footer.vue' /* webpackChunkName: "components/footer" */).then(c => wrapFunctional(c.default || c))
+export const Header = () => import('../..\\components\\header.vue' /* webpackChunkName: "components/header" */).then(c => wrapFunctional(c.default || c))
+export const HomeHeader = () => import('../..\\components\\home-header.vue' /* webpackChunkName: "components/home-header" */).then(c => wrapFunctional(c.default || c))
+export const Login = () => import('../..\\components\\login.vue' /* webpackChunkName: "components/login" */).then(c => wrapFunctional(c.default || c))
+export const Logo = () => import('../..\\components\\Logo.vue' /* webpackChunkName: "components/logo" */).then(c => wrapFunctional(c.default || c))
+export const MobileCopy = () => import('../..\\components\\mobile-copy.vue' /* webpackChunkName: "components/mobile-copy" */).then(c => wrapFunctional(c.default || c))
+export const MobileMenu = () => import('../..\\components\\mobile-menu.vue' /* webpackChunkName: "components/mobile-menu" */).then(c => wrapFunctional(c.default || c))
+export const Modal = () => import('../..\\components\\modal.vue' /* webpackChunkName: "components/modal" */).then(c => wrapFunctional(c.default || c))
+export const Product = () => import('../..\\components\\product.vue' /* webpackChunkName: "components/product" */).then(c => wrapFunctional(c.default || c))
+export const Register = () => import('../..\\components\\register.vue' /* webpackChunkName: "components/register" */).then(c => wrapFunctional(c.default || c))
+export const TopBar = () => import('../..\\components\\top-bar.vue' /* webpackChunkName: "components/top-bar" */).then(c => wrapFunctional(c.default || c))
+export const WhatsappModal = () => import('../..\\components\\whatsapp-modal.vue' /* webpackChunkName: "components/whatsapp-modal" */).then(c => wrapFunctional(c.default || c))
+export const HomeAbout = () => import('../..\\components\\home\\about.vue' /* webpackChunkName: "components/home-about" */).then(c => wrapFunctional(c.default || c))
+export const HomeClearance = () => import('../..\\components\\home\\clearance.vue' /* webpackChunkName: "components/home-clearance" */).then(c => wrapFunctional(c.default || c))
+export const HomeDesktopMenuCopy = () => import('../..\\components\\home\\desktop-menu-copy.vue' /* webpackChunkName: "components/home-desktop-menu-copy" */).then(c => wrapFunctional(c.default || c))
+export const HomeHotmaxSlider = () => import('../..\\components\\home\\hotmax-slider.vue' /* webpackChunkName: "components/home-hotmax-slider" */).then(c => wrapFunctional(c.default || c))
+export const HomeMegaMenu = () => import('../..\\components\\home\\mega-menu.vue' /* webpackChunkName: "components/home-mega-menu" */).then(c => wrapFunctional(c.default || c))
+export const HomeOffers = () => import('../..\\components\\home\\offers.vue' /* webpackChunkName: "components/home-offers" */).then(c => wrapFunctional(c.default || c))
+export const HomeSliderCopy = () => import('../..\\components\\home\\slider-copy.vue' /* webpackChunkName: "components/home-slider-copy" */).then(c => wrapFunctional(c.default || c))
+export const HomeSlider = () => import('../..\\components\\home\\slider.vue' /* webpackChunkName: "components/home-slider" */).then(c => wrapFunctional(c.default || c))
+export const HomeSlider2 = () => import('../..\\components\\home\\slider2.vue' /* webpackChunkName: "components/home-slider2" */).then(c => wrapFunctional(c.default || c))
+export const HomeTrending = () => import('../..\\components\\home\\trending.vue' /* webpackChunkName: "components/home-trending" */).then(c => wrapFunctional(c.default || c))
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
