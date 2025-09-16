@@ -107,14 +107,14 @@
         <!-- div 2 -->
         <div class="card p-2 bg-white">
           <img
-            src="~assets/images/jani-holdings.jpeg"
+            src="~@/assets/images/jani-holdings.jpeg"
             alt
             class="object-cover md:h-96"
           />
         </div>
         <!-- div 3 -->
         <div class="card p-2 bg-white">
-          <img src="~assets/images/home3.jpeg" alt class="object-fit md:h-96" />
+          <img src="~@/assets/images/home3.jpeg" alt class="object-fit md:h-96" />
         </div>
         <!-- end -->
       </div>
