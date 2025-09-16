@@ -17,7 +17,7 @@
         <div>
           <nuxt-link to="/">
             <img
-              src="~/assets/images/jubilantafrofarms-logo.png"
+              :src="require('~assets/images/jubilantafrofarms-logo.png')"
               alt
               class="h-16 md:h-16 md:ml-1 object-contain"
               style="width: 142px; height: 90px"
