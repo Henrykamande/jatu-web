@@ -606,7 +606,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "6e28d479",
-  "36aa834e"
+  "0f45ea55"
   
 )
 
@@ -667,7 +667,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "10b19386",
-  "05dd224b"
+  "30784e47"
   
 )
 
@@ -767,7 +767,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "233d2ac2",
-  "3c2f7466"
+  "0ab29951"
   
 )
 
@@ -991,7 +991,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "3275463a",
-  "4bae1a2e"
+  "d6c14dac"
   
 )
 
@@ -1207,7 +1207,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "8fcdd38a",
-  "fe6f7548"
+  "65159240"
   
 )
 
@@ -2705,69 +2705,69 @@ function shouldScrollToTop(route) {
 
 
 
-const _6f9004b5 = () => interopDefault(__webpack_require__.e(/* import() | pages/about/index */ 22).then(__webpack_require__.bind(null, 212)));
-const _79d638e0 = () => interopDefault(__webpack_require__.e(/* import() | pages/blog/index */ 26).then(__webpack_require__.bind(null, 213)));
-const _d011c55c = () => interopDefault(__webpack_require__.e(/* import() | pages/cart/index */ 29).then(__webpack_require__.bind(null, 214)));
-const _4a23936c = () => interopDefault(__webpack_require__.e(/* import() | pages/checkout/index */ 30).then(__webpack_require__.bind(null, 215)));
-const _3ce4a627 = () => interopDefault(__webpack_require__.e(/* import() | pages/contact-us/index */ 32).then(__webpack_require__.bind(null, 216)));
-const _03bf5ae8 = () => interopDefault(__webpack_require__.e(/* import() | pages/engage-expert/index */ 34).then(__webpack_require__.bind(null, 206)));
-const _59df2c14 = () => interopDefault(__webpack_require__.e(/* import() | pages/equipment/index */ 37).then(__webpack_require__.bind(null, 217)));
-const _53a9a08e = () => interopDefault(__webpack_require__.e(/* import() | pages/events/index */ 43).then(__webpack_require__.bind(null, 218)));
-const _5d7641dc = () => interopDefault(__webpack_require__.e(/* import() | pages/expert-success/index */ 44).then(__webpack_require__.bind(null, 219)));
-const _373875b0 = () => interopDefault(__webpack_require__.e(/* import() | pages/farmlands/index */ 46).then(__webpack_require__.bind(null, 220)));
-const _66c4982a = () => interopDefault(__webpack_require__.e(/* import() | pages/financing/index */ 47).then(__webpack_require__.bind(null, 221)));
-const _9d9f2752 = () => interopDefault(__webpack_require__.e(/* import() | pages/gakuo/index */ 48).then(__webpack_require__.bind(null, 222)));
-const _f3546a7c = () => interopDefault(__webpack_require__.e(/* import() | pages/gasaya/index */ 49).then(__webpack_require__.bind(null, 223)));
-const _a4ad3838 = () => interopDefault(__webpack_require__.e(/* import() | pages/investor-success/index */ 53).then(__webpack_require__.bind(null, 224)));
-const _17639c4a = () => interopDefault(__webpack_require__.e(/* import() | pages/join-event/index */ 55).then(__webpack_require__.bind(null, 207)));
-const _2904f883 = () => interopDefault(__webpack_require__.e(/* import() | pages/joseph/index */ 56).then(__webpack_require__.bind(null, 225)));
-const _ce2294c6 = () => interopDefault(__webpack_require__.e(/* import() | pages/location/index */ 57).then(__webpack_require__.bind(null, 226)));
-const _d41f5362 = () => interopDefault(__webpack_require__.e(/* import() | pages/management/index */ 58).then(__webpack_require__.bind(null, 227)));
-const _11da0f08 = () => interopDefault(__webpack_require__.e(/* import() | pages/marketing/index */ 59).then(__webpack_require__.bind(null, 228)));
-const _ed188d5e = () => interopDefault(__webpack_require__.e(/* import() | pages/meeting-success/index */ 60).then(__webpack_require__.bind(null, 229)));
-const _17efc423 = () => interopDefault(__webpack_require__.e(/* import() | pages/newsletter-success/index */ 65).then(__webpack_require__.bind(null, 230)));
-const _91b52358 = () => interopDefault(__webpack_require__.e(/* import() | pages/order/index */ 68).then(__webpack_require__.bind(null, 231)));
-const _7cc28806 = () => interopDefault(__webpack_require__.e(/* import() | pages/order-farm/index */ 67).then(__webpack_require__.bind(null, 208)));
-const _b125a55a = () => interopDefault(__webpack_require__.e(/* import() | pages/our-services/index */ 69).then(__webpack_require__.bind(null, 209)));
-const _2e3ee84e = () => interopDefault(__webpack_require__.e(/* import() | pages/owner-success/index */ 70).then(__webpack_require__.bind(null, 232)));
-const _17cecbda = () => interopDefault(__webpack_require__.e(/* import() | pages/privacy/index */ 71).then(__webpack_require__.bind(null, 233)));
-const _67a9f08e = () => interopDefault(__webpack_require__.e(/* import() | pages/products/index */ 73).then(__webpack_require__.bind(null, 234)));
-const _135e7fb8 = () => interopDefault(__webpack_require__.e(/* import() | pages/projects/index */ 75).then(__webpack_require__.bind(null, 235)));
-const _73897154 = () => interopDefault(__webpack_require__.e(/* import() | pages/services/index */ 77).then(__webpack_require__.bind(null, 236)));
-const _786e9bbc = () => interopDefault(__webpack_require__.e(/* import() | pages/shop/index */ 79).then(__webpack_require__.bind(null, 237)));
-const _3f7596cd = () => interopDefault(__webpack_require__.e(/* import() | pages/simo-index */ 80).then(__webpack_require__.bind(null, 238)));
-const _b768b702 = () => interopDefault(__webpack_require__.e(/* import() | pages/success/index */ 81).then(__webpack_require__.bind(null, 239)));
-const _21aacf57 = () => interopDefault(__webpack_require__.e(/* import() | pages/whishlist/index */ 82).then(__webpack_require__.bind(null, 240)));
-const _e9da1df8 = () => interopDefault(__webpack_require__.e(/* import() | pages/winnie/index */ 83).then(__webpack_require__.bind(null, 241)));
-const _1d95b104 = () => interopDefault(__webpack_require__.e(/* import() | pages/blog/blog-copy */ 25).then(__webpack_require__.bind(null, 242)));
-const _2540667c = () => interopDefault(__webpack_require__.e(/* import() | pages/blog/index-copy */ 27).then(__webpack_require__.bind(null, 243)));
-const _89c02390 = () => interopDefault(__webpack_require__.e(/* import() | pages/contact-us/ali-index */ 31).then(__webpack_require__.bind(null, 244)));
-const _83969f22 = () => interopDefault(__webpack_require__.e(/* import() | pages/equipment/list-farmland-equipment/index */ 38).then(__webpack_require__.bind(null, 245)));
-const _e6b9cc6c = () => interopDefault(__webpack_require__.e(/* import() | pages/equipment/rent-farmland-equipment/index */ 41).then(__webpack_require__.bind(null, 246)));
-const _2ebe57fb = () => interopDefault(__webpack_require__.e(/* import() | pages/global-auth/login/index */ 50).then(__webpack_require__.bind(null, 247)));
-const _f37e2be6 = () => interopDefault(__webpack_require__.e(/* import() | pages/global-auth/register/index */ 51).then(__webpack_require__.bind(null, 248)));
-const _27159036 = () => interopDefault(__webpack_require__.e(/* import() | pages/my-details/account/index */ 61).then(__webpack_require__.bind(null, 249)));
-const _03bffcec = () => interopDefault(__webpack_require__.e(/* import() | pages/my-details/equipments/index */ 62).then(__webpack_require__.bind(null, 250)));
-const _20eb5ba6 = () => interopDefault(__webpack_require__.e(/* import() | pages/my-details/farms/index */ 64).then(__webpack_require__.bind(null, 251)));
-const _2c787b34 = () => interopDefault(__webpack_require__.e(/* import() | pages/services/urlcopy */ 78).then(__webpack_require__.bind(null, 252)));
-const _74493275 = () => interopDefault(__webpack_require__.e(/* import() | pages/my-details/equipments/index1 */ 63).then(__webpack_require__.bind(null, 253)));
-const _f4a8a41c = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 52).then(__webpack_require__.bind(null, 254)));
-const _4f2ce240 = () => interopDefault(__webpack_require__.e(/* import() | pages/equipment/apply/_url */ 36).then(__webpack_require__.bind(null, 255)));
-const _bd912830 = () => interopDefault(__webpack_require__.e(/* import() | pages/equipment/rent-farmland-equipment/_url */ 39).then(__webpack_require__.bind(null, 256)));
-const _f480ba0e = () => interopDefault(__webpack_require__.e(/* import() | pages/equipment/rent-farmland-equipment/_url1 */ 40).then(__webpack_require__.bind(null, 257)));
-const _f786a030 = () => interopDefault(__webpack_require__.e(/* import() | pages/auth/_url */ 23).then(__webpack_require__.bind(null, 258)));
-const _48225162 = () => interopDefault(__webpack_require__.e(/* import() | pages/blog/_url */ 24).then(__webpack_require__.bind(null, 259)));
-const _497a21d2 = () => interopDefault(__webpack_require__.e(/* import() | pages/brand/_url */ 28).then(__webpack_require__.bind(null, 260)));
-const _42a1da34 = () => interopDefault(__webpack_require__.e(/* import() | pages/engage-expert/_url */ 33).then(__webpack_require__.bind(null, 261)));
-const _5c9db908 = () => interopDefault(__webpack_require__.e(/* import() | pages/equipment/_id */ 35).then(__webpack_require__.bind(null, 262)));
-const _19cb1a55 = () => interopDefault(__webpack_require__.e(/* import() | pages/equipments/_id */ 42).then(__webpack_require__.bind(null, 210)));
-const _d398097c = () => interopDefault(__webpack_require__.e(/* import() | pages/farmlands/_url */ 45).then(__webpack_require__.bind(null, 211)));
-const _28b08db7 = () => interopDefault(__webpack_require__.e(/* import() | pages/join-event/_url */ 54).then(__webpack_require__.bind(null, 263)));
-const _78159156 = () => interopDefault(__webpack_require__.e(/* import() | pages/order-farm/_url */ 66).then(__webpack_require__.bind(null, 264)));
-const _49d2e702 = () => interopDefault(__webpack_require__.e(/* import() | pages/product/_url */ 72).then(__webpack_require__.bind(null, 265)));
-const _30bedf8c = () => interopDefault(__webpack_require__.e(/* import() | pages/projects/_url */ 74).then(__webpack_require__.bind(null, 266)));
-const _1a40c723 = () => interopDefault(__webpack_require__.e(/* import() | pages/register/_url */ 76).then(__webpack_require__.bind(null, 267)));
-const _2e40de46 = () => interopDefault(__webpack_require__.e(/* import() | pages/_category/_subcategory/index */ 21).then(__webpack_require__.bind(null, 268)));
+const _461591ca = () => interopDefault(__webpack_require__.e(/* import() | pages/about/index */ 22).then(__webpack_require__.bind(null, 212)));
+const _08accc6a = () => interopDefault(__webpack_require__.e(/* import() | pages/blog/index */ 26).then(__webpack_require__.bind(null, 213)));
+const _44e1f3a8 = () => interopDefault(__webpack_require__.e(/* import() | pages/cart/index */ 29).then(__webpack_require__.bind(null, 214)));
+const _84f10174 = () => interopDefault(__webpack_require__.e(/* import() | pages/checkout/index */ 30).then(__webpack_require__.bind(null, 215)));
+const _66fd0381 = () => interopDefault(__webpack_require__.e(/* import() | pages/contact-us/index */ 32).then(__webpack_require__.bind(null, 216)));
+const _b110821c = () => interopDefault(__webpack_require__.e(/* import() | pages/engage-expert/index */ 34).then(__webpack_require__.bind(null, 206)));
+const _52f8bb7a = () => interopDefault(__webpack_require__.e(/* import() | pages/equipment/index */ 37).then(__webpack_require__.bind(null, 217)));
+const _156c4a13 = () => interopDefault(__webpack_require__.e(/* import() | pages/events/index */ 43).then(__webpack_require__.bind(null, 218)));
+const _52daff6c = () => interopDefault(__webpack_require__.e(/* import() | pages/expert-success/index */ 44).then(__webpack_require__.bind(null, 219)));
+const _30520516 = () => interopDefault(__webpack_require__.e(/* import() | pages/farmlands/index */ 46).then(__webpack_require__.bind(null, 220)));
+const _7491795e = () => interopDefault(__webpack_require__.e(/* import() | pages/financing/index */ 47).then(__webpack_require__.bind(null, 221)));
+const _1e959ebd = () => interopDefault(__webpack_require__.e(/* import() | pages/gakuo/index */ 48).then(__webpack_require__.bind(null, 222)));
+const _74d235c8 = () => interopDefault(__webpack_require__.e(/* import() | pages/gasaya/index */ 49).then(__webpack_require__.bind(null, 223)));
+const _2238d5be = () => interopDefault(__webpack_require__.e(/* import() | pages/investor-success/index */ 53).then(__webpack_require__.bind(null, 224)));
+const _1e668f35 = () => interopDefault(__webpack_require__.e(/* import() | pages/join-event/index */ 55).then(__webpack_require__.bind(null, 207)));
+const _684612dd = () => interopDefault(__webpack_require__.e(/* import() | pages/joseph/index */ 56).then(__webpack_require__.bind(null, 225)));
+const _0c52a177 = () => interopDefault(__webpack_require__.e(/* import() | pages/location/index */ 57).then(__webpack_require__.bind(null, 226)));
+const _7fee98ae = () => interopDefault(__webpack_require__.e(/* import() | pages/management/index */ 58).then(__webpack_require__.bind(null, 227)));
+const _1fa6f03c = () => interopDefault(__webpack_require__.e(/* import() | pages/marketing/index */ 59).then(__webpack_require__.bind(null, 228)));
+const _3aa1a437 = () => interopDefault(__webpack_require__.e(/* import() | pages/meeting-success/index */ 60).then(__webpack_require__.bind(null, 229)));
+const _b32bb106 = () => interopDefault(__webpack_require__.e(/* import() | pages/newsletter-success/index */ 65).then(__webpack_require__.bind(null, 230)));
+const _248aa0ba = () => interopDefault(__webpack_require__.e(/* import() | pages/order/index */ 68).then(__webpack_require__.bind(null, 231)));
+const _2891cd52 = () => interopDefault(__webpack_require__.e(/* import() | pages/order-farm/index */ 67).then(__webpack_require__.bind(null, 208)));
+const _a638c7a6 = () => interopDefault(__webpack_require__.e(/* import() | pages/our-services/index */ 69).then(__webpack_require__.bind(null, 209)));
+const _db900f82 = () => interopDefault(__webpack_require__.e(/* import() | pages/owner-success/index */ 70).then(__webpack_require__.bind(null, 232)));
+const _7e9e0680 = () => interopDefault(__webpack_require__.e(/* import() | pages/privacy/index */ 71).then(__webpack_require__.bind(null, 233)));
+const _49e44730 = () => interopDefault(__webpack_require__.e(/* import() | pages/products/index */ 73).then(__webpack_require__.bind(null, 234)));
+const _f27b28dc = () => interopDefault(__webpack_require__.e(/* import() | pages/projects/index */ 75).then(__webpack_require__.bind(null, 235)));
+const _322545a4 = () => interopDefault(__webpack_require__.e(/* import() | pages/services/index */ 77).then(__webpack_require__.bind(null, 236)));
+const _83f2f6d4 = () => interopDefault(__webpack_require__.e(/* import() | pages/shop/index */ 79).then(__webpack_require__.bind(null, 237)));
+const _31302ab3 = () => interopDefault(__webpack_require__.e(/* import() | pages/simo-index */ 80).then(__webpack_require__.bind(null, 238)));
+const _4d2dd565 = () => interopDefault(__webpack_require__.e(/* import() | pages/success/index */ 81).then(__webpack_require__.bind(null, 239)));
+const _1ac45ebd = () => interopDefault(__webpack_require__.e(/* import() | pages/whishlist/index */ 82).then(__webpack_require__.bind(null, 240)));
+const _6b57e944 = () => interopDefault(__webpack_require__.e(/* import() | pages/winnie/index */ 83).then(__webpack_require__.bind(null, 241)));
+const _64991358 = () => interopDefault(__webpack_require__.e(/* import() | pages/blog/blog-copy */ 25).then(__webpack_require__.bind(null, 242)));
+const _330d47b0 = () => interopDefault(__webpack_require__.e(/* import() | pages/blog/index-copy */ 27).then(__webpack_require__.bind(null, 243)));
+const _3cb60e92 = () => interopDefault(__webpack_require__.e(/* import() | pages/contact-us/ali-index */ 31).then(__webpack_require__.bind(null, 244)));
+const _25411fc9 = () => interopDefault(__webpack_require__.e(/* import() | pages/equipment/list-farmland-equipment/index */ 38).then(__webpack_require__.bind(null, 245)));
+const _18a0edb8 = () => interopDefault(__webpack_require__.e(/* import() | pages/equipment/rent-farmland-equipment/index */ 41).then(__webpack_require__.bind(null, 246)));
+const _858e8956 = () => interopDefault(__webpack_require__.e(/* import() | pages/global-auth/login/index */ 50).then(__webpack_require__.bind(null, 247)));
+const _4a9edf1a = () => interopDefault(__webpack_require__.e(/* import() | pages/global-auth/register/index */ 51).then(__webpack_require__.bind(null, 248)));
+const _67e7981c = () => interopDefault(__webpack_require__.e(/* import() | pages/my-details/account/index */ 61).then(__webpack_require__.bind(null, 249)));
+const _3d452346 = () => interopDefault(__webpack_require__.e(/* import() | pages/my-details/equipments/index */ 62).then(__webpack_require__.bind(null, 250)));
+const _3e4a250c = () => interopDefault(__webpack_require__.e(/* import() | pages/my-details/farms/index */ 64).then(__webpack_require__.bind(null, 251)));
+const _13dc1fc0 = () => interopDefault(__webpack_require__.e(/* import() | pages/services/urlcopy */ 78).then(__webpack_require__.bind(null, 252)));
+const _6b68d75b = () => interopDefault(__webpack_require__.e(/* import() | pages/my-details/equipments/index1 */ 63).then(__webpack_require__.bind(null, 253)));
+const _3231c24c = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 52).then(__webpack_require__.bind(null, 254)));
+const _ecd10c74 = () => interopDefault(__webpack_require__.e(/* import() | pages/equipment/apply/_url */ 36).then(__webpack_require__.bind(null, 255)));
+const _74daad64 = () => interopDefault(__webpack_require__.e(/* import() | pages/equipment/rent-farmland-equipment/_url */ 39).then(__webpack_require__.bind(null, 256)));
+const _2667db5a = () => interopDefault(__webpack_require__.e(/* import() | pages/equipment/rent-farmland-equipment/_url1 */ 40).then(__webpack_require__.bind(null, 257)));
+const _75f743ce = () => interopDefault(__webpack_require__.e(/* import() | pages/auth/_url */ 23).then(__webpack_require__.bind(null, 258)));
+const _39dce548 = () => interopDefault(__webpack_require__.e(/* import() | pages/blog/_url */ 24).then(__webpack_require__.bind(null, 259)));
+const _20dad7f1 = () => interopDefault(__webpack_require__.e(/* import() | pages/brand/_url */ 28).then(__webpack_require__.bind(null, 260)));
+const _37b4fc80 = () => interopDefault(__webpack_require__.e(/* import() | pages/engage-expert/_url */ 33).then(__webpack_require__.bind(null, 261)));
+const _7a935462 = () => interopDefault(__webpack_require__.e(/* import() | pages/equipment/_id */ 35).then(__webpack_require__.bind(null, 262)));
+const _e5a1f3a2 = () => interopDefault(__webpack_require__.e(/* import() | pages/equipments/_id */ 42).then(__webpack_require__.bind(null, 210)));
+const _0997e71c = () => interopDefault(__webpack_require__.e(/* import() | pages/farmlands/_url */ 45).then(__webpack_require__.bind(null, 211)));
+const _21ca1d1d = () => interopDefault(__webpack_require__.e(/* import() | pages/join-event/_url */ 54).then(__webpack_require__.bind(null, 263)));
+const _85e2728a = () => interopDefault(__webpack_require__.e(/* import() | pages/order-farm/_url */ 66).then(__webpack_require__.bind(null, 264)));
+const _1a57a6d9 = () => interopDefault(__webpack_require__.e(/* import() | pages/product/_url */ 72).then(__webpack_require__.bind(null, 265)));
+const _defa7dc0 = () => interopDefault(__webpack_require__.e(/* import() | pages/projects/_url */ 74).then(__webpack_require__.bind(null, 266)));
+const _79ba0fee = () => interopDefault(__webpack_require__.e(/* import() | pages/register/_url */ 76).then(__webpack_require__.bind(null, 267)));
+const _2560832c = () => interopDefault(__webpack_require__.e(/* import() | pages/_category/_subcategory/index */ 21).then(__webpack_require__.bind(null, 268)));
 const emptyFn = () => {};
 external_vue_default.a.use(external_vue_router_default.a);
 const routerOptions = {
@@ -2778,255 +2778,255 @@ const routerOptions = {
   scrollBehavior: router_scrollBehavior,
   routes: [{
     path: "/about",
-    component: _6f9004b5,
+    component: _461591ca,
     name: "about"
   }, {
     path: "/blog",
-    component: _79d638e0,
+    component: _08accc6a,
     name: "blog"
   }, {
     path: "/cart",
-    component: _d011c55c,
+    component: _44e1f3a8,
     name: "cart"
   }, {
     path: "/checkout",
-    component: _4a23936c,
+    component: _84f10174,
     name: "checkout"
   }, {
     path: "/contact-us",
-    component: _3ce4a627,
+    component: _66fd0381,
     name: "contact-us"
   }, {
     path: "/engage-expert",
-    component: _03bf5ae8,
+    component: _b110821c,
     name: "engage-expert"
   }, {
     path: "/equipment",
-    component: _59df2c14,
+    component: _52f8bb7a,
     name: "equipment"
   }, {
     path: "/events",
-    component: _53a9a08e,
+    component: _156c4a13,
     name: "events"
   }, {
     path: "/expert-success",
-    component: _5d7641dc,
+    component: _52daff6c,
     name: "expert-success"
   }, {
     path: "/farmlands",
-    component: _373875b0,
+    component: _30520516,
     name: "farmlands"
   }, {
     path: "/financing",
-    component: _66c4982a,
+    component: _7491795e,
     name: "financing"
   }, {
     path: "/gakuo",
-    component: _9d9f2752,
+    component: _1e959ebd,
     name: "gakuo"
   }, {
     path: "/gasaya",
-    component: _f3546a7c,
+    component: _74d235c8,
     name: "gasaya"
   }, {
     path: "/investor-success",
-    component: _a4ad3838,
+    component: _2238d5be,
     name: "investor-success"
   }, {
     path: "/join-event",
-    component: _17639c4a,
+    component: _1e668f35,
     name: "join-event"
   }, {
     path: "/joseph",
-    component: _2904f883,
+    component: _684612dd,
     name: "joseph"
   }, {
     path: "/location",
-    component: _ce2294c6,
+    component: _0c52a177,
     name: "location"
   }, {
     path: "/management",
-    component: _d41f5362,
+    component: _7fee98ae,
     name: "management"
   }, {
     path: "/marketing",
-    component: _11da0f08,
+    component: _1fa6f03c,
     name: "marketing"
   }, {
     path: "/meeting-success",
-    component: _ed188d5e,
+    component: _3aa1a437,
     name: "meeting-success"
   }, {
     path: "/newsletter-success",
-    component: _17efc423,
+    component: _b32bb106,
     name: "newsletter-success"
   }, {
     path: "/order",
-    component: _91b52358,
+    component: _248aa0ba,
     name: "order"
   }, {
     path: "/order-farm",
-    component: _7cc28806,
+    component: _2891cd52,
     name: "order-farm"
   }, {
     path: "/our-services",
-    component: _b125a55a,
+    component: _a638c7a6,
     name: "our-services"
   }, {
     path: "/owner-success",
-    component: _2e3ee84e,
+    component: _db900f82,
     name: "owner-success"
   }, {
     path: "/privacy",
-    component: _17cecbda,
+    component: _7e9e0680,
     name: "privacy"
   }, {
     path: "/products",
-    component: _67a9f08e,
+    component: _49e44730,
     name: "products"
   }, {
     path: "/projects",
-    component: _135e7fb8,
+    component: _f27b28dc,
     name: "projects"
   }, {
     path: "/services",
-    component: _73897154,
+    component: _322545a4,
     name: "services"
   }, {
     path: "/shop",
-    component: _786e9bbc,
+    component: _83f2f6d4,
     name: "shop"
   }, {
     path: "/simo-index",
-    component: _3f7596cd,
+    component: _31302ab3,
     name: "simo"
   }, {
     path: "/success",
-    component: _b768b702,
+    component: _4d2dd565,
     name: "success"
   }, {
     path: "/whishlist",
-    component: _21aacf57,
+    component: _1ac45ebd,
     name: "whishlist"
   }, {
     path: "/winnie",
-    component: _e9da1df8,
+    component: _6b57e944,
     name: "winnie"
   }, {
     path: "/blog/blog-copy",
-    component: _1d95b104,
+    component: _64991358,
     name: "blog-blog-copy"
   }, {
     path: "/blog/index-copy",
-    component: _2540667c,
+    component: _330d47b0,
     name: "blog-index-copy"
   }, {
     path: "/contact-us/ali-index",
-    component: _89c02390,
+    component: _3cb60e92,
     name: "contact-us-ali"
   }, {
     path: "/equipment/list-farmland-equipment",
-    component: _83969f22,
+    component: _25411fc9,
     name: "equipment-list-farmland-equipment"
   }, {
     path: "/equipment/rent-farmland-equipment",
-    component: _e6b9cc6c,
+    component: _18a0edb8,
     name: "equipment-rent-farmland-equipment"
   }, {
     path: "/global-auth/login",
-    component: _2ebe57fb,
+    component: _858e8956,
     name: "global-auth-login"
   }, {
     path: "/global-auth/register",
-    component: _f37e2be6,
+    component: _4a9edf1a,
     name: "global-auth-register"
   }, {
     path: "/my-details/account",
-    component: _27159036,
+    component: _67e7981c,
     name: "my-details-account"
   }, {
     path: "/my-details/equipments",
-    component: _03bffcec,
+    component: _3d452346,
     name: "my-details-equipments"
   }, {
     path: "/my-details/farms",
-    component: _20eb5ba6,
+    component: _3e4a250c,
     name: "my-details-farms"
   }, {
     path: "/services/urlcopy",
-    component: _2c787b34,
+    component: _13dc1fc0,
     name: "services-urlcopy"
   }, {
     path: "/my-details/equipments/index1",
-    component: _74493275,
+    component: _6b68d75b,
     name: "my-details-equipments-index1"
   }, {
     path: "/",
-    component: _f4a8a41c,
+    component: _3231c24c,
     name: "index"
   }, {
     path: "/equipment/apply/:url?",
-    component: _4f2ce240,
+    component: _ecd10c74,
     name: "equipment-apply-url"
   }, {
     path: "/equipment/rent-farmland-equipment/:url?",
-    component: _bd912830,
+    component: _74daad64,
     name: "equipment-rent-farmland-equipment-url"
   }, {
     path: "/equipment/rent-farmland-equipment/:url1?",
-    component: _f480ba0e,
+    component: _2667db5a,
     name: "equipment-rent-farmland-equipment-url1"
   }, {
     path: "/auth/:url?",
-    component: _f786a030,
+    component: _75f743ce,
     name: "auth-url"
   }, {
     path: "/blog/:url",
-    component: _48225162,
+    component: _39dce548,
     name: "blog-url"
   }, {
     path: "/brand/:url?",
-    component: _497a21d2,
+    component: _20dad7f1,
     name: "brand-url"
   }, {
     path: "/engage-expert/:url?",
-    component: _42a1da34,
+    component: _37b4fc80,
     name: "engage-expert-url"
   }, {
     path: "/equipment/:id",
-    component: _5c9db908,
+    component: _7a935462,
     name: "equipment-id"
   }, {
     path: "/equipments/:id?",
-    component: _19cb1a55,
+    component: _e5a1f3a2,
     name: "equipments-id"
   }, {
     path: "/farmlands/:url",
-    component: _d398097c,
+    component: _0997e71c,
     name: "farmlands-url"
   }, {
     path: "/join-event/:url?",
-    component: _28b08db7,
+    component: _21ca1d1d,
     name: "join-event-url"
   }, {
     path: "/order-farm/:url",
-    component: _78159156,
+    component: _85e2728a,
     name: "order-farm-url"
   }, {
     path: "/product/:url?",
-    component: _49d2e702,
+    component: _1a57a6d9,
     name: "product-url"
   }, {
     path: "/projects/:url",
-    component: _30bedf8c,
+    component: _defa7dc0,
     name: "projects-url"
   }, {
     path: "/register/:url?",
-    component: _1a40c723,
+    component: _79ba0fee,
     name: "register-url"
   }, {
     path: "/:category/:subcategory",
-    component: _2e40de46,
+    component: _2560832c,
     name: "category-subcategory"
   }],
   fallback: false
@@ -3198,7 +3198,7 @@ var nuxt_error_component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   null,
-  "44b7d711"
+  "24b9380d"
   
 )
 
@@ -3464,7 +3464,7 @@ var nuxt_loading_component = Object(componentNormalizer["a" /* default */])(
   false,
   nuxt_loading_injectStyles,
   null,
-  "6c755405"
+  "51a26601"
   
 )
 
@@ -3539,7 +3539,7 @@ var default_component = Object(componentNormalizer["a" /* default */])(
   false,
   default_injectStyles,
   null,
-  "2386a6a6"
+  "21b4a1a2"
   
 )
 
@@ -3601,7 +3601,7 @@ var home_component = Object(componentNormalizer["a" /* default */])(
   false,
   home_injectStyles,
   null,
-  "1a4b366c"
+  "6e8aa964"
   
 )
 
@@ -3963,7 +3963,7 @@ var free_brands_svg_icons_ = __webpack_require__(30);
 // EXTERNAL MODULE: external "@fortawesome/free-regular-svg-icons"
 var free_regular_svg_icons_ = __webpack_require__(31);
 
-// CONCATENATED MODULE: ./.nuxt/templates.plugin.6a9ed7d8.js
+// CONCATENATED MODULE: ./.nuxt/templates.plugin.8eeff1d0.js
 
 
 
@@ -4004,7 +4004,7 @@ var _nuxt_empty = __webpack_require__(27);
 /* Plugins */
 
  // Source: .\\components\\plugin.js (mode: 'all')
- // Source: .\\templates.plugin.6a9ed7d8.js (mode: 'all')
+ // Source: .\\templates.plugin.8eeff1d0.js (mode: 'all')
  // Source: ..\\plugins\\capitalize (mode: 'all')
  // Source: ..\\plugins\\vuex-persist (mode: 'client')
  // Source: ..\\plugins\\vue-datepicker (mode: 'client')
@@ -4219,8 +4219,8 @@ async function createApp(ssrContext, config = {}) {
   if (typeof /* Cannot get final name for export "default" in "./.nuxt/components/plugin.js" (known exports: , known reexports: ) */ undefined === 'function') {
     await /* Cannot get final name for export "default" in "./.nuxt/components/plugin.js" (known exports: , known reexports: ) */ undefined(app.context, inject);
   }
-  if (typeof /* Cannot get final name for export "default" in "./.nuxt/templates.plugin.6a9ed7d8.js" (known exports: , known reexports: ) */ undefined === 'function') {
-    await /* Cannot get final name for export "default" in "./.nuxt/templates.plugin.6a9ed7d8.js" (known exports: , known reexports: ) */ undefined(app.context, inject);
+  if (typeof /* Cannot get final name for export "default" in "./.nuxt/templates.plugin.8eeff1d0.js" (known exports: , known reexports: ) */ undefined === 'function') {
+    await /* Cannot get final name for export "default" in "./.nuxt/templates.plugin.8eeff1d0.js" (known exports: , known reexports: ) */ undefined(app.context, inject);
   }
   if (typeof /* Cannot get final name for export "default" in "./plugins/capitalize.js" (known exports: , known reexports: ) */ undefined === 'function') {
     await /* Cannot get final name for export "default" in "./plugins/capitalize.js" (known exports: , known reexports: ) */ undefined(app.context, inject);

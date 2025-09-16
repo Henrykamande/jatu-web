@@ -45,7 +45,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "ffed112e",
-  "2e2ef18e"
+  "01c880ec"
   
 )
 
