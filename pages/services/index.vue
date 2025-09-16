@@ -2870,7 +2870,7 @@ export default {
         doc.internal.pageSize.width || doc.internal.pageSize.getWidth();
 
       var img = new Image();
-      img.src = require("@/assets/images/jubilantafrofarms-logo.png");
+      img.src = require("~assets/images/jubilantafrofarms-logo.png");
       doc.addImage(img, "png", 10, 5, 45, 40);
 
       doc.setFontSize(15);
@@ -3031,7 +3031,7 @@ export default {
         doc.internal.pageSize.width || doc.internal.pageSize.getWidth();
 
       var img = new Image();
-      img.src = require("@/assets/images/jubilantafrofarms-logo.png");
+      img.src = require("~assets/images/jubilantafrofarms-logo.png");
       doc.addImage(img, "png", 10, 5, 45, 40);
 
       doc.setFontSize(15);
