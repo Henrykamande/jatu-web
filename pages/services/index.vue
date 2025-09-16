@@ -2532,7 +2532,7 @@ import "jspdf-autotable";
 import { http } from "~/common/index.js";
 import { mapGetters } from "vuex";
 import Product from "@/components/product.vue";
-import backgroundImagePath from "~/assets/images/services/plant-bg.png";
+import backgroundImagePath from "~assets/images/services/plant-bg.png";
 export default {
   components: {
     Product

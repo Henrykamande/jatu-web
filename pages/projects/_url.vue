@@ -795,7 +795,7 @@ import { http } from "~/common/index.js";
 import { mapGetters } from "vuex";
 import Product from "@/components/product.vue";
 import backgroundImagePath from "~/assets/images/bg.jpg";
-import headerImagePath from "~/assets/images/orange-bg.png";
+import headerImagePath from "~assets/images/orange-bg.png";
 export default {
   components: {
     Product
