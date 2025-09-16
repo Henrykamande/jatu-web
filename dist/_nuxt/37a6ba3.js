@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[76],{577:function(t,n,c){"use strict";c.r(n);var o={},r=c(14),component=Object(r.a)(o,function(){return(0,this._self._c)("div",{staticClass:"mx-4 my-2 p-4 h-96 grid md:grid-cols-2"},[this._v("products")])},[],!1,null,"193f67a4",null);n.default=component.exports}}]);
