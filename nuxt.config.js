@@ -1,16 +1,14 @@
 export default {
-     // (default) remove if not present
+  // (default) remove if not present
 
   target: 'static',
-  buildModules: ['@nuxt/postcss8'],   // important for PostCSS 8 with Nuxt 2
-  css: ['@/assets/css/tailwind.css'],
-  build: {
-    postcss: {
-      plugins: {
-        tailwindcss: {},
-        autoprefixer: {},
-      },
-    },
+
+  // Define environment variables accessible in the application.
+  // These values can be overridden by a .env file at the root.
+  env: {
+    websiteUrl: process.env.WEBSITE_URL || "http://localhost:8182",
+    backendUrl:
+      process.env.BACKEND_URL || "https://jatu-server-long-cloud-6971.fly.dev",
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -30,7 +28,10 @@ export default {
     port: 8182, // default: 3000
   },
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["~assets/styles/main.css"],
+  css: [
+    "~/assets/css/tailwind.css",
+    "~assets/styles/main.css"
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -43,6 +44,7 @@ export default {
   // modules: ["nuxt-lazy-load"],
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxt/postcss8',   // important for PostCSS 8 with Nuxt 2
     "@nuxtjs/tailwindcss",
     [
       "nuxt-fontawesome",
@@ -73,5 +75,12 @@ export default {
   // },
   // Modules: https://go.nuxtjs.dev/config-modules
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
+  },
 };

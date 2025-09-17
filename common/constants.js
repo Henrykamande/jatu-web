@@ -1,8 +1,7 @@
 // This file contains constants with no other project dependencies
 // to help prevent circular dependency issues.
 
-// export const websiteUrl = "https://jubilantafrofarms.com";
-// export const backendUrl = "https://portal.jubilantafrofarms.com";
-
-export const websiteUrl = "http://localhost:8182";
-export const backendUrl = "https://jatu-server-long-cloud-6971.fly.dev";
+// These values are injected by Webpack's DefinePlugin via nuxt.config.js
+// and can be configured in a .env file.
+export const websiteUrl = process.env.websiteUrl;
+export const backendUrl = process.env.backendUrl;
