@@ -202,7 +202,7 @@ export async function setContext (app, context) {
       payload: context.payload,
       error: context.error,
       base: app.router.options.base,
-      env: {"websiteUrl":"https://jatu-site.netlify.app/","backendUrl":"https://jatu-server-long-cloud-6971.fly.dev"}
+      env: {"websiteUrl":"http://localhost:8182/","backendUrl":"http://localhost:7800"}
     }
     // Only set once
 

@@ -3,441 +3,378 @@
     "name": "about",
     "path": "/about",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\about\\\\index.vue",
-    "chunkName": "pages/about/index",
-    "_name": "_24ce7e8c"
+    "chunkName": "pages/about/index"
   },
   {
     "name": "blog",
     "path": "/blog",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\blog\\\\index.vue",
-    "chunkName": "pages/blog/index",
-    "_name": "_23c452d9"
+    "chunkName": "pages/blog/index"
   },
   {
     "name": "cart",
     "path": "/cart",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\cart\\\\index.vue",
-    "chunkName": "pages/cart/index",
-    "_name": "_0eb2e6ca"
+    "chunkName": "pages/cart/index"
   },
   {
     "name": "checkout",
     "path": "/checkout",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\checkout\\\\index.vue",
-    "chunkName": "pages/checkout/index",
-    "_name": "_48ef9396"
+    "chunkName": "pages/checkout/index"
   },
   {
     "name": "contact-us",
     "path": "/contact-us",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\contact-us\\\\index.vue",
-    "chunkName": "pages/contact-us/index",
-    "_name": "_07abbab0"
+    "chunkName": "pages/contact-us/index"
   },
   {
     "name": "engage-expert",
     "path": "/engage-expert",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\engage-expert\\\\index.vue",
-    "chunkName": "pages/engage-expert/index",
-    "_name": "_734f0563"
+    "chunkName": "pages/engage-expert/index"
   },
   {
     "name": "equipment",
     "path": "/equipment",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\equipment\\\\index.vue",
-    "chunkName": "pages/equipment/index",
-    "_name": "_15e23b2a"
+    "chunkName": "pages/equipment/index"
   },
   {
     "name": "events",
     "path": "/events",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\events\\\\index.vue",
-    "chunkName": "pages/events/index",
-    "_name": "_6e881e7c"
+    "chunkName": "pages/events/index"
   },
   {
     "name": "expert-success",
     "path": "/expert-success",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\expert-success\\\\index.vue",
-    "chunkName": "pages/expert-success/index",
-    "_name": "_01ec871b"
+    "chunkName": "pages/expert-success/index"
   },
   {
     "name": "farmlands",
     "path": "/farmlands",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\farmlands\\\\index.vue",
-    "chunkName": "pages/farmlands/index",
-    "_name": "_5b2fa7f2"
+    "chunkName": "pages/farmlands/index"
   },
   {
     "name": "financing",
     "path": "/financing",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\financing\\\\index.vue",
-    "chunkName": "pages/financing/index",
-    "_name": "_67cd6a42"
+    "chunkName": "pages/financing/index"
   },
   {
     "name": "gakuo",
     "path": "/gakuo",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\gakuo\\\\index.vue",
-    "chunkName": "pages/gakuo/index",
-    "_name": "_666ee62e"
+    "chunkName": "pages/gakuo/index"
   },
   {
     "name": "gasaya",
     "path": "/gasaya",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\gasaya\\\\index.vue",
-    "chunkName": "pages/gasaya/index",
-    "_name": "_78e68bcb"
+    "chunkName": "pages/gasaya/index"
   },
   {
     "name": "investor-success",
     "path": "/investor-success",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\investor-success\\\\index.vue",
-    "chunkName": "pages/investor-success/index",
-    "_name": "_53072dad"
+    "chunkName": "pages/investor-success/index"
   },
   {
     "name": "join-event",
     "path": "/join-event",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\join-event\\\\index.vue",
-    "chunkName": "pages/join-event/index",
-    "_name": "_81d57338"
+    "chunkName": "pages/join-event/index"
   },
   {
     "name": "joseph",
     "path": "/joseph",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\joseph\\\\index.vue",
-    "chunkName": "pages/joseph/index",
-    "_name": "_1b95b98c"
+    "chunkName": "pages/joseph/index"
   },
   {
     "name": "location",
     "path": "/location",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\location\\\\index.vue",
-    "chunkName": "pages/location/index",
-    "_name": "_2a535866"
+    "chunkName": "pages/location/index"
   },
   {
     "name": "management",
     "path": "/management",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\management\\\\index.vue",
-    "chunkName": "pages/management/index",
-    "_name": "_60b76ad8"
+    "chunkName": "pages/management/index"
   },
   {
     "name": "marketing",
     "path": "/marketing",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\marketing\\\\index.vue",
-    "chunkName": "pages/marketing/index",
-    "_name": "_db7aa25a"
+    "chunkName": "pages/marketing/index"
   },
   {
     "name": "meeting-success",
     "path": "/meeting-success",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\meeting-success\\\\index.vue",
-    "chunkName": "pages/meeting-success/index",
-    "_name": "_6dc11268"
+    "chunkName": "pages/meeting-success/index"
   },
   {
     "name": "newsletter-success",
     "path": "/newsletter-success",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\newsletter-success\\\\index.vue",
-    "chunkName": "pages/newsletter-success/index",
-    "_name": "_45fb80a8"
+    "chunkName": "pages/newsletter-success/index"
   },
   {
     "name": "order",
     "path": "/order",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\order\\\\index.vue",
-    "chunkName": "pages/order/index",
-    "_name": "_6c63e82b"
+    "chunkName": "pages/order/index"
   },
   {
     "name": "order-farm",
     "path": "/order-farm",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\order-farm\\\\index.vue",
-    "chunkName": "pages/order-farm/index",
-    "_name": "_e7345ef4"
+    "chunkName": "pages/order-farm/index"
   },
   {
     "name": "our-services",
     "path": "/our-services",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\our-services\\\\index.vue",
-    "chunkName": "pages/our-services/index",
-    "_name": "_467d78c8"
+    "chunkName": "pages/our-services/index"
   },
   {
     "name": "owner-success",
     "path": "/owner-success",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\owner-success\\\\index.vue",
-    "chunkName": "pages/owner-success/index",
-    "_name": "_5e0f3eb0"
+    "chunkName": "pages/owner-success/index"
   },
   {
     "name": "privacy",
     "path": "/privacy",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\privacy\\\\index.vue",
-    "chunkName": "pages/privacy/index",
-    "_name": "_77562bf1"
+    "chunkName": "pages/privacy/index"
   },
   {
     "name": "products",
     "path": "/products",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\products\\\\index.vue",
-    "chunkName": "pages/products/index",
-    "_name": "_0de2d952"
+    "chunkName": "pages/products/index"
   },
   {
     "name": "projects",
     "path": "/projects",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\projects\\\\index.vue",
-    "chunkName": "pages/projects/index",
-    "_name": "_b679bafe"
+    "chunkName": "pages/projects/index"
   },
   {
     "name": "services",
     "path": "/services",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\services\\\\index.vue",
-    "chunkName": "pages/services/index",
-    "_name": "_04ee141d"
+    "chunkName": "pages/services/index"
   },
   {
     "name": "shop",
     "path": "/shop",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\shop\\\\index.vue",
-    "chunkName": "pages/shop/index",
-    "_name": "_4dc3e9f6"
+    "chunkName": "pages/shop/index"
   },
   {
     "name": "simo",
     "path": "/simo-index",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\simo-index.vue",
-    "chunkName": "pages/simo-index",
-    "_name": "_e632cb38"
+    "chunkName": "pages/simo-index"
   },
   {
     "name": "success",
     "path": "/success",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\success\\\\index.vue",
-    "chunkName": "pages/success/index",
-    "_name": "_03d30496"
+    "chunkName": "pages/success/index"
   },
   {
     "name": "whishlist",
     "path": "/whishlist",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\whishlist\\\\index.vue",
-    "chunkName": "pages/whishlist/index",
-    "_name": "_864af4a4"
+    "chunkName": "pages/whishlist/index"
   },
   {
     "name": "winnie",
     "path": "/winnie",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\winnie\\\\index.vue",
-    "chunkName": "pages/winnie/index",
-    "_name": "_7da3b20d"
+    "chunkName": "pages/winnie/index"
   },
   {
     "name": "blog-blog-copy",
     "path": "/blog/blog-copy",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\blog\\\\blog-copy.vue",
-    "chunkName": "pages/blog/blog-copy",
-    "_name": "_facc6b72"
+    "chunkName": "pages/blog/blog-copy"
   },
   {
     "name": "blog-index-copy",
     "path": "/blog/index-copy",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\blog\\\\index-copy.vue",
-    "chunkName": "pages/blog/index-copy",
-    "_name": "_eee0f9ce"
+    "chunkName": "pages/blog/index-copy"
   },
   {
     "name": "contact-us-ali",
     "path": "/contact-us/ali-index",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\contact-us\\\\ali-index.vue",
-    "chunkName": "pages/contact-us/ali-index",
-    "_name": "_2870d37e"
+    "chunkName": "pages/contact-us/ali-index"
   },
   {
     "name": "equipment-list-farmland-equipment",
     "path": "/equipment/list-farmland-equipment",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\equipment\\\\list-farmland-equipment\\\\index.vue",
-    "chunkName": "pages/equipment/list-farmland-equipment/index",
-    "_name": "_304e0c10"
+    "chunkName": "pages/equipment/list-farmland-equipment/index"
   },
   {
     "name": "equipment-rent-farmland-equipment",
     "path": "/equipment/rent-farmland-equipment",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\equipment\\\\rent-farmland-equipment\\\\index.vue",
-    "chunkName": "pages/equipment/rent-farmland-equipment/index",
-    "_name": "_9371395a"
+    "chunkName": "pages/equipment/rent-farmland-equipment/index"
   },
   {
     "name": "global-auth-login",
     "path": "/global-auth/login",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\global-auth\\\\login\\\\index.vue",
-    "chunkName": "pages/global-auth/login/index",
-    "_name": "_185e58f8"
+    "chunkName": "pages/global-auth/login/index"
   },
   {
     "name": "global-auth-register",
     "path": "/global-auth/register",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\global-auth\\\\register\\\\index.vue",
-    "chunkName": "pages/global-auth/register/index",
-    "_name": "_0816d5e4"
+    "chunkName": "pages/global-auth/register/index"
   },
   {
     "name": "my-details-account",
     "path": "/my-details/account",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\my-details\\\\account\\\\index.vue",
-    "chunkName": "pages/my-details/account/index",
-    "_name": "_045285cd"
+    "chunkName": "pages/my-details/account/index"
   },
   {
     "name": "my-details-equipments",
     "path": "/my-details/equipments",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\my-details\\\\equipments\\\\index.vue",
-    "chunkName": "pages/my-details/equipments/index",
-    "_name": "_86b0e816"
+    "chunkName": "pages/my-details/equipments/index"
   },
   {
     "name": "my-details-farms",
     "path": "/my-details/farms",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\my-details\\\\farms\\\\index.vue",
-    "chunkName": "pages/my-details/farms/index",
-    "_name": "_2746cafd"
+    "chunkName": "pages/my-details/farms/index"
   },
   {
     "name": "services-urlcopy",
     "path": "/services/urlcopy",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\services\\\\urlcopy.vue",
-    "chunkName": "pages/services/urlcopy",
-    "_name": "_96ea5222"
+    "chunkName": "pages/services/urlcopy"
   },
   {
     "name": "my-details-equipments-index1",
     "path": "/my-details/equipments/index1",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\my-details\\\\equipments\\\\index1.vue",
-    "chunkName": "pages/my-details/equipments/index1",
-    "_name": "_4f58f6e8"
+    "chunkName": "pages/my-details/equipments/index1"
   },
   {
     "name": "index",
     "path": "/",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_8562f00a"
+    "chunkName": "pages/index"
   },
   {
     "name": "equipment-apply-url",
     "path": "/equipment/apply/:url?",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\equipment\\\\apply\\\\_url.vue",
-    "chunkName": "pages/equipment/apply/_url",
-    "_name": "_86923012"
+    "chunkName": "pages/equipment/apply/_url"
   },
   {
     "name": "equipment-rent-farmland-equipment-url",
     "path": "/equipment/rent-farmland-equipment/:url?",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\equipment\\\\rent-farmland-equipment\\\\_url.vue",
-    "chunkName": "pages/equipment/rent-farmland-equipment/_url",
-    "_name": "_bae16582"
+    "chunkName": "pages/equipment/rent-farmland-equipment/_url"
   },
   {
     "name": "equipment-rent-farmland-equipment-url1",
     "path": "/equipment/rent-farmland-equipment/:url1?",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\equipment\\\\rent-farmland-equipment\\\\_url1.vue",
-    "chunkName": "pages/equipment/rent-farmland-equipment/_url1",
-    "_name": "_a13826fc"
+    "chunkName": "pages/equipment/rent-farmland-equipment/_url1"
   },
   {
     "name": "auth-url",
     "path": "/auth/:url?",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\auth\\\\_url.vue",
-    "chunkName": "pages/auth/_url",
-    "_name": "_5ca49902"
+    "chunkName": "pages/auth/_url"
   },
   {
     "name": "blog-url",
     "path": "/blog/:url",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\blog\\\\_url.vue",
-    "chunkName": "pages/blog/_url",
-    "_name": "_d4d9560e"
+    "chunkName": "pages/blog/_url"
   },
   {
     "name": "brand-url",
     "path": "/brand/:url?",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\brand\\\\_url.vue",
-    "chunkName": "pages/brand/_url",
-    "_name": "_3bf25e60"
+    "chunkName": "pages/brand/_url"
   },
   {
     "name": "engage-expert-url",
     "path": "/engage-expert/:url?",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\engage-expert\\\\_url.vue",
-    "chunkName": "pages/engage-expert/_url",
-    "_name": "_1403292f"
+    "chunkName": "pages/engage-expert/_url"
   },
   {
     "name": "equipment-id",
     "path": "/equipment/:id",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\equipment\\\\_id.vue",
-    "chunkName": "pages/equipment/_id",
-    "_name": "_31388393"
+    "chunkName": "pages/equipment/_id"
   },
   {
     "name": "equipments-id",
     "path": "/equipments/:id?",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\equipments\\\\_id.vue",
-    "chunkName": "pages/equipments/_id",
-    "_name": "_a9a085c4"
+    "chunkName": "pages/equipments/_id"
   },
   {
     "name": "farmlands-url",
     "path": "/farmlands/:url",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\farmlands\\\\_url.vue",
-    "chunkName": "pages/farmlands/_url",
-    "_name": "_27989e0b"
+    "chunkName": "pages/farmlands/_url"
   },
   {
     "name": "join-event-url",
     "path": "/join-event/:url?",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\join-event\\\\_url.vue",
-    "chunkName": "pages/join-event/_url",
-    "_name": "_783f77e4"
+    "chunkName": "pages/join-event/_url"
   },
   {
     "name": "order-farm-url",
     "path": "/order-farm/:url",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\order-farm\\\\_url.vue",
-    "chunkName": "pages/order-farm/_url",
-    "_name": "_5f24edac"
+    "chunkName": "pages/order-farm/_url"
   },
   {
     "name": "product-url",
     "path": "/product/:url?",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\product\\\\_url.vue",
-    "chunkName": "pages/product/_url",
-    "_name": "_64b164f0"
+    "chunkName": "pages/product/_url"
   },
   {
     "name": "projects-url",
     "path": "/projects/:url",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\projects\\\\_url.vue",
-    "chunkName": "pages/projects/_url",
-    "_name": "_4727f051"
+    "chunkName": "pages/projects/_url"
   },
   {
     "name": "register-url",
     "path": "/register/:url?",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\register\\\\_url.vue",
-    "chunkName": "pages/register/_url",
-    "_name": "_79c8273a"
+    "chunkName": "pages/register/_url"
   },
   {
     "name": "category-subcategory",
     "path": "/:category/:subcategory",
     "component": "E:\\\\Projects\\\\afrofarms\\\\jatu-web\\\\pages\\\\_category\\\\_subcategory\\\\index.vue",
-    "chunkName": "pages/_category/_subcategory/index",
-    "_name": "_db699f46"
+    "chunkName": "pages/_category/_subcategory/index"
   }
 ]
